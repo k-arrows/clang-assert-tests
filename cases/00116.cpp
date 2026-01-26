@@ -7,4 +7,4 @@ enum E;
 
 enum {
   a = (__underlying_type(E)){},
-}
+};
