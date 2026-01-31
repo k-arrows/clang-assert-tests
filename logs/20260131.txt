@@ -48,7 +48,7 @@
 00048.cpp OK
 00049.cpp OK
 00050.cpp OK
-00051.cpp FAIL
+00051.cpp OK
 00052.cpp OK
 00053.cpp OK
 00054.cpp OK
@@ -61,7 +61,7 @@
 00061.cpp OK
 00062.cpp OK
 00063.cpp OK
-00064.cpp FAIL
+00064.cpp OK
 00065.cpp OK
 00066.cpp OK
 00067.cpp OK
@@ -113,7 +113,7 @@
 00113.cpp OK
 00114.cpp OK
 00115.cpp OK
-00116.cpp FAIL
+00116.cpp OK
 00117.cpp OK
 00118.cpp OK
 00119.cpp OK
@@ -126,6 +126,5 @@
 === Summary ===
 Clang version: clang version 23.0.0git (https://github.com/llvm/llvm-project.git a01b91fb06ceeefde9ea4d37a20dda2791dbb4a6)
 Total: 124
-OK: 121
-FAIL: 3
-Failed files: 00051.cpp, 00064.cpp, 00116.cpp
+OK: 124
+FAIL: 0

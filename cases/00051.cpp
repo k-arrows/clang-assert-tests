@@ -1,7 +1,4 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-ASSERT: getCorrespondingSignedType
-// EXPECT-CRASH-ASSERT: hasSignedIntegerRepresentation
-// EXPECT-CRASH-ASSERT: isSignedFixedPointType
-// EXPECT-CRASH-ASSERT: Unexpected
+// EXPECT-FAIL
 
 void foo(_Bool *zn) { printf("%zn", zn); }

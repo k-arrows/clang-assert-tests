@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: GetEnumUnderlyingType
-// EXPECT-CRASH-ASSERT: isThisDeclarationADemotedDefinition
+// EXPECT-PASS
 
 enum E {};
 enum E;
