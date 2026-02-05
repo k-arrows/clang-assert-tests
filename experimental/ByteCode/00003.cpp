@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: visitZeroRecordInitializer
+// EXPECT-FAIL
 
 struct S1;
 
