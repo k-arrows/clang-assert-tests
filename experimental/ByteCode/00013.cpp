@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitShuffleVectorExpr
-// EXPECT-CRASH-ASSERT: Initializing 
+// EXPECT-PASS
 
 typedef float __m128 __attribute__((__vector_size__(16)));
 

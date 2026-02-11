@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: peek
-// EXPECT-CRASH-ASSERT: toPrimType
+// EXPECT-PASS
 
 class Foo {
 public:

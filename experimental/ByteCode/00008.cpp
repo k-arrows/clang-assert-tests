@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: RetVoid
-// EXPECT-CRASH-ASSERT: getFrameOffset
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-PASS
 
 constexpr void foo() {
   int i = 0;

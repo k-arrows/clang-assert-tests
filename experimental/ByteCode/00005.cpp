@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: visitBreakStmt
-// EXPECT-CRASH-ASSERT: TargetLabel
+// EXPECT-FAIL
 
 constexpr int foo() {
 bar:

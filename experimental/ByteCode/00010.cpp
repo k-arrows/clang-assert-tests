@@ -1,4 +1,4 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 void foo() { *(void (*)()) ""; }

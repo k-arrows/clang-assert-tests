@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: trunc
-// EXPECT-CRASH-ASSERT: BitWidth
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-PASS
 
 struct S {
   __int128 foo : 1234;

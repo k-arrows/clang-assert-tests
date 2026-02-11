@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitUnaryExprOrTypeTraitExpr
-// EXPECT-CRASH-ASSERT: isSizelessVectorType
+// EXPECT-FAIL
 
 constexpr int foo() {
   int m = 1;
