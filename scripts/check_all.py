@@ -1,8 +1,23 @@
 #!/usr/bin/env python3
+import argparse
 import subprocess
 from pathlib import Path
 
-cases_dir = Path("cases")
+parser = argparse.ArgumentParser(
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter
+)
+
+parser.add_argument(
+    "--cases-dir",
+    default="cases",
+    help="Directory containing test cases"
+)
+args = parser.parse_args()
+
+cases_dir = Path(args.cases_dir)
+
+if not cases_dir.is_dir():
+    raise SystemExit(f"Error: '{cases_dir}' is not a directory")
 
 try:
     clang_version = subprocess.run(
