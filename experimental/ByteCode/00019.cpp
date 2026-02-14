@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: interp__builtin_nan
-// EXPECT-CRASH-ASSERT: isPrimitiveArray
+// EXPECT-PASS
 
 struct {
 } const s;

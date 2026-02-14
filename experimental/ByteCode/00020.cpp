@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: cast
-// EXPECT-CRASH-ASSERT: isa
-// EXPECT-CRASH-ASSERT: incompatible
+// EXPECT-FAIL
 
 constexpr bool foo() {
   struct A {};

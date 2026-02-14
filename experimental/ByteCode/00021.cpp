@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: evaluateAsInitializer
-// EXPECT-CRASH-ASSERT: empty
+// EXPECT-FAIL
 
 constexpr __complex__ float foo = 0.;
 

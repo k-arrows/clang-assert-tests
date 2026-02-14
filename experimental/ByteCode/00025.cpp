@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getSize
-// EXPECT-CRASH-ASSERT: isUnknownSizeArray
-// EXPECT-CRASH-ASSERT: unknown
+// EXPECT-FAIL
 
 constexpr char abc[] = /* missing */;
 
