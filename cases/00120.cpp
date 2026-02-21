@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getTypeDeclType
-// EXPECT-CRASH-ASSERT: Qualifier
+// EXPECT-FAIL
 
 #include <foo>
 

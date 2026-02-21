@@ -117,7 +117,7 @@
 00117.cpp OK
 00118.cpp OK
 00119.cpp OK
-00120.cpp FAIL
+00120.cpp OK
 00121.cpp OK
 00122.cpp OK
 00123.cpp OK
@@ -126,7 +126,7 @@
 00126.cpp OK
 00127.cpp OK
 00128.cpp OK
-00129.cpp FAIL
+00129.cpp OK
 00130.cpp OK
 00131.cpp OK
 00132.cpp OK
@@ -150,6 +150,5 @@
 === Summary ===
 Clang version: clang version 23.0.0git (https://github.com/llvm/llvm-project.git 99dc561c7da3448cb90c73b10e08c2061ed34991)
 Total: 148
-OK: 146
-FAIL: 2
-Failed files: 00120.cpp, 00129.cpp
+OK: 148
+FAIL: 0
