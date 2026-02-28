@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-ASSERT: getExtValue
-// EXPECT-CRASH-ASSERT: isRepresentableByInt64
-// EXPECT-CRASH-ASSERT: int64_t
+// EXPECT-PASS
 
 typedef unsigned V __attribute__((vector_size(64)));
 

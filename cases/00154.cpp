@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckLoopHintExpr
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-FAIL
 
 struct S {};
 
