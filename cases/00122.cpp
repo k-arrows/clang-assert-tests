@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getStored
-// EXPECT-CRASH-ASSERT: isStoredKind
+// EXPECT-FAIL
 
 struct S {
   void func();

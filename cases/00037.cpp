@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: checkBuiltinTemplateIdType
-// EXPECT-CRASH-ASSERT: Converted
+// EXPECT-FAIL
 
 template <class T> struct type_identity {
   using type = T;

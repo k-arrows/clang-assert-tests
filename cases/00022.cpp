@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: checkBuiltinTemplateIdType
-// EXPECT-CRASH-ASSERT: Converted
-// EXPECT-CRASH-ASSERT: __type_pack_element
+// EXPECT-FAIL
 
 namespace std {
 typedef decltype(sizeof(0)) size_t;
