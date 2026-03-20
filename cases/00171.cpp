@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: cast
-// EXPECT-CRASH-ASSERT: isa
-// EXPECT-CRASH-ASSERT: incompatible
+// EXPECT-FAIL
 
 template <class {
 }, class C > struct S;

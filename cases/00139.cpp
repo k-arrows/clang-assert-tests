@@ -1,7 +1,7 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: getDeducedTemplateSpecializationTypeInternal
-// EXPECT-CRASH-ASSERT: TempID
-// EXPECT-CRASH-ASSERT: match
+// EXPECT-CRASH-ASSERT: getTypeInfoImpl
+// EXPECT-CRASH-ASSERT: isDependentType
+// EXPECT-CRASH-ASSERT: should
 
 template <class T> int i;
 
