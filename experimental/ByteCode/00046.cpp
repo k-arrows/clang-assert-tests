@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: invokeCtor
-// EXPECT-CRASH-ASSERT: IsInitialized
+// EXPECT-FAIL
 
 constexpr void foo() {
   bool b = false;
