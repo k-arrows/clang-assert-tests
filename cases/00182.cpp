@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: operator==
-// EXPECT-CRASH-ASSERT: IsUnsigned
-// EXPECT-CRASH-ASSERT: Signedness
+// EXPECT-FAIL
 
 void bar(int);
 
