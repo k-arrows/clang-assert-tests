@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: RetVoid
-// EXPECT-CRASH-ASSERT: getFrameOffset
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-PASS
 
 struct S {
   float x[3][3];

@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: CallVirt
-// EXPECT-CRASH-ASSERT: DynamicDecl 
+// EXPECT-PASS
 
 struct S {
   virtual int foo();

@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: This
-// EXPECT-CRASH-ASSERT: R
+// EXPECT-FAIL
 
 class Foo {
   void a;
