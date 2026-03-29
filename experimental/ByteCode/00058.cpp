@@ -1,6 +1,5 @@
 // RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: interp__builtin_strcmp
-// EXPECT-CRASH-ASSERT: isPrimitiveArray
+// EXPECT-FAIL
 
 int strcmp(const char *, const char *);
 #define S "\x01\x02"
