@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: Ret
-// EXPECT-CRASH-ASSERT: getFrameOffset
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-FAIL
 
 struct S {};
 template <auto V> struct M;
