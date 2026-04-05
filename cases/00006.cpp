@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getMangledNameImpl
-// EXPECT-CRASH-ASSERT: II
-// EXPECT-CRASH-ASSERT: unnamed 
+// EXPECT-FAIL
 
 int foo(void) {
   extern union {

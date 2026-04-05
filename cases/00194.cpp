@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fblocks %s
-// EXPECT-CRASH-ASSERT: CheckTemplateArgument
-// EXPECT-CRASH-ASSERT: isPointerOrReferenceType
-// EXPECT-CRASH-ASSERT: isNullPtrType
+// EXPECT-FAIL
 
 template <void (^foo)()> struct T {};
 

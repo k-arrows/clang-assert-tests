@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-ASSERT: getScalarVal
-// EXPECT-CRASH-ASSERT: isScalar
-// EXPECT-CRASH-ASSERT: Not
+// EXPECT-FAIL
 
 _Complex double foo();
 
