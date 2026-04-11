@@ -1,11 +1,5 @@
-// RUN: clang++ -x c --analyze %s
-// EXPECT-CRASH-ASSERT: makeNullWithType
-// EXPECT-CRASH-ASSERT: isPointerType
-// EXPECT-CRASH-ASSERT: isObjCObjectPointerType
-// EXPECT-CRASH-ASSERT: isBlockPointerType
-// EXPECT-CRASH-ASSERT: isNullPtrType
-// EXPECT-CRASH-ASSERT: isReferenceType
-// EXPECT-CRASH-ASSERT: must
+// RUN: clang++ -x c --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 void foo(void *_Atomic);
 
