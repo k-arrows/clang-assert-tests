@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: APInt
-// EXPECT-CRASH-ASSERT: isUIntN
-// EXPECT-CRASH-ASSERT: N-bit
+// EXPECT-FAIL
 
 void f(void);
 struct S {

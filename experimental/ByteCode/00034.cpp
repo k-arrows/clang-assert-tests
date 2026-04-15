@@ -1,6 +1,6 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: UnsignedOrNone
-// EXPECT-CRASH-ASSERT: operator
+// EXPECT-CRASH-ASSERT: OptionalUnsigned
+// EXPECT-CRASH-ASSERT: has_value
 
 void foo() {
   struct A {

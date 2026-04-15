@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: elem
-// EXPECT-CRASH-ASSERT: ReadOffset
-// EXPECT-CRASH-ASSERT: getAllocSize
+// EXPECT-FAIL
 
 void foo(void) {
   _Complex double cd;

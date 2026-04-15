@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: allElementsInitialized
-// EXPECT-CRASH-ASSERT: isPrimitiveArray
+// EXPECT-PASS
 
 struct {
   int a[1 << 30];
