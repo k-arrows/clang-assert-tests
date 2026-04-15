@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 struct S {
   typename T;

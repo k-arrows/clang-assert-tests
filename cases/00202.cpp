@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: BuildDeductionGuideForTypeAlias
-// EXPECT-CRASH-ASSERT: FReturnType
-// EXPECT-CRASH-ASSERT: expected
+// EXPECT-FAIL
 
 template <typename T> struct S1 {};
 template <typename T> using S2 = S1<char>;
