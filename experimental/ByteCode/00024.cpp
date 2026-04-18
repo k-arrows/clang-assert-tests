@@ -1,6 +1,6 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: cleanupAfterFunctionCall
-// EXPECT-CRASH-ASSERT: getNumWrittenParams
+// EXPECT-CRASH-ASSERT: discard
+// EXPECT-CRASH-ASSERT: toPrimType
 
 namespace ConstexprVirtualDispatch {
 class A {
