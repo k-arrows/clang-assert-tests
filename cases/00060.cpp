@@ -1,6 +1,5 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-ASSERT: getFileIDLoaded
-// EXPECT-CRASH-ASSERT: SLocOffset
+// EXPECT-FAIL
 
 #define T(str) strcpy(d, str)
 

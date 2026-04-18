@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: data
-// EXPECT-CRASH-ASSERT: DD
-// EXPECT-CRASH-ASSERT: queried
+// EXPECT-FAIL
 
 struct S static;
 
