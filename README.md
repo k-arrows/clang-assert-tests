@@ -10,3 +10,7 @@ To check all test cases using the provided helper script:
     python3 scripts/check_all.py
 
 The script invokes Clang on each test case with predefined options.
+
+## License
+
+This repository is licensed under the MIT License.
