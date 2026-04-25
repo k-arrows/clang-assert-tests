@@ -1,5 +1,4 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: toAPSInt
-// EXPECT-CRASH-ASSERT: isNumber
+// EXPECT-PASS
 
 double foo = (long)&foo;
