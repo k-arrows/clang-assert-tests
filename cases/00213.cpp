@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: operator+=
-// EXPECT-CRASH-ASSERT: BitWidth
-// EXPECT-CRASH-ASSERT: widths
+// EXPECT-PASS
 
 constexpr char foo() { return 3; }
 

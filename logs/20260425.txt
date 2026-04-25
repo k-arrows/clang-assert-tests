@@ -210,7 +210,7 @@
 00210.cpp OK
 00211.cpp OK
 00212.cpp OK
-00213.cpp FAIL
+00213.cpp OK
 00214.cpp OK
 00215.cpp OK
 00216.cpp OK
@@ -225,6 +225,5 @@
 === Summary ===
 Clang version: clang version 23.0.0git (https://github.com/llvm/llvm-project.git b4c1e1a14e47c383da308bcd3195b6dee9ba086e)
 Total: 223
-OK: 222
-FAIL: 1
-Failed files: 00213.cpp
+OK: 223
+FAIL: 0
