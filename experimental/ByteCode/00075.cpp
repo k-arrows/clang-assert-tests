@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: evaluateAsInitializer
-// EXPECT-CRASH-ASSERT: Stk.empty
+// EXPECT-PASS
 
 struct S {
   virtual ~S() = default;

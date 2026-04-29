@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fopenmp -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: deref
-// EXPECT-CRASH-ASSERT: isDereferencable
+// EXPECT-PASS
 
 void foo() {
   char i = 0;
