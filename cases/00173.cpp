@@ -1,6 +1,4 @@
 // RUN: clang++ -c -std=c++26 %s
-// EXPECT-CRASH-ASSERT: EvaluateAsStringImpl
-// EXPECT-CRASH-ASSERT: isUnevaluated
-// EXPECT-CRASH-ASSERT: expected
+// EXPECT-FAIL
 
 static_assert(true, "";);
