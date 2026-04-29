@@ -82,6 +82,11 @@ def get_clang_version():
 def main():
     parser = argparse.ArgumentParser(description="List assertion failures")
     parser.add_argument(
+        "--assertions-only",
+        action="store_true",
+        help="Show only assertion messages (no file paths, no summary)"
+    )
+    parser.add_argument(
         "--cases-dir",
         default="cases",
         help="target directory (default: cases)",
@@ -116,7 +121,10 @@ def main():
 
             assertion = extract_assertion(stderr)
             if assertion:
-                print(f"{file} {assertion}")
+                if args.assertions_only:
+                    print(assertion)
+                else:
+                    print(f"{file} {assertion}")
 
                 total_assertions += 1
 
@@ -127,14 +135,15 @@ def main():
                 break
 
     # --- summary ---
-    print("\n=== summary ===")
-    print(f"directory: {case_dir}")
-    print(f"files: {total_files}")
-    print(f"total assertions: {total_assertions}")
-    print(get_clang_version())
+    if not args.assertions_only:
+        print("\n=== summary ===")
+        print(f"directory: {case_dir}")
+        print(f"files: {total_files}")
+        print(f"total assertions: {total_assertions}")
+        print(get_clang_version())
 
     # --- optional duplicate analysis ---
-    if args.show_frequency:
+    if not args.assertions_only and args.show_frequency:
         print("\n=== assertion duplicates (2x+) ===")
 
         for assertion, count in sorted(counter.items(), key=lambda x: -x[1]):
