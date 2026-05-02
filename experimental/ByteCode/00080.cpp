@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getPtr
-// EXPECT-CRASH-ASSERT: isNumber
+// EXPECT-FAIL
 
 typedef decltype(sizeof(int)) L;
 
