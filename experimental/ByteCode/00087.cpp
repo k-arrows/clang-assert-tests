@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: Pointer
-// EXPECT-CRASH-ASSERT: Pointee
+// EXPECT-FAIL
 
 namespace std {
 template <class _E> class initializer_list {};
