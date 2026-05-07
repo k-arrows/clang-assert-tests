@@ -66,7 +66,7 @@ def parse_directives(source):
 
 def main():
     if len(sys.argv) != 2:
-        print("usage: check_assert.py <source.cpp>")
+        print("usage: check.py <source.cpp>")
         sys.exit(1)
 
     src = Path(sys.argv[1])
