@@ -73,9 +73,9 @@ def run_one(path: pathlib.Path, verbose: bool) -> bool:
 
     if verbose:
         if crashed:
-            print("[OK] GCC internal compiler error detected")
+            print("[ICE] GCC internal compiler error detected")
         else:
-            print("[FAIL] No GCC crash detected")
+            print("[NOT ICE] GCC internal compiler error not detected")
 
     return crashed
 
@@ -115,8 +115,8 @@ def main():
         print("No cpp files found")
         sys.exit(1)
 
-    ok = 0
-    fail = 0
+    ice = 0
+    not_ice = 0
 
     multi = len(files) > 1
 
@@ -124,11 +124,11 @@ def main():
         crashed = run_one(path, verbose=not multi)
 
         if crashed:
-            ok += 1
-            status = "OK"
+            ice += 1
+            status = "ICE"
         else:
-            fail += 1
-            status = "FAIL"
+            not_ice += 1
+            status = "NOT ICE"
 
         if multi:
             print(f"{path.name} {status}")
@@ -137,8 +137,8 @@ def main():
         print("\n=== Summary ===")
         print(f"GCC version: {get_gxx_version()}")
         print(f"Total: {len(files)}")
-        print(f"OK: {ok}")
-        print(f"FAIL: {fail}")
+        print(f"ICE: {ice}")
+        print(f"NOT ICE: {not_ice}")
 
 
 if __name__ == "__main__":
