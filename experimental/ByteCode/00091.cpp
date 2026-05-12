@@ -1,6 +1,5 @@
 // RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: evaluateValueImpl
-// EXPECT-CRASH-ASSERT: isValueDependent
+// EXPECT-FAIL
 
 void foo() {
   struct S {
