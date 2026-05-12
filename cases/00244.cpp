@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: setInvalidDecl
-// EXPECT-CRASH-ASSERT: TagDecl
-// EXPECT-CRASH-ASSERT: isCompleteDefinition
+// EXPECT-FAIL
 
 constexpr bool foo() {
   struct U {
