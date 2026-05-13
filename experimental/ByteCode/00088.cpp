@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 constexpr int &foo(int *arr, size_t idx) { return arr[idx]; }
 
