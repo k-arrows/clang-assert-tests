@@ -12,6 +12,10 @@ DEFAULT_CASES_DIR = ROOT / "experimental" / "gcc"
 
 ICE_PATTERN = "internal compiler error:"
 
+STRIP_OPTIONS = {
+    "-fexperimental-new-constant-interpreter",
+}
+
 GXX = shutil.which("g++")
 if GXX is None:
     print("g++ not found")
@@ -45,6 +49,8 @@ def build_gcc_command(run_line: str, source_path: pathlib.Path):
     cmd = cmd.replace("%s", shlex.quote(str(relative_path)))
 
     args = shlex.split(cmd)
+
+    args = [arg for arg in args if arg not in STRIP_OPTIONS]
 
     if "-o" not in args:
         args += ["-o", "/dev/null"]
