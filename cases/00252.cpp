@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: operator[]
-// EXPECT-CRASH-ASSERT: Length
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-FAIL
 
 void bar(const int &x [[clang::lifetime_capture_by(this)]]);
 

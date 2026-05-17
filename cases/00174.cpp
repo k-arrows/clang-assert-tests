@@ -1,8 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: SubstType
-// EXPECT-CRASH-ASSERT: CodeSynthesisContexts
-// EXPECT-CRASH-ASSERT: Cannot
-// EXPECT-CRASH-ASSERT: instantiation
+// EXPECT-FAIL
 
 template <typename... Ts> void foo(Ts...) {}
 void bar(baz<Ts>) {

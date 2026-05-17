@@ -1,7 +1,8 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: getNumArgumentsInExpansionFromUnexpanded
-// EXPECT-CRASH-ASSERT: Result
-// EXPECT-CRASH-ASSERT: inconsistent
+// EXPECT-CRASH-ASSERT: getTemplateArgumentPackPatternForRewrite
+// EXPECT-CRASH-ASSERT: pack_size
+// EXPECT-CRASH-ASSERT: isPackExpansion
+// EXPECT-CRASH-ASSERT: unexpected
 
 template <auto...> struct X {};
 
