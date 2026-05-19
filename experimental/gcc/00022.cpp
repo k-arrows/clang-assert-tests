@@ -1,5 +1,5 @@
-// RUN: clang++ -c %s
-// EXPECT-FAIL
+// RUN: clang++ -c -std=c++20 %s
+// EXPECT-PASS
 
 struct S {
   short operator<=>(int);
