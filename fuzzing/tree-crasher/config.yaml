@@ -1,0 +1,31 @@
+corpus:
+  source_directory: "/corpus/clang-test/SemaCXX"
+  destination_directory: "./corpus"
+
+  extensions:
+    - ".cpp"
+
+  number_to_select: 50
+  recursive: true
+  seed: null
+
+fuzzer:
+  binary: "/usr/local/bin/tree-crasher"
+  corpus_dir: "./corpus"
+  debug: "--debug"
+
+  interesting_stderr: '"(?m)^PLEASE "'
+
+  timeout_seconds: 600
+  parallel: 8
+
+  show_stdout: false
+
+  compiler_cmd:
+    - clang++
+    - -c
+    - -o
+    - /dev/null
+
+logging:
+  log_directory: "./logs"
