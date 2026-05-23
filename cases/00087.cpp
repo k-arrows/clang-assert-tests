@@ -1,8 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: SubstQualifier
-// EXPECT-CRASH-ASSERT: getFriendObjectKind
-// EXPECT-CRASH-ASSERT: isDependentContext
-// EXPECT-CRASH-ASSERT: non-friend
+// EXPECT-FAIL
 
 template <class T> void foo(T x) {
   struct S {

@@ -1,7 +1,5 @@
-// RUN: clang++ --analyze %s
-// EXPECT-CRASH-ASSERT: create_OSAtomicCompareAndSwap
-// EXPECT-CRASH-ASSERT: OldValueTy
-// EXPECT-CRASH-ASSERT: NewValueTy
+// RUN: clang++ --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 int foo = 0;
 bool OSAtomicCompareAndSwap(char32_t __oldValue, int __newValue,

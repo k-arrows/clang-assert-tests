@@ -1,7 +1,7 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: mangleFunctionParam
-// EXPECT-CRASH-ASSERT: parmDepth
-// EXPECT-CRASH-ASSERT: getDepth
+// EXPECT-CRASH-ASSERT: getNestingDepth
+// EXPECT-CRASH-ASSERT: ParmDepth
+// EXPECT-CRASH-ASSERT: ParmVarDecl
 
 struct S {
   int x[2];

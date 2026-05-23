@@ -1,0 +1,277 @@
+Assertion `(data().DefaultedCopyAssignmentIsDeleted || needsOverloadResolutionForCopyAssignment()) && "copy assignment should not be deleted"' failed.
+Assertion `DS.getStorageClassSpec() == DeclSpec::SCS_unspecified' failed.
+Assertion `!VD->mightBeUsableInConstantExpressions(Info.Ctx)' failed.
+Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
+Assertion `Access != AS_none && "Access specifier is AS_none inside a record decl"' failed.
+Assertion `isLValue()' failed.
+Assertion `Init < getNumInits() && "Initializer access out of range!"' failed.
+Assertion `(EltTy->isDependentType() || EltTy->isIncompleteType() || EltTy->isConstantSizeType()) && "Constant array of VLAs is illegal!"' failed.
+Assertion `SI.getBitWidth() == Info.Ctx.getIntWidth(E->getType()) && "Invalid evaluation result."' failed.
+Assertion `Val && "isa<> used on a null pointer"' failed.
+Assertion `Ancestor->getEntity() == CurContext && "ancestor context mismatch"' failed.
+Assertion `((IndexOfCaptureReadyLambda != (FunctionScopes.size() - 1)) || S.getCurGenericLambda()) && "The capture ready lambda for a potential capture can only be the " "current lambda if it is a generic lambda"' failed.
+Assertion `Permissive || !(!LabelAndGotoScopes.count(TheLabel->getStmt()))' failed.
+Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc() && "The annotation should be until the most recent cached token"' failed.
+Assertion `Tok.is(tok::l_paren) && "Expected '('"' failed.
+Assertion `(NamedDC->InEnclosingNamespaceSetOf(SemaDC) || NewD->isInvalidDecl() || OldD->isInvalidDecl()) && "unexpected context for redeclaration"' failed.
+Assertion `QualifierLoc.getNestedNameSpecifier() == getTypePtr()->getQualifier()' failed.
+Assertion `!KnownValid && "Explicit template arguments?"' failed.
+Assertion `!llvm::is_contained(getLookupResult(), D) && "Already exists!"' failed.
+Assertion `IdentLoc.isValid() && "Invalid TargetName location."' failed.
+Assertion `DD && "queried property of class with no definition"' failed.
+Assertion `!AllocType->isArrayType() && "array allocation with non-array new"' failed.
+Assertion `!Body && "can't replace function body with defaulted function info"' failed.
+Assertion `R.getAsSingle<TemplateDecl>() && "There should only be one declaration found."' failed.
+Assertion `(FD && FD->getInClassInitStyle() != ICIS_NoInit) && "must set init style when field is created"' failed.
+Assertion `(!Unexpanded.empty() || LambdaReferencingOuterPacks) && "Unable to find unexpanded parameter packs"' failed.
+Assertion `CanDeclareSpecialMemberFunction(RD) && "doing special member lookup into record that isn't fully complete"' failed.
+Assertion `getType(Base).getNonReferenceType()->isPointerType() || getType(Base).getNonReferenceType()->isArrayType()' failed.
+Assertion `(LHSExpr->containsErrors() || RHSExpr->containsErrors()) && "Should only occur in error-recovery path."' failed.
+Assertion `NameInfo.getName().getNameKind() == DeclarationName::CXXDestructorName && "Name must refer to a destructor"' failed.
+Assertion `getSubExpr()->getType()->isAnyPointerType() && !getSubExpr()->getType()->isBlockPointerType()' failed.
+Assertion `Type <= 3 && "unexpected type"' failed.
+Assertion `!isIncompleteType() && "This doesn't make sense for incomplete types"' failed.
+Assertion `BO->getRHS()->isPRValue()' failed.
+Assertion `(getExceptionSpecType() == EST_DependentNoexcept) == epi.ExceptionSpec.NoexceptExpr->isValueDependent()' failed.
+Assertion `vecType->isBuiltinType() || vecType->isDependentType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
+Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
+Assertion `E->getType()->isSpecificBuiltinType(BuiltinType::Overload)' failed.
+Assertion `Pointer->getType()->isAnyPointerType()' failed.
+Assertion `E->isPRValue() && E->getType()->isIntegralOrEnumerationType()' failed.
+Assertion `(isUnevaluated() || getCharByteWidth() == 1) && "This function is used in places that assume strings use char"' failed.
+Assertion `T->isFunctionType() && "GetTypeForDeclarator made a non-function block signature"' failed.
+Assertion `(Fn->containsErrors() || llvm::any_of(ArgExprs, [](clang::Expr *E) { return E->containsErrors(); })) && "should only occur in error-recovery path."' failed.
+Assertion `!Info.isIncomplete() && "Access to an object of an incomplete type!"' failed.
+Assertion `NumElts > 0 && "#Elements of a VectorType must be greater than 0"' failed.
+Assertion `isa<LabelDecl>(D) && "declaration not instantiated in this scope"' failed.
+Assertion `Info.Ctx.hasSameUnqualifiedType(BaseIt->getType(), BaseType) && "base class initializers not in expected order"' failed.
+Assertion `Access == AS_private || Access == AS_protected' failed.
+Assertion `Init->containsErrors() && "Dependent code should only occur in error-recovery path."' failed.
+Assertion `Offset >= Size' failed.
+Assertion `Permissive || !(!LabelAndGotoScopes.count(SC))' failed.
+Assertion `vlaSize && "no size for VLA!"' failed.
+Assertion `Idx < NumElements && "Invalid element idx!"' failed.
+Assertion `I && "decl not found in linked list"' failed.
+Assertion `Tok.is(tok::r_square) && "isCXX11AttributeSpecifier lied"' failed.
+Assertion `!getType()->isBooleanType() && "unheralded conversion to bool"' failed.
+Assertion `DestTy->isFloatingType() && "unexpected type"' failed.
+Assertion `getAddressSpace() == qs.getAddressSpace() || !hasAddressSpace() || !qs.hasAddressSpace()' failed.
+Assertion `ArgIdx < Args.size() && "ArgIdx outside bounds"' failed.
+Assertion `(CXX11Attrs.empty() || Res.isInvalid() || Res.isUsable()) && "attributes on empty statement"' failed.
+Assertion `NewArgs.empty() && "no parens or braces but have direct init with arguments?"' failed.
+Assertion `RD->isUnion() && "RecordType is expected to be a union."' failed.
+Assertion `IsReinject && "new tokens in the middle of cached stream"' failed.
+Assertion `VD->isThisDeclarationADefinition() && !VD->isExternallyVisible() && "Broken AliasAttr handled late!"' failed.
+Assertion `N.ugt(ArraySize) && "bounds check failed for in-bounds index"' failed.
+Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
+Assertion `(t.isNull() || !t->isReferenceType()) && "Expressions can't have reference type"' failed.
+Assertion `getSema().Context.hasSameType(ThisT, T) && "mismatched resolved types in using pack expansion"' failed.
+Assertion `FromType->castAsEnumDecl()->isFixed() && SCS.Second == ICK_Integral_Promotion && "only enums with fixed underlying type can promote to bool"' failed.
+Assertion `(S.getLangOpts().CPlusPlus11 || isCCEAllowedPreCXX11) && "converted constant expression outside C++11 or TTP matching"' failed.
+Assertion `VDecl->isLinkageValid()' failed.
+Assertion `!Eval->WasEvaluated && "already evaluated var value before checking for constant init"' failed.
+Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
+Assertion `!T->isDependentType() && "should not see dependent types here"' failed.
+Assertion `DS.getStorageClassSpec() == DeclSpec::SCS_unspecified' failed.
+Assertion `TL.getFullDataSize() == CurrTL.getFullDataSize()' failed.
+Assertion `isFuncOrMethodForAttrSubject(D) && hasFunctionProto(D)' failed.
+Assertion `(NoexceptExpr->isTypeDependent() || NoexceptExpr->getType()->getCanonicalTypeUnqualified() == Context.BoolTy) && "Parser should have made sure that the expression is boolean"' failed.
+Assertion `CurVal.getAlignMode() == AlignPackInfo::Native && "Empty pack stack can only be at Native alignment mode."' failed.
+Assertion `(ElemType->isRecordType() || ElemType->isVectorType() || ElemType->isOpenCLSpecificType() || ElemType->isMFloat8Type()) && "Unexpected type"' failed.
+Assertion `(FD == nullptr || getInitializedFieldInUnion() == nullptr || getInitializedFieldInUnion() == FD) && "Only one field of a union may be initialized at a time!"' failed.
+Assertion `UserValue <= UserMaxValue && "value is too big"' failed.
+Assertion `NextVal != ArgumentEnd && "Value for integer select modifier was" " larger than the number of options in the diagnostic string!"' failed.
+Assertion `detail::isPresent(Val) && "dyn_cast on a non-existent value"' failed.
+Assertion `!isAnnotation() && "getIdentifierInfo() on an annotation token!"' failed.
+Assertion `SL->isOrdinary()' failed.
+Assertion `Func && "No function?"' failed.
+Assertion `NameInfo.getName()' failed.
+Assertion `ResultKind == LookupResultKind::NotFound || ResultKind == LookupResultKind::NotFoundInCurrentInstantiation' failed.
+Assertion `(S->getFlags() & (Scope::DeclScope | Scope::TemplateParamScope)) && "Scope shouldn't contain decls!"' failed.
+Assertion `Chunk.Kind == DeclaratorChunk::BlockPointer' failed.
+Assertion `Tok.is(tok::eof) && Tok.getEofData() == AttrEnd.getEofData()' failed.
+Assertion `ME->getBase()->getType()->getAsRecordDecl()' failed.
+Assertion `BaseDecl && "Base type is not incomplete, but has no definition"' failed.
+Assertion `Initializer && "Initializer must be non-null"' failed.
+Assertion `!CodeSynthesisContexts.empty()' failed.
+Assertion `!Friend->isDependentContext() && "can't handle friends with dependent contexts here"' failed.
+Assertion `ArgPackSubstIndex && "found declaration pack but not pack expanding"' failed.
+Assertion `(Kind != CK_LValueToRValue || !(T->isNullPtrType() || T->getAsCXXRecordDecl())) && "invalid type for lvalue-to-rvalue conversion"' failed.
+Assertion `getType() == Other.getType()' failed.
+Assertion `Dtor && "class has literal fields and bases but no dtor?"' failed.
+Assertion `isa<IncompleteArrayType>(AT) && "Expected incomplete array"' failed.
+Assertion `isFieldDesignator() && "Only valid on a field designator"' failed.
+Assertion `Ex && "elem must be a CFGStmt containing an Expr"' failed.
+Assertion `P.getAs<PreStmt>() || P.getAs<PreStmtPurgeDeadSymbols>() || P.getAs<BlockEntrance>()' failed.
+Assertion `!S.isUnevaluatedContext()' failed.
+Assertion `isGenericLambdaCallOperatorSpecialization(CurLSI->CallOperator) && "While computing 'this' capture-type for a generic lambda, when we " "run out of enclosing LSI's, yet the enclosing DC is a " "lambda-call-operator we must be (i.e. Current LSI) in a generic " "lambda call oeprator"' failed.
+Assertion `!(mask & ~CVRMask & ~UMask) && "bitmask contains non-CVRU bits"' failed.
+Assertion `isFunctionDeclarator() && "Not a function declarator!"' failed.
+Assertion `QualifierLoc.getNestedNameSpecifier() == getTypePtr()->getTemplateName().getQualifier()' failed.
+Assertion `hasInClassInitializer() && !getInClassInitializer()' failed.
+Assertion `llvm::isPowerOf2_64(Value) && "Alignment is not a power of 2"' failed.
+Assertion `!DT.isNull() && "Undeduced types shouldn't reach here."' failed.
+Assertion `getLangOpts().CPlusPlusModules && ModuleTok.is(tok::kw_module)' failed.
+Assertion `ModifierLen == 0 && "unknown modifier for string"' failed.
+Assertion `Kind != -1 && "couldn't find reason why type is not structural"' failed.
+Assertion `it != BitFields.end() && "Unable to find bitfield info"' failed.
+Assertion `LV.getLinkage() == OldLinkage' failed.
+Assertion `i < getNumParams() && "Illegal param #"' failed.
+Assertion `(!getLangOpts().CPlusPlusModules || SeenGMF == (bool)this->TheGlobalModuleFragment) && "mismatched global module state"' failed.
+Assertion `!T->isDependentType() && "should not see dependent types here"' failed.
+Assertion `isPRValue()' failed.
+Assertion `!(D & ExprDependence::UnexpandedPack)' failed.
+Assertion `Value > 0 && "Value must not be 0"' failed.
+Assertion `T2->isBuiltinType() && !T1.isNull()' failed.
+Assertion `Info.Size > 0 && "Empty bitfield!"' failed.
+Assertion `DiagnoseInitList.HadError() && "Inconsistent init list check result."' failed.
+Assertion `Arg.getKind() == TemplateArgument::Pack && "Missing argument pack"' failed.
+Assertion `!CallOp->getReturnType()->isUndeducedType() && "failed to deduce lambda return type"' failed.
+Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofExpr || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualExpr' failed.
+Assertion `NewParamInfo.size() == getNumParams() && "Parameter count mismatch!"' failed.
+Assertion `MD->getParent()->mayInsertExtraPadding() && "unknown trivial member function"' failed.
+Assertion `E->isPRValue() && E->getType()->isRecordType()' failed.
+Assertion `Diagnosed && "failed to diagnose bad conversion"' failed.
+Assertion `D && "missing definition for pattern of instantiated definition"' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
+Assertion `!A->getDeducedType().isNull() && "cannot request the size of an undeduced or dependent auto type"' failed.
+Assertion `!isNull() && "Cannot retrieve a NULL type pointer"' failed.
+Assertion `Unqualified ? hasSameUnqualifiedType(X, Y) : hasSameType(X, Y)' failed.
+Assertion `F.isPresplitCoroutine() && "The frontend uses Switch-Resumed ABI should emit " "\"presplitcoroutine\" attribute for the coroutine."' failed.
+Assertion `!E->isFileScope() && "file-scope compound literal did not have constant initializer!"' failed.
+Assertion `ModuleScopes.size() <= 1 && "expected to be at global module scope"' failed.
+Assertion `isArray() && "Invalid accessor"' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
+Assertion `!isResultDependent() && "Generic selection is result-dependent but getResultIndex called!"' failed.
+Assertion `ParamD && "no parameter found for invalid explicit arguments"' failed.
+Assertion `!Invalid' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
+Assertion `E->isGLValue() || E->getType()->isFunctionType() || E->getType()->isVoidType() || isa<ObjCSelectorExpr>(E->IgnoreParens())' failed.
+Assertion `Constructor->getInheritedConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()' failed.
+Assertion `FD->hasBody() && "expected the function to have a body"' failed.
+Assertion `(MoveConstructor->isDefaulted() && MoveConstructor->isMoveConstructor() && !MoveConstructor->doesThisDeclarationHaveABody() && !MoveConstructor->isDeleted()) && "DefineImplicitMoveConstructor - call it for implicit move ctor"' failed.
+Assertion `I.first.getItem().getKind() == ConstructionContextItem::TemporaryDestructorKind || I.first.getItem().getKind() == ConstructionContextItem::ElidedDestructorKind' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
+Assertion `!isTokenSpecial() && "Should consume special tokens with Consume*Token"' failed.
+Assertion `iter->getSecond() >= 0 && "Found a negative number of references to a VarDecl"' failed.
+Assertion `Conv == Best->FoundDecl.getDecl() && "Found Decl & conversion-to-functionptr should be same, right?!"' failed.
+Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
+Assertion `getActiveBits() <= 64 && "Too many bits for uint64_t"' failed.
+Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpected pack arguments in template rewrite"' failed.
+Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
+Assertion `DC->getLexicalParent() == CurContext && "The next DeclContext should be lexically contained in the current one."' failed.
+Assertion `!ResultType.isNull() && (ResultType->isVectorType() || ResultType->isSizelessVectorType()) && (!CondType->isExtVectorType() || ResultType->isExtVectorType()) && "Result should have been a vector type"' failed.
+Assertion `width >= BitWidth && "Invalid APInt ZeroExtend request"' failed.
+Assertion `S.Context.hasSameType(Param, NonCanonParam)' failed.
+Assertion `(SS.isEmpty() ? !BaseType->isDependentType() || computeDeclContext(BaseType) : !isDependentScopeSpecifier(SS) || computeDeclContext(SS)) && "dependent lookup context that isn't the current instantiation?"' failed.
+Assertion `Context.getLangOpts().CPlusPlus && "Can only have wide bit-fields in C++!"' failed.
+Assertion `!empty()' failed.
+Assertion `(Cond.get()->containsErrors() || LHS.get()->containsErrors() || RHS.get()->containsErrors()) && "should only occur in error-recovery path."' failed.
+Assertion `(DestType->containsErrors() || SrcExpr.get()->containsErrors() || SrcExpr.get()->containsErrors()) && "should only occur in error-recovery path."' failed.
+Assertion `(T->hasSignedIntegerRepresentation() || T->isSignedFixedPointType()) && "Unexpected signed integer or fixed point type"' failed.
+Assertion `MaybeODRUseExprs.empty() && "Leftover expressions for odr-use checking"' failed.
+Assertion `BTy && "Expected a builtin type."' failed.
+Assertion `IntTy->isComplexIntegerType()' failed.
+Assertion `Name.isIdentifier() && "Name is not a simple identifier"' failed.
+Assertion `D.getASTContext().getLangOpts().CPlusPlus' failed.
+Assertion `OldTInfo && "substituting function without type source info"' failed.
+Assertion `(!E->getSourceExpr() || getDerived().AlreadyTransformed(E->getType())) && "opaque value expression requires transformation"' failed.
+Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpected pack arguments in template rewrite"' failed.
+Assertion `Idx < size() && "Out-of-bounds Bit access."' failed.
+Assertion `(NewDecl->getFriendObjectKind() || !OldDecl->getLexicalDeclContext()->isDependentContext()) && "non-friend with qualified name defined in dependent context"' failed.
+Assertion `Arg < NumArgs && "Arg access out of range!"' failed.
+Assertion `Chunk.Kind == DeclaratorChunk::Function' failed.
+Assertion `(Constructor->isDefaulted() && Constructor->isDefaultConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()) && "DefineImplicitDefaultConstructor - call it for implicit default ctor"' failed.
+Assertion `(!needsOverloadResolutionForCopyConstructor() || (data().DeclaredSpecialMembers & SMF_CopyConstructor)) && "this property has not yet been computed by Sema"' failed.
+Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
+Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' failed.
+Assertion `D->getTemplateSpecializationKind() != TSK_ImplicitInstantiation' failed.
+Assertion `isa<T>(CanonicalType)' failed.
+Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
+Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
+Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a constructor or assignment operator was empty"' failed.
+Assertion `!MemberQuals.hasAddressSpace()' failed.
+Assertion `SemaRef.Context.hasSameType(expr->getType(), ElemType) && "found implicit initialization for the wrong type"' failed.
+Assertion `Loc.isValid() && "point of instantiation must be valid!"' failed.
+Assertion `getType()->isBlockPointerType() == getSubExpr()->getType()->isBlockPointerType()' failed.
+Assertion `!E->hasPlaceholderType() && "unexpected placeholder"' failed.
+Assertion `!Found.isAmbiguous() && "Cannot handle ambiguities here yet"' failed.
+Assertion `Param->hasDefaultArg() && "can't build nonexistent default arg"' failed.
+Assertion `!isa<NamedDecl>(static_cast<decl_type*>(this)) || cast<NamedDecl>(static_cast<decl_type*>(this))->isLinkageValid()' failed.
+Assertion `Result.isInvalid() && "C++ binary operator overloading is missing candidates!"' failed.
+Assertion `CallRange.isValid()' failed.
+Assertion `ParmDepth < Depth && "ParmVarDecl is not visible in current parameter environment"' failed.
+Assertion `(data().DefaultedCopyConstructorIsDeleted || needsOverloadResolutionForCopyConstructor()) && "Copy constructor should not be deleted"' failed.
+Assertion `Context.hasSameType( ToAtomicType->castAs<AtomicType>()->getValueType(), From->getType())' failed.
+Assertion `Align != 0u && "Align can't be 0."' failed.
+Assertion `!S->isDeclScope(PrevDecl)' failed.
+Assertion `vecType->isBuiltinType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
+Assertion `Permissive || !(!LabelAndGotoScopes.count(To))' failed.
+Assertion `ToType->isIntegerType()' failed.
+Assertion `R.isValid() && "Must have a valid source range"' failed.
+Assertion `T->isIntegralOrEnumerationType() && "unexpected converted const type"' failed.
+Assertion `(T->isIntegralType(*this) || T->isEnumeralType()) && "Integral type required!"' failed.
+Assertion `!SS.isInvalid() && "Invalid CXXScopeSpec."' failed.
+Assertion `AddressOfExpr->getType() == Context.OverloadTy' failed.
+Assertion `0 && "Invalid SLocOffset or bad function choice"' failed.
+Assertion `false && "Unexpected unary operator!"' failed.
+Assertion `IsExpectedEntity(FD1) && FD2 && IsExpectedEntity(FD2) && "use non-instantiated function declaration for constraints partial " "ordering"' failed.
+Assertion `!Current->LocalDecls.contains(D) && "Instantiated local in inner and outer scopes"' failed.
+Assertion `Kind.getKind() == InitializationKind::IK_Copy || Kind.isExplicitCast() || Kind.getKind() == InitializationKind::IK_DirectList' failed.
+Assertion `isAllowedClauseForDirective(DKind, CKind, OpenMPVersion) && "Invalid directive with CKind-clause"' failed.
+Assertion `!LHS.get()->hasPlaceholderType() && !RHS.get()->hasPlaceholderType() && "placeholders should have been weeded out by now"' failed.
+Assertion `From->getType()->isIntegerType()' failed.
+Assertion `(data().DefaultedDestructorIsDeleted || needsOverloadResolutionForDestructor()) && "destructor should not be deleted"' failed.
+Assertion `ParsedType.isUsable() && "Expect usable parsed mapper type"' failed.
+Assertion `IsLocalStaticOrLocalExtern && "Declared a variable on the stack without Stack memspace?"' failed.
+Assertion `getResultKind() == LookupResultKind::Found && "getFoundDecl called on non-unique result"' failed.
+Assertion `!Unexpanded.empty() && "Pack expansion without parameter packs?"' failed.
+Assertion `Kind.getKind() == InitializationKind::IK_Value || DestType->isReferenceType()' failed.
+Assertion `Index < Length && "Invalid index!"' failed.
+Assertion `NumBits >= MIN_INT_BITS && "bitwidth too small"' failed.
+Assertion `EC.isDependent() && "delaying non-dependent access"' failed.
+Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
+Assertion `At && "Received null Attr object!"' failed.
+Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' failed.
+Assertion `getContext().hasSameUnqualifiedType( AlignValT->castAsEnumDecl()->getIntegerType(), sizeType) && "wrong type for alignment parameter"' failed.
+Assertion `V && "Dereferencing deleted ValueHandle"' failed.
+Assertion `idx < size()' failed.
+Assertion `Ty->isScalarType()' failed.
+Assertion `Record && "Missing record descriptor"' failed.
+Assertion `Ptr && "Offset too large"' failed.
+Assertion `ItemTypes.back() == toPrimType<T>()' failed.
+Assertion `value.isComplexFloat()' failed.
+Assertion `Offset != PastEndMark && "invalid offset"' failed.
+Assertion `ItemTypes.back() == toPrimType<T>()' failed.
+Assertion `i < getStructNumBases() && "base class index OOB"' failed.
+Assertion `BS.Pointee' failed.
+Assertion `ItemTypes.back() == toPrimType<T>()' failed.
+Assertion `has_value()' failed.
+Assertion `BS.Base <= BS.Pointee->getSize()' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
+Assertion `Base >= Pointee->getDescriptor()->getMetadataSize()' failed.
+Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
+Assertion `Result && "Could not evaluate expression"' failed.
+Assertion `I < getFieldDesc()->getNumElems()' failed.
+Assertion `NumElems <= (MaxArrayElemBytes / ElemSize)' failed.
+Assertion `Initializing' failed.
+Assertion `!ItemTypes.empty()' failed.
+Assertion `&getSemantics() == &RHS.getSemantics() && "Should only call on two APFloats with the same semantics"' failed.
+Assertion `Offset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' failed.
+Assertion `SrcDesc->ElemRecord == DestDesc->ElemRecord' failed.
+Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
+Assertion `ArgSize >= F->getWrittenArgSize()' failed.
+Assertion `(Base == RootPtrMark || Base % alignof(void *) == 0) && "wrong base"' failed.
+Assertion `isNumber()' failed.
+Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
+Assertion `isBlockPointer()' failed.
+Assertion `HasRVO == Func->hasRVO()' failed.
+Assertion `BS.Base != sizeof(GlobalInlineDescriptor)' failed.
+Assertion `&getSemantics() == &RHS.getSemantics() && "Should only compare APFloats with the same semantics"' failed.
+Assertion `NumArgs >= Func->getNumWrittenParams()' failed.
+Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
+Assertion `P.getType()->isNullPtrType()' failed.
+Assertion `isDereferencable()' failed.
+Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
+Assertion `BS.Base != 0 && "Only composite fields can be initialised"' failed.
+Assertion `cast<CompoundStmt>(Ctor->getBody())->body_empty()' failed.
