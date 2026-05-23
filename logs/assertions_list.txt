@@ -237,6 +237,8 @@ Assertion `getContext().hasSameUnqualifiedType( AlignValT->castAsEnumDecl()->get
 Assertion `V && "Dereferencing deleted ValueHandle"' failed.
 Assertion `idx < size()' failed.
 Assertion `Ty->isScalarType()' failed.
+Assertion `D >= 0 && "The depth cannot be negative"' failed.
+Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
 Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
