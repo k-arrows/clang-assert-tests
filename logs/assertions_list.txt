@@ -277,3 +277,5 @@ Assertion `isDereferencable()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `BS.Base != 0 && "Only composite fields can be initialised"' failed.
 Assertion `cast<CompoundStmt>(Ctor->getBody())->body_empty()' failed.
+Assertion `Kind != IntegralKind::AddrLabelDiff' failed.
+Assertion `D && "Cannot get layout of forward declarations!"' failed.
