@@ -239,6 +239,8 @@ Assertion `idx < size()' failed.
 Assertion `Ty->isScalarType()' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
+Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
+Assertion `isValid() && I.isValid() && "ParamIdx must be valid to be compared"' failed.
 Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
