@@ -285,3 +285,4 @@ Assertion `cast<CompoundStmt>(Ctor->getBody())->body_empty()' failed.
 Assertion `Kind != IntegralKind::AddrLabelDiff' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `A.isNumber() && B.isNumber()' failed.
+Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
