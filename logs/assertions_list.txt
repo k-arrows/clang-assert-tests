@@ -242,6 +242,8 @@ Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
 Assertion `isValid() && I.isValid() && "ParamIdx must be valid to be compared"' failed.
 Assertion `T1->isBuiltinType() && !T2.isNull()' failed.
+Assertion `(!needsOverloadResolutionForDestructor() || (data().DeclaredSpecialMembers & SMF_Destructor)) && "this property has not yet been computed by Sema"' failed.
+Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
