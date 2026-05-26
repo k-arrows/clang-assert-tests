@@ -246,6 +246,7 @@ Assertion `(!needsOverloadResolutionForDestructor() || (data().DeclaredSpecialMe
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `Match != ArgType::NoMatchPromotionTypeConfusion' failed.
 Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar expression to emit"' failed.
+Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' failed.
 Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
