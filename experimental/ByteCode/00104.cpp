@@ -1,7 +1,7 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: initialize
-// EXPECT-CRASH-ASSERT: BS.Base
-// EXPECT-CRASH-ASSERT: composite
+// EXPECT-CRASH-ASSERT: interp__builtin_carryop
+// EXPECT-CRASH-ASSERT: getType
+// EXPECT-CRASH-ASSERT: getArg
 
 using u8 = unsigned char;
 
