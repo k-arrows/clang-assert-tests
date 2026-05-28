@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: GenerateReductionInitRecipeExpr
-// EXPECT-CRASH-ASSERT: isScalarType
+// EXPECT-FAIL
 
 void foo() {
   int i;

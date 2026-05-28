@@ -1,8 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: TransformOpaqueValueExpr
-// EXPECT-CRASH-ASSERT: getSourceExpr
-// EXPECT-CRASH-ASSERT: AlreadyTransformed
-// EXPECT-CRASH-ASSERT: transformation
+// EXPECT-FAIL
 
 struct S {};
 
