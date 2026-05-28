@@ -175,7 +175,6 @@ Assertion `IntTy->isComplexIntegerType()' failed.
 Assertion `Name.isIdentifier() && "Name is not a simple identifier"' failed.
 Assertion `D.getASTContext().getLangOpts().CPlusPlus' failed.
 Assertion `OldTInfo && "substituting function without type source info"' failed.
-Assertion `(!E->getSourceExpr() || getDerived().AlreadyTransformed(E->getType())) && "opaque value expression requires transformation"' failed.
 Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpected pack arguments in template rewrite"' failed.
 Assertion `Idx < size() && "Out-of-bounds Bit access."' failed.
 Assertion `(NewDecl->getFriendObjectKind() || !OldDecl->getLexicalDeclContext()->isDependentContext()) && "non-friend with qualified name defined in dependent context"' failed.
@@ -236,7 +235,6 @@ Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' 
 Assertion `getContext().hasSameUnqualifiedType( AlignValT->castAsEnumDecl()->getIntegerType(), sizeType) && "wrong type for alignment parameter"' failed.
 Assertion `V && "Dereferencing deleted ValueHandle"' failed.
 Assertion `idx < size()' failed.
-Assertion `Ty->isScalarType()' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
@@ -283,8 +281,7 @@ Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value
 Assertion `P.getType()->isNullPtrType()' failed.
 Assertion `isDereferencable()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
-Assertion `BS.Base != 0 && "Only composite fields can be initialised"' failed.
-Assertion `cast<CompoundStmt>(Ctor->getBody())->body_empty()' failed.
+Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `Kind != IntegralKind::AddrLabelDiff' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `A.isNumber() && B.isNumber()' failed.
