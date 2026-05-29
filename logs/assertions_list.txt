@@ -245,6 +245,8 @@ Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' f
 Assertion `Match != ArgType::NoMatchPromotionTypeConfusion' failed.
 Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar expression to emit"' failed.
 Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' failed.
+Assertion `!Base.getType()->isDependentType() && "Cannot layout class with dependent bases."' failed.
+Assertion `paramInfos.size() <= totalArgs && "Did we forget to insert pass_object_size args?"' failed.
 Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
