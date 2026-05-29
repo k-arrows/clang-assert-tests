@@ -247,6 +247,7 @@ Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar express
 Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' failed.
 Assertion `!Base.getType()->isDependentType() && "Cannot layout class with dependent bases."' failed.
 Assertion `paramInfos.size() <= totalArgs && "Did we forget to insert pass_object_size args?"' failed.
+Assertion `DK != DeducedKind::DeducedAsPack && "unexpected DeducedAsPack for DeducedTemplateSpecializationType"' failed.
 Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
