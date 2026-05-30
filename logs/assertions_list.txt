@@ -246,6 +246,7 @@ Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' 
 Assertion `!Base.getType()->isDependentType() && "Cannot layout class with dependent bases."' failed.
 Assertion `paramInfos.size() <= totalArgs && "Did we forget to insert pass_object_size args?"' failed.
 Assertion `DK != DeducedKind::DeducedAsPack && "unexpected DeducedAsPack for DeducedTemplateSpecializationType"' failed.
+Assertion `isLambdaCallOperator(Frame->Callee) && (VD->getDeclContext() != Frame->Callee || VD->isInitCapture()) && "missing value for local variable"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
