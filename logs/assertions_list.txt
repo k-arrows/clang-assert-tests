@@ -1,6 +1,5 @@
 Assertion `(data().DefaultedCopyAssignmentIsDeleted || needsOverloadResolutionForCopyAssignment()) && "copy assignment should not be deleted"' failed.
 Assertion `DS.getStorageClassSpec() == DeclSpec::SCS_unspecified' failed.
-Assertion `!VD->mightBeUsableInConstantExpressions(Info.Ctx)' failed.
 Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
 Assertion `Access != AS_none && "Access specifier is AS_none inside a record decl"' failed.
 Assertion `isLValue()' failed.
@@ -240,7 +239,6 @@ Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
 Assertion `isValid() && I.isValid() && "ParamIdx must be valid to be compared"' failed.
 Assertion `T1->isBuiltinType() && !T2.isNull()' failed.
-Assertion `(!needsOverloadResolutionForDestructor() || (data().DeclaredSpecialMembers & SMF_Destructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `Match != ArgType::NoMatchPromotionTypeConfusion' failed.
 Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar expression to emit"' failed.
@@ -248,7 +246,6 @@ Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' 
 Assertion `!Base.getType()->isDependentType() && "Cannot layout class with dependent bases."' failed.
 Assertion `paramInfos.size() <= totalArgs && "Did we forget to insert pass_object_size args?"' failed.
 Assertion `DK != DeducedKind::DeducedAsPack && "unexpected DeducedAsPack for DeducedTemplateSpecializationType"' failed.
-Assertion `Record && "Missing record descriptor"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
@@ -263,9 +260,7 @@ Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Base >= Pointee->getDescriptor()->getMetadataSize()' failed.
 Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
 Assertion `Result && "Could not evaluate expression"' failed.
-Assertion `I < getFieldDesc()->getNumElems()' failed.
 Assertion `NumElems <= (MaxArrayElemBytes / ElemSize)' failed.
-Assertion `Initializing' failed.
 Assertion `!ItemTypes.empty()' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only call on two APFloats with the same semantics"' failed.
 Assertion `Offset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' failed.
@@ -286,6 +281,3 @@ Assertion `isDereferencable()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `Kind != IntegralKind::AddrLabelDiff' failed.
-Assertion `D && "Cannot get layout of forward declarations!"' failed.
-Assertion `A.isNumber() && B.isNumber()' failed.
-Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
