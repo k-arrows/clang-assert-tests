@@ -249,6 +249,7 @@ Assertion `DK != DeducedKind::DeducedAsPack && "unexpected DeducedAsPack for Ded
 Assertion `isLambdaCallOperator(Frame->Callee) && (VD->getDeclContext() != Frame->Callee || VD->isInitCapture()) && "missing value for local variable"' failed.
 Assertion `NumBits <= MAX_INT_BITS && "bitwidth too large"' failed.
 Assertion `II && "Attempt to mangle unnamed decl."' failed.
+Assertion `(IsDependent || !ObjectType->isIncompleteType() || !ObjectType->getAs<TagType>() || ObjectType->castAs<TagType>()->getDecl()->isEntityBeingDefined()) && "Caller should have completed object type"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
