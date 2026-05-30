@@ -282,3 +282,4 @@ Assertion `isDereferencable()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `Kind != IntegralKind::AddrLabelDiff' failed.
+Assertion `FuncDecl->getDeclName().getCXXOverloadedOperator() == OO_Delete' failed.
