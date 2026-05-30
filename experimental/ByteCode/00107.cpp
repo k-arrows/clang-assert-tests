@@ -1,6 +1,5 @@
 // RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getASTRecordLayout
-// EXPECT-CRASH-ASSERT: Cannot
+// EXPECT-FAIL
 
 #define FOO(num, expr) enum { test##num = (expr) };
 

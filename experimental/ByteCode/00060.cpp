@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitConvertVectorExpr
-// EXPECT-CRASH-ASSERT: Initializing
+// EXPECT-FAIL
 
 typedef float __m128 __attribute__((__vector_size__(16), __aligned__(16)));
 typedef double __m128d __attribute__((__vector_size__(16), __aligned__(16)));
