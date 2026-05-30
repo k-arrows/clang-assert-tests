@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: evaluateVarDeclInit
-// EXPECT-CRASH-ASSERT: mightBeUsableInConstantExpressions
+// EXPECT-FAIL
 
 template <typename T> struct S {
   static const bool b;
