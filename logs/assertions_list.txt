@@ -288,3 +288,4 @@ Assertion `getFieldDesc()->isPrimitiveArray()' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
 Assertion `isDereferencable()' failed.
 Assertion `Ptr.inUnion()' failed.
+Assertion `Stk.empty()' failed.
