@@ -286,3 +286,4 @@ Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
 Assertion `getFieldDesc()->isPrimitiveArray()' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
 Assertion `isDereferencable()' failed.
+Assertion `Ptr.inUnion()' failed.
