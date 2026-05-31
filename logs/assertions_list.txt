@@ -283,3 +283,5 @@ Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
+Assertion `getFieldDesc()->isPrimitiveArray()' failed.
+Assertion `CurRecord->getNumBases() > 0' failed.
