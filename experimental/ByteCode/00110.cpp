@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitCallExpr
-// EXPECT-CRASH-ASSERT: getCXXOverloadedOperator
-// EXPECT-CRASH-ASSERT: OO_Delete
+// EXPECT-FAIL
 
 struct S {};
 using State = S[2];

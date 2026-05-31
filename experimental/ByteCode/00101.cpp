@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fblocks -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: readPointerToBuffer
-// EXPECT-CRASH-ASSERT: isNullPtrType
+// EXPECT-PASS
 
 struct S {
   void (^p)(){};
