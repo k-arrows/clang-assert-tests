@@ -291,3 +291,6 @@ Assertion `isDereferencable()' failed.
 Assertion `Ptr.inUnion()' failed.
 Assertion `Stk.empty()' failed.
 Assertion `I < getNumBases()' failed.
+Assertion `E->isArgumentType()' failed.
+Assertion `isa<ArrayType>(CanonicalType)' failed.
+Assertion `E->getType()->isRecordType()' failed.
