@@ -254,6 +254,10 @@ Assertion `(Pattern || PatternDecl->isDefaulted() || PatternDecl->hasSkippedBody
 Assertion `!Init->isValueDependent()' failed.
 Assertion `S.Context.hasSameUnqualifiedType(SubInit[0]->getType(), DestType) && "Deduced to other type?"' failed.
 Assertion `!VD->mightBeUsableInConstantExpressions(Info.Ctx)' failed.
+Assertion `T::isKind(*this)' failed.
+Assertion `CGF.getContext().hasSameUnqualifiedType(E->getSubExpr()->getType(), E->getType()) && "Implicit cast types must be compatible"' failed.
+Assertion `!isAlignmentDependent()' failed.
+Assertion `llvm::isPowerOf2_64(NewAlignment.getQuantity()) && "Alignment not a power of 2"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
