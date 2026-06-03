@@ -100,8 +100,6 @@ Assertion `getType() == Other.getType()' failed.
 Assertion `Dtor && "class has literal fields and bases but no dtor?"' failed.
 Assertion `isa<IncompleteArrayType>(AT) && "Expected incomplete array"' failed.
 Assertion `isFieldDesignator() && "Only valid on a field designator"' failed.
-Assertion `Ex && "elem must be a CFGStmt containing an Expr"' failed.
-Assertion `P.getAs<PreStmt>() || P.getAs<PreStmtPurgeDeadSymbols>() || P.getAs<BlockEntrance>()' failed.
 Assertion `!S.isUnevaluatedContext()' failed.
 Assertion `isGenericLambdaCallOperatorSpecialization(CurLSI->CallOperator) && "While computing 'this' capture-type for a generic lambda, when we " "run out of enclosing LSI's, yet the enclosing DC is a " "lambda-call-operator we must be (i.e. Current LSI) in a generic " "lambda call oeprator"' failed.
 Assertion `!(mask & ~CVRMask & ~UMask) && "bitmask contains non-CVRU bits"' failed.
@@ -117,7 +115,6 @@ Assertion `it != BitFields.end() && "Unable to find bitfield info"' failed.
 Assertion `LV.getLinkage() == OldLinkage' failed.
 Assertion `i < getNumParams() && "Illegal param #"' failed.
 Assertion `(!getLangOpts().CPlusPlusModules || SeenGMF == (bool)this->TheGlobalModuleFragment) && "mismatched global module state"' failed.
-Assertion `!T->isDependentType() && "should not see dependent types here"' failed.
 Assertion `isPRValue()' failed.
 Assertion `!(D & ExprDependence::UnexpandedPack)' failed.
 Assertion `Value > 0 && "Value must not be 0"' failed.
@@ -237,7 +234,6 @@ Assertion `idx < size()' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
-Assertion `isValid() && I.isValid() && "ParamIdx must be valid to be compared"' failed.
 Assertion `T1->isBuiltinType() && !T2.isNull()' failed.
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `Match != ArgType::NoMatchPromotionTypeConfusion' failed.
@@ -293,10 +289,6 @@ Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
 Assertion `getFieldDesc()->isPrimitiveArray()' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
-Assertion `isDereferencable()' failed.
 Assertion `Ptr.inUnion()' failed.
-Assertion `Stk.empty()' failed.
 Assertion `I < getNumBases()' failed.
-Assertion `E->isArgumentType()' failed.
 Assertion `isa<ArrayType>(CanonicalType)' failed.
-Assertion `E->getType()->isRecordType()' failed.
