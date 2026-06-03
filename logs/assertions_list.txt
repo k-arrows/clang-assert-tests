@@ -296,3 +296,4 @@ Assertion `&R.getSemantics() == &I.getSemantics() && "Invalid complex float (typ
 Assertion `ReadOffset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' failed.
 Assertion `T->isVectorType()' failed.
 Assertion `TruncBits >= 1' failed.
+Assertion `VarSize == CstSize && "Emitted constant has unexpected size"' failed.
