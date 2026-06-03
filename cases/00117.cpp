@@ -1,6 +1,4 @@
-// RUN: clang++ --analyze %s
-// EXPECT-CRASH-ASSERT: conjureSymbolVal
-// EXPECT-CRASH-ASSERT: Ex
-// EXPECT-CRASH-ASSERT: CFGStmt
+// RUN: clang++ --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 void foo(int x) { [[assume(x == 42 ? true : throw 1)]]; }

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c -std=c23 %s
-// EXPECT-CRASH-ASSERT: assertComparable
-// EXPECT-CRASH-ASSERT: I.isValid
-// EXPECT-CRASH-ASSERT: ParamIdx
+// EXPECT-FAIL
 
 #define FOO(Ty, Name) alignas(Ty) char Name[sizeof(Ty)]
 

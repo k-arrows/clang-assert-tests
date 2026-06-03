@@ -1,5 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 template <typename T> bool foo(T *p) { return __builtin_is_within_lifetime(p); }
 

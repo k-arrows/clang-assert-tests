@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: getTypeInfoImpl
-// EXPECT-CRASH-ASSERT: isDependentType
-// EXPECT-CRASH-ASSERT: should
+// EXPECT-FAIL
 
 template <class T> int i;
 

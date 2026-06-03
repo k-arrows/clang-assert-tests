@@ -1,8 +1,5 @@
-// RUN: clang++ --analyze %s
-// EXPECT-CRASH-ASSERT: VisitLogicalExpr
-// EXPECT-CRASH-ASSERT: getAs
-// EXPECT-CRASH-ASSERT: PreStmtPurgeDeadSymbols
-// EXPECT-CRASH-ASSERT: BlockEntrance
+// RUN: clang++ --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 struct S {
   int a, b;
