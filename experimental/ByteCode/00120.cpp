@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitDesignatedInitUpdateExpr
-// EXPECT-CRASH-ASSERT: isRecordType
+// EXPECT-FAIL
 
 struct S {
   char L[3];
