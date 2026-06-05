@@ -258,6 +258,7 @@ Assertion `PrevClassTemplate && "Member specialization without a primary templat
 Assertion `(ForConstraintInstantiation || Result.getNumSubstitutedLevels() == 0) && "Outer template not instantiated?"' failed.
 Assertion `F && "deduction guide for alias template must be a function template"' failed.
 Assertion `!NewFD->getReturnType()->isVariablyModifiedType() && "Variably modified return types are not handled here"' failed.
+Assertion `!isValueDependent() && "setSatisfied called on a dependent RequiresExpr"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
