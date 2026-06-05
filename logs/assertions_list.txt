@@ -259,6 +259,7 @@ Assertion `(ForConstraintInstantiation || Result.getNumSubstitutedLevels() == 0)
 Assertion `F && "deduction guide for alias template must be a function template"' failed.
 Assertion `!NewFD->getReturnType()->isVariablyModifiedType() && "Variably modified return types are not handled here"' failed.
 Assertion `!isValueDependent() && "setSatisfied called on a dependent RequiresExpr"' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
