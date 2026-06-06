@@ -266,6 +266,7 @@ Assertion `getOperand(1)->getType() == getOperand(2)->getType() && "Cmp type and
 Assertion `Kind == OMPD_for || Kind == OMPD_section || Kind == OMPD_sections || Kind == OMPD_parallel_sections || Kind == OMPD_parallel_for || Kind == OMPD_distribute_parallel_for || Kind == OMPD_target_parallel_for || Kind == OMPD_teams_distribute_parallel_for || Kind == OMPD_target_teams_distribute_parallel_for' failed.
 Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
+Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
