@@ -168,19 +168,16 @@ Assertion `(T->hasSignedIntegerRepresentation() || T->isSignedFixedPointType()) 
 Assertion `MaybeODRUseExprs.empty() && "Leftover expressions for odr-use checking"' failed.
 Assertion `BTy && "Expected a builtin type."' failed.
 Assertion `IntTy->isComplexIntegerType()' failed.
-Assertion `Name.isIdentifier() && "Name is not a simple identifier"' failed.
 Assertion `D.getASTContext().getLangOpts().CPlusPlus' failed.
 Assertion `OldTInfo && "substituting function without type source info"' failed.
 Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpected pack arguments in template rewrite"' failed.
 Assertion `Idx < size() && "Out-of-bounds Bit access."' failed.
-Assertion `(NewDecl->getFriendObjectKind() || !OldDecl->getLexicalDeclContext()->isDependentContext()) && "non-friend with qualified name defined in dependent context"' failed.
 Assertion `Arg < NumArgs && "Arg access out of range!"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Function' failed.
 Assertion `(Constructor->isDefaulted() && Constructor->isDefaultConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()) && "DefineImplicitDefaultConstructor - call it for implicit default ctor"' failed.
 Assertion `(!needsOverloadResolutionForCopyConstructor() || (data().DeclaredSpecialMembers & SMF_CopyConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' failed.
-Assertion `D->getTemplateSpecializationKind() != TSK_ImplicitInstantiation' failed.
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
 Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
@@ -224,7 +221,7 @@ Assertion `!Unexpanded.empty() && "Pack expansion without parameter packs?"' fai
 Assertion `Kind.getKind() == InitializationKind::IK_Value || DestType->isReferenceType()' failed.
 Assertion `Index < Length && "Invalid index!"' failed.
 Assertion `NumBits >= MIN_INT_BITS && "bitwidth too small"' failed.
-Assertion `EC.isDependent() && "delaying non-dependent access"' failed.
+Assertion `!NumLevels && "Declaration had less levels than expected"' failed.
 Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
 Assertion `At && "Received null Attr object!"' failed.
 Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' failed.
@@ -241,7 +238,6 @@ Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar express
 Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' failed.
 Assertion `!Base.getType()->isDependentType() && "Cannot layout class with dependent bases."' failed.
 Assertion `paramInfos.size() <= totalArgs && "Did we forget to insert pass_object_size args?"' failed.
-Assertion `DK != DeducedKind::DeducedAsPack && "unexpected DeducedAsPack for DeducedTemplateSpecializationType"' failed.
 Assertion `isLambdaCallOperator(Frame->Callee) && (VD->getDeclContext() != Frame->Callee || VD->isInitCapture()) && "missing value for local variable"' failed.
 Assertion `NumBits <= MAX_INT_BITS && "bitwidth too large"' failed.
 Assertion `II && "Attempt to mangle unnamed decl."' failed.
@@ -255,7 +251,6 @@ Assertion `CGF.getContext().hasSameUnqualifiedType(E->getSubExpr()->getType(), E
 Assertion `!isAlignmentDependent()' failed.
 Assertion `llvm::isPowerOf2_64(NewAlignment.getQuantity()) && "Alignment not a power of 2"' failed.
 Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
-Assertion `(ForConstraintInstantiation || Result.getNumSubstitutedLevels() == 0) && "Outer template not instantiated?"' failed.
 Assertion `F && "deduction guide for alias template must be a function template"' failed.
 Assertion `!NewFD->getReturnType()->isVariablyModifiedType() && "Variably modified return types are not handled here"' failed.
 Assertion `!isValueDependent() && "setSatisfied called on a dependent RequiresExpr"' failed.
@@ -302,12 +297,10 @@ Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
 Assertion `getFieldDesc()->isPrimitiveArray()' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
-Assertion `Ptr.inUnion()' failed.
 Assertion `I < getNumBases()' failed.
 Assertion `isa<ArrayType>(CanonicalType)' failed.
 Assertion `&R.getSemantics() == &I.getSemantics() && "Invalid complex float (type mismatch)."' failed.
 Assertion `ReadOffset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' failed.
-Assertion `T->isVectorType()' failed.
 Assertion `TruncBits >= 1' failed.
 Assertion `VarSize == CstSize && "Emitted constant has unexpected size"' failed.
 Assertion `NumElements.isPositive()' failed.
