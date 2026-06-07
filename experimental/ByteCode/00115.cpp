@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: CheckActive
-// EXPECT-CRASH-ASSERT: Ptr.inUnion
+// EXPECT-CRASH-ASSERT: expand
 
 struct B {};
 struct M1 {

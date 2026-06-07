@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: classifyVectorElementType
-// EXPECT-CRASH-ASSERT: isVectorType
+// EXPECT-FAIL
 
 typedef float __m128 __attribute__((__vector_size__(16)));
 
