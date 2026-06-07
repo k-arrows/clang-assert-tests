@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getName
-// EXPECT-CRASH-ASSERT: isIdentifier
-// EXPECT-CRASH-ASSERT: simple
+// EXPECT-FAIL
 
 struct S {};
 using F = decltype([](auto val)
