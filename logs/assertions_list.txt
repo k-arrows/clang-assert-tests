@@ -265,6 +265,7 @@ Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"'
 Assertion `NewFunction && "Failed to instantiate function template"' failed.
 Assertion `(Qualifier || TPLs.empty()) && "template parameter lists without qualifier"' failed.
 Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
+Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
