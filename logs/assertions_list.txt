@@ -262,6 +262,7 @@ Assertion `Kind == OMPD_for || Kind == OMPD_section || Kind == OMPD_sections || 
 Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
 Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
+Assertion `NewFunction && "Failed to instantiate function template"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
