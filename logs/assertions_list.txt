@@ -268,6 +268,7 @@ Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
 Assertion `Source->isUnicodeCharacterType() && Target->isUnicodeCharacterType() && Source != Target' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
+Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
