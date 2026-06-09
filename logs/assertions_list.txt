@@ -313,3 +313,4 @@ Assertion `ReadOffset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()
 Assertion `TruncBits >= 1' failed.
 Assertion `VarSize == CstSize && "Emitted constant has unexpected size"' failed.
 Assertion `NumElements.isPositive()' failed.
+Assertion `!Desc->hasTrivialDtor()' failed.
