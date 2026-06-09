@@ -269,6 +269,8 @@ Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecTyp
 Assertion `Source->isUnicodeCharacterType() && Target->isUnicodeCharacterType() && Source != Target' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
+Assertion `ShiftAmt <= BitWidth && "Invalid shift amount"' failed.
+Assertion `getSignificantBits() <= 64 && "Too many bits for int64_t"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
