@@ -1,5 +1,5 @@
 // RUN: clang++ -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 const __int128_t a = ((__int128_t)1 << 127);
 

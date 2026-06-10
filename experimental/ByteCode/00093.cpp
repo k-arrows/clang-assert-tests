@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: asBlockPointer
-// EXPECT-CRASH-ASSERT: isBlockPointer
+// EXPECT-FAIL
 
 constexpr void foo() {
   int *m = (int *)&m;

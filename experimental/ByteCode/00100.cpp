@@ -1,6 +1,7 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: APInt
-// EXPECT-CRASH-ASSERT: isUIntN
-// EXPECT-CRASH-ASSERT: N-bit
+// EXPECT-CRASH-ASSERT: copyComposite
+// EXPECT-CRASH-ASSERT: SrcDesc
+// EXPECT-CRASH-ASSERT: DestDesc
+// EXPECT-CRASH-ASSERT: getPrimType
 
 auto foo = *(_Complex double *)&(int[2]){};

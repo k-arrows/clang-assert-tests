@@ -1,6 +1,4 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: EmitGlobalVarDefinition
-// EXPECT-CRASH-ASSERT: CstSize
-// EXPECT-CRASH-ASSERT: Emitted
+// EXPECT-PASS
 
 auto foo = *(_Complex double *)&(float[2]){};

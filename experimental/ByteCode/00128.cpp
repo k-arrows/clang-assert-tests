@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: AllocCN
-// EXPECT-CRASH-ASSERT: NumElements.isPositive
+// EXPECT-PASS
 
 struct Foo {};
 struct Bar {
