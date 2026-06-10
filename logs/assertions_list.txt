@@ -310,3 +310,4 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `TruncBits >= 1' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
+Assertion `isLive() && "Invalid pointer"' failed.
