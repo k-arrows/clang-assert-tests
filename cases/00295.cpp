@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c -std=c23 %s
-// EXPECT-CRASH-ASSERT: isEquivalent
-// EXPECT-CRASH-ASSERT: isBuiltinType
-// EXPECT-CRASH-ASSERT: isNull
+// EXPECT-FAIL
 
 struct S {
   union {};

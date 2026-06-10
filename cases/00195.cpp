@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: zext
-// EXPECT-CRASH-ASSERT: BitWidth
-// EXPECT-CRASH-ASSERT: ZeroExtend
+// EXPECT-PASS
 
 struct Foo {
   int x[10];
