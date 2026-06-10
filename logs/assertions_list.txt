@@ -1,5 +1,4 @@
 Assertion `(data().DefaultedCopyAssignmentIsDeleted || needsOverloadResolutionForCopyAssignment()) && "copy assignment should not be deleted"' failed.
-Assertion `DS.getStorageClassSpec() == DeclSpec::SCS_unspecified' failed.
 Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
 Assertion `Access != AS_none && "Access specifier is AS_none inside a record decl"' failed.
 Assertion `isLValue()' failed.
@@ -71,7 +70,6 @@ Assertion `VDecl->isLinkageValid()' failed.
 Assertion `!Eval->WasEvaluated && "already evaluated var value before checking for constant init"' failed.
 Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
 Assertion `!T->isDependentType() && "should not see dependent types here"' failed.
-Assertion `DS.getStorageClassSpec() == DeclSpec::SCS_unspecified' failed.
 Assertion `TL.getFullDataSize() == CurrTL.getFullDataSize()' failed.
 Assertion `isFuncOrMethodForAttrSubject(D) && hasFunctionProto(D)' failed.
 Assertion `(NoexceptExpr->isTypeDependent() || NoexceptExpr->getType()->getCanonicalTypeUnqualified() == Context.BoolTy) && "Parser should have made sure that the expression is boolean"' failed.
@@ -118,7 +116,6 @@ Assertion `(!getLangOpts().CPlusPlusModules || SeenGMF == (bool)this->TheGlobalM
 Assertion `isPRValue()' failed.
 Assertion `!(D & ExprDependence::UnexpandedPack)' failed.
 Assertion `Value > 0 && "Value must not be 0"' failed.
-Assertion `T2->isBuiltinType() && !T1.isNull()' failed.
 Assertion `Info.Size > 0 && "Empty bitfield!"' failed.
 Assertion `DiagnoseInitList.HadError() && "Inconsistent init list check result."' failed.
 Assertion `Arg.getKind() == TemplateArgument::Pack && "Missing argument pack"' failed.
@@ -157,7 +154,6 @@ Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpec
 Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
 Assertion `DC->getLexicalParent() == CurContext && "The next DeclContext should be lexically contained in the current one."' failed.
 Assertion `!ResultType.isNull() && (ResultType->isVectorType() || ResultType->isSizelessVectorType()) && (!CondType->isExtVectorType() || ResultType->isExtVectorType()) && "Result should have been a vector type"' failed.
-Assertion `width >= BitWidth && "Invalid APInt ZeroExtend request"' failed.
 Assertion `S.Context.hasSameType(Param, NonCanonParam)' failed.
 Assertion `(SS.isEmpty() ? !BaseType->isDependentType() || computeDeclContext(BaseType) : !isDependentScopeSpecifier(SS) || computeDeclContext(SS)) && "dependent lookup context that isn't the current instantiation?"' failed.
 Assertion `Context.getLangOpts().CPlusPlus && "Can only have wide bit-fields in C++!"' failed.
@@ -231,7 +227,6 @@ Assertion `idx < size()' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
-Assertion `T1->isBuiltinType() && !T2.isNull()' failed.
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `Match != ArgType::NoMatchPromotionTypeConfusion' failed.
 Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar expression to emit"' failed.
@@ -287,6 +282,7 @@ Assertion `BS.Base <= BS.Pointee->getSize()' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Base >= Pointee->getDescriptor()->getMetadataSize()' failed.
 Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
+Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Result && "Could not evaluate expression"' failed.
 Assertion `NumElems <= (MaxArrayElemBytes / ElemSize)' failed.
 Assertion `!ItemTypes.empty()' failed.
@@ -298,22 +294,17 @@ Assertion `ArgSize >= F->getWrittenArgSize()' failed.
 Assertion `(Base == RootPtrMark || Base % alignof(void *) == 0) && "wrong base"' failed.
 Assertion `isNumber()' failed.
 Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
-Assertion `isBlockPointer()' failed.
 Assertion `HasRVO == Func->hasRVO()' failed.
 Assertion `BS.Base != sizeof(GlobalInlineDescriptor)' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only compare APFloats with the same semantics"' failed.
 Assertion `NumArgs >= Func->getNumWrittenParams()' failed.
-Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
-Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
-Assertion `Call->getType() == Call->getArg(0)->getType()' failed.
+Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
 Assertion `getFieldDesc()->isPrimitiveArray()' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
 Assertion `I < getNumBases()' failed.
 Assertion `isa<ArrayType>(CanonicalType)' failed.
-Assertion `&R.getSemantics() == &I.getSemantics() && "Invalid complex float (type mismatch)."' failed.
-Assertion `ReadOffset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' failed.
+Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
+Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `TruncBits >= 1' failed.
-Assertion `VarSize == CstSize && "Emitted constant has unexpected size"' failed.
-Assertion `NumElements.isPositive()' failed.
-Assertion `!Desc->hasTrivialDtor()' failed.
+Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
