@@ -273,6 +273,7 @@ Assertion `isSemanticForm() && "syntactic form never semantically transparent"' 
 Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind() == ConstructionContextItem::TemporaryDestructorKind || State->contains<IndexOfElementToConstruct>( {dyn_cast_or_null<CXXConstructExpr>(Init), SF})) && "The object is already marked as `UnderConstruction`, when it's not " "supposed to!"' failed.
 Assertion `Qualifiers && "expected QualifiedTemplate"' failed.
 Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in array type bit size evaluation"' failed.
+Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->isConstrained()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
