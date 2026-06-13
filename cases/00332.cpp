@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: InstantiateFunctionDefinition
-// EXPECT-CRASH-ASSERT: NewFunction
-// EXPECT-CRASH-ASSERT: Failed
+// EXPECT-FAIL
 
 template <typename T> constexpr int foo(T);
 

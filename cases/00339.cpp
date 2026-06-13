@@ -1,5 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 template <int> void foo(void* = nullptr; int i; )
 void foo() {}

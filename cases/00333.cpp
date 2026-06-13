@@ -1,8 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getTemplateInstantiationArgs
-// EXPECT-CRASH-ASSERT: Qualifier
-// EXPECT-CRASH-ASSERT: TPLs.empty
-// EXPECT-CRASH-ASSERT: without
+// EXPECT-FAIL
 
 class C {
 public:

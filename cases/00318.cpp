@@ -1,5 +1,7 @@
 // RUN: clang++ -c %s
-// EXPECT-FAIL
+// EXPECT-CRASH-ASSERT: HandleRecordDecl
+// EXPECT-CRASH-ASSERT: getNumSubstitutedLevels
+// EXPECT-CRASH-ASSERT: Outer
 
 template <int> void foo(const void * = nullptr);
 

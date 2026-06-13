@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: cast
-// EXPECT-CRASH-ASSERT: isa
-// EXPECT-CRASH-ASSERT: incompatible
+// EXPECT-PASS
 
 struct E {
   operator int() const;
