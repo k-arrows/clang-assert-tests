@@ -274,6 +274,8 @@ Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind(
 Assertion `Qualifiers && "expected QualifiedTemplate"' failed.
 Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in array type bit size evaluation"' failed.
 Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->isConstrained()' failed.
+Assertion `S->getFlags() & Scope::DeclScope && "Invalid Scope."' failed.
+Assertion `AggrDeductionCandidateParamTypes' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
