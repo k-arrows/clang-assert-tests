@@ -168,12 +168,14 @@ Assertion `D.getASTContext().getLangOpts().CPlusPlus' failed.
 Assertion `OldTInfo && "substituting function without type source info"' failed.
 Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpected pack arguments in template rewrite"' failed.
 Assertion `Idx < size() && "Out-of-bounds Bit access."' failed.
+Assertion `(NewDecl->getFriendObjectKind() || !OldDecl->getLexicalDeclContext()->isDependentContext()) && "non-friend with qualified name defined in dependent context"' failed.
 Assertion `Arg < NumArgs && "Arg access out of range!"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Function' failed.
 Assertion `(Constructor->isDefaulted() && Constructor->isDefaultConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()) && "DefineImplicitDefaultConstructor - call it for implicit default ctor"' failed.
 Assertion `(!needsOverloadResolutionForCopyConstructor() || (data().DeclaredSpecialMembers & SMF_CopyConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' failed.
+Assertion `D->getTemplateSpecializationKind() != TSK_ImplicitInstantiation' failed.
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
 Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
@@ -217,7 +219,7 @@ Assertion `!Unexpanded.empty() && "Pack expansion without parameter packs?"' fai
 Assertion `Kind.getKind() == InitializationKind::IK_Value || DestType->isReferenceType()' failed.
 Assertion `Index < Length && "Invalid index!"' failed.
 Assertion `NumBits >= MIN_INT_BITS && "bitwidth too small"' failed.
-Assertion `!NumLevels && "Declaration had less levels than expected"' failed.
+Assertion `EC.isDependent() && "delaying non-dependent access"' failed.
 Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
 Assertion `At && "Received null Attr object!"' failed.
 Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' failed.
@@ -246,10 +248,10 @@ Assertion `CGF.getContext().hasSameUnqualifiedType(E->getSubExpr()->getType(), E
 Assertion `!isAlignmentDependent()' failed.
 Assertion `llvm::isPowerOf2_64(NewAlignment.getQuantity()) && "Alignment not a power of 2"' failed.
 Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
+Assertion `(ForConstraintInstantiation || Result.getNumSubstitutedLevels() == 0) && "Outer template not instantiated?"' failed.
 Assertion `F && "deduction guide for alias template must be a function template"' failed.
 Assertion `!NewFD->getReturnType()->isVariablyModifiedType() && "Variably modified return types are not handled here"' failed.
 Assertion `!isValueDependent() && "setSatisfied called on a dependent RequiresExpr"' failed.
-Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `isa<ObjCMethodDecl>(DC) && "unexpected parent code decl"' failed.
 Assertion `Var->hasLocalStorage() && "capture added 'const' to non-local?"' failed.
 Assertion `getOperand(1)->getType() == getOperand(2)->getType() && "Cmp type and NewVal type must be same!"' failed.
@@ -257,8 +259,6 @@ Assertion `Kind == OMPD_for || Kind == OMPD_section || Kind == OMPD_sections || 
 Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
 Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
-Assertion `NewFunction && "Failed to instantiate function template"' failed.
-Assertion `(Qualifier || TPLs.empty()) && "template parameter lists without qualifier"' failed.
 Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
 Assertion `Source->isUnicodeCharacterType() && Target->isUnicodeCharacterType() && Source != Target' failed.
@@ -277,13 +277,13 @@ Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->i
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
-Assertion `Offset != PastEndMark && "invalid offset"' failed.
+Assertion `Offset != PastEndMark' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `i < getStructNumBases() && "base class index OOB"' failed.
 Assertion `BS.Pointee' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `has_value()' failed.
-Assertion `BS.Base <= BS.Pointee->getSize()' failed.
+Assertion `Base <= Pointee->getSize()' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Base >= Pointee->getDescriptor()->getMetadataSize()' failed.
 Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
@@ -296,7 +296,7 @@ Assertion `Offset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' fa
 Assertion `SrcDesc->ElemRecord == DestDesc->ElemRecord' failed.
 Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
 Assertion `ArgSize >= F->getWrittenArgSize()' failed.
-Assertion `(Base == RootPtrMark || Base % alignof(void *) == 0) && "wrong base"' failed.
+Assertion `Base % alignof(void *) == 0 && "wrong base"' failed.
 Assertion `isNumber()' failed.
 Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
 Assertion `HasRVO == Func->hasRVO()' failed.
@@ -313,5 +313,4 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `TruncBits >= 1' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
-Assertion `isLive() && "Invalid pointer"' failed.
 Assertion `Func->hasThisPointer()' failed.
