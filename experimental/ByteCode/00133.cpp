@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 __attribute__((nonnull(1))) void foo(void *ptr);
 

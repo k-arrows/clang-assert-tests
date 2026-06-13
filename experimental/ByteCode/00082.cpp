@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
 // EXPECT-CRASH-ASSERT: Pointer
-// EXPECT-CRASH-ASSERT: RootPtrMark
 // EXPECT-CRASH-ASSERT: alignof
 // EXPECT-CRASH-ASSERT: wrong
 

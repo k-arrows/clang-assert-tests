@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: expand
+// EXPECT-FAIL
 
 struct B {};
 struct M1 {
