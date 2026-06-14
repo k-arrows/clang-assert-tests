@@ -322,3 +322,4 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
 Assertion `isBlockPointer()' failed.
+Assertion `I < getFieldDesc()->getNumElems()' failed.
