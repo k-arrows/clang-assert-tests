@@ -279,6 +279,7 @@ Assertion `AggrDeductionCandidateParamTypes' failed.
 Assertion `Name.isIdentifier() && "Name is not a simple identifier"' failed.
 Assertion `isa<CXXRecordDecl>(D->getDeclContext()) && "not a member specialization"' failed.
 Assertion `CodeDC && !CodeDC->isFileContext() && "statement expr not in code context"' failed.
+Assertion `Chunk.Kind == DeclaratorChunk::Paren' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
