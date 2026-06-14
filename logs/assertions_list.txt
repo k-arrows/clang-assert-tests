@@ -321,3 +321,4 @@ Assertion `TruncBits >= 1' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
+Assertion `isBlockPointer()' failed.
