@@ -323,3 +323,4 @@ Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
 Assertion `isBlockPointer()' failed.
 Assertion `I < getFieldDesc()->getNumElems()' failed.
+Assertion `Pointee' failed.
