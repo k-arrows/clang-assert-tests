@@ -280,6 +280,7 @@ Assertion `isa<CXXRecordDecl>(D->getDeclContext()) && "not a member specializati
 Assertion `CodeDC && !CodeDC->isFileContext() && "statement expr not in code context"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Paren' failed.
 Assertion `ParamD && "no parameter found for incomplete deduction result"' failed.
+Assertion `(PAsInteger & PtrMask) == 0 && "Improperly aligned pointer in setPtrAndKind!"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
