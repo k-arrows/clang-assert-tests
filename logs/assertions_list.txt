@@ -322,3 +322,4 @@ Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
 Assertion `BitWidth == V.getBitWidth()' failed.
+Assertion `It != VirtualBaseMap.end() && "Missing virtual base"' failed.
