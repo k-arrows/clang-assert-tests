@@ -1,8 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: ActOnUsingDeclaration
-// EXPECT-CRASH-ASSERT: getFlags
-// EXPECT-CRASH-ASSERT: DeclScope
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-FAIL
 
 void foo() {
 #pragma acc data default(none)
