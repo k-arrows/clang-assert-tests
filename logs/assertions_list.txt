@@ -321,3 +321,4 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
+Assertion `BitWidth == V.getBitWidth()' failed.
