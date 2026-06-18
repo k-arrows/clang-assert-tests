@@ -1,4 +1,4 @@
-// RUN: clang++ -c -fexperimental-new-constant-interpreter %s
+// RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
 // EXPECT-FAIL
 
 struct B {};
