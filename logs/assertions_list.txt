@@ -93,7 +93,7 @@ Assertion `Initializer && "Initializer must be non-null"' failed.
 Assertion `!CodeSynthesisContexts.empty()' failed.
 Assertion `!Friend->isDependentContext() && "can't handle friends with dependent contexts here"' failed.
 Assertion `ArgPackSubstIndex && "found declaration pack but not pack expanding"' failed.
-Assertion `(Kind != CK_LValueToRValue || !(T->isNullPtrType() || T->getAsCXXRecordDecl())) && "invalid type for lvalue-to-rvalue conversion"' failed.
+Assertion `(Kind != CK_LValueToRValue || !(T->isNullPtrType() || (T->getAsCXXRecordDecl() && !C.getLangOpts().HLSL))) && "invalid type for lvalue-to-rvalue conversion"' failed.
 Assertion `getType() == Other.getType()' failed.
 Assertion `Dtor && "class has literal fields and bases but no dtor?"' failed.
 Assertion `isa<IncompleteArrayType>(AT) && "Expected incomplete array"' failed.
@@ -274,7 +274,6 @@ Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind(
 Assertion `Qualifiers && "expected QualifiedTemplate"' failed.
 Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in array type bit size evaluation"' failed.
 Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->isConstrained()' failed.
-Assertion `S->getFlags() & Scope::DeclScope && "Invalid Scope."' failed.
 Assertion `AggrDeductionCandidateParamTypes' failed.
 Assertion `Name.isIdentifier() && "Name is not a simple identifier"' failed.
 Assertion `isa<CXXRecordDecl>(D->getDeclContext()) && "not a member specialization"' failed.
@@ -321,6 +320,4 @@ Assertion `TruncBits >= 1' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
-Assertion `isBlockPointer()' failed.
-Assertion `I < getFieldDesc()->getNumElems()' failed.
 Assertion `Pointee' failed.
