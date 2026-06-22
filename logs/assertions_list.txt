@@ -325,3 +325,4 @@ Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
 Assertion `BitWidth == V.getBitWidth()' failed.
 Assertion `It != VirtualBaseMap.end() && "Missing virtual base"' failed.
+Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
