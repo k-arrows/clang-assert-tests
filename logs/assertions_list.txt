@@ -281,6 +281,7 @@ Assertion `CodeDC && !CodeDC->isFileContext() && "statement expr not in code con
 Assertion `Chunk.Kind == DeclaratorChunk::Paren' failed.
 Assertion `ParamD && "no parameter found for incomplete deduction result"' failed.
 Assertion `(PAsInteger & PtrMask) == 0 && "Improperly aligned pointer in setPtrAndKind!"' failed.
+Assertion `!OldParam->hasUnparsedDefaultArg()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
