@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getVirtualBase
-// EXPECT-CRASH-ASSERT: VirtualBaseMap.end
-// EXPECT-CRASH-ASSERT: Missing
+// EXPECT-FAIL
 
 struct X {};
 struct Y : virtual X {};

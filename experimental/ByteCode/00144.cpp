@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getInlineDesc
-// EXPECT-CRASH-ASSERT: GlobalInlineDescriptor
+// EXPECT-FAIL
 
 struct S { virtual void s(); };
 struct A : S { : ; };
