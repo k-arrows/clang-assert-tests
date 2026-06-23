@@ -175,7 +175,6 @@ Assertion `(Constructor->isDefaulted() && Constructor->isDefaultConstructor() &&
 Assertion `(!needsOverloadResolutionForCopyConstructor() || (data().DeclaredSpecialMembers & SMF_CopyConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' failed.
-Assertion `D->getTemplateSpecializationKind() != TSK_ImplicitInstantiation' failed.
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
 Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
@@ -247,7 +246,6 @@ Assertion `T::isKind(*this)' failed.
 Assertion `CGF.getContext().hasSameUnqualifiedType(E->getSubExpr()->getType(), E->getType()) && "Implicit cast types must be compatible"' failed.
 Assertion `!isAlignmentDependent()' failed.
 Assertion `llvm::isPowerOf2_64(NewAlignment.getQuantity()) && "Alignment not a power of 2"' failed.
-Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
 Assertion `(ForConstraintInstantiation || Result.getNumSubstitutedLevels() == 0) && "Outer template not instantiated?"' failed.
 Assertion `F && "deduction guide for alias template must be a function template"' failed.
 Assertion `!NewFD->getReturnType()->isVariablyModifiedType() && "Variably modified return types are not handled here"' failed.
@@ -324,9 +322,4 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
-Assertion `BitWidth == V.getBitWidth()' failed.
-Assertion `It != VirtualBaseMap.end() && "Missing virtual base"' failed.
 Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
-Assertion `isBlockPointer()' failed.
-Assertion `Base != sizeof(GlobalInlineDescriptor)' failed.
-Assertion `LimitedPtr.getRecord()' failed.
