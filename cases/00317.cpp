@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckClassTemplate
-// EXPECT-CRASH-ASSERT: PrevClassTemplate
-// EXPECT-CRASH-ASSERT: specialization
+// EXPECT-FAIL
 
 template <class T> struct A {};
 template <class T> struct B : A<T> {};

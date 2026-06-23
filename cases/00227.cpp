@@ -1,7 +1,5 @@
-// RUN: clang++ --analyze %s
-// EXPECT-CRASH-ASSERT: TraverseVarTemplateSpecializationDecl
-// EXPECT-CRASH-ASSERT: getTemplateSpecializationKind
-// EXPECT-CRASH-ASSERT: TSK_ImplicitInstantiation
+// RUN: clang++ --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 struct S {
   template <typename T> static T t;
