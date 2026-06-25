@@ -282,6 +282,7 @@ Assertion `(PAsInteger & PtrMask) == 0 && "Improperly aligned pointer in setPtrA
 Assertion `!OldParam->hasUnparsedDefaultArg()' failed.
 Assertion `getType()->isMemberPointerType()' failed.
 Assertion `OldParm->getFunctionScopeIndex() == i' failed.
+Assertion `getKind() == Pack' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
