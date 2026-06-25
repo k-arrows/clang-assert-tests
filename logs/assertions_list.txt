@@ -281,6 +281,7 @@ Assertion `ParamD && "no parameter found for incomplete deduction result"' faile
 Assertion `(PAsInteger & PtrMask) == 0 && "Improperly aligned pointer in setPtrAndKind!"' failed.
 Assertion `!OldParam->hasUnparsedDefaultArg()' failed.
 Assertion `getType()->isMemberPointerType()' failed.
+Assertion `OldParm->getFunctionScopeIndex() == i' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
