@@ -330,3 +330,4 @@ Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
 Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
 Assertion `LimitedPtr.block() == Ptr.block()' failed.
+Assertion `Base != sizeof(GlobalInlineDescriptor)' failed.
