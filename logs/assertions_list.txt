@@ -284,6 +284,7 @@ Assertion `getType()->isMemberPointerType()' failed.
 Assertion `OldParm->getFunctionScopeIndex() == i' failed.
 Assertion `getKind() == Pack' failed.
 Assertion `!D1 == !D2' failed.
+Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
