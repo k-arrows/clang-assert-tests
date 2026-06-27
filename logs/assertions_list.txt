@@ -286,6 +286,7 @@ Assertion `getKind() == Pack' failed.
 Assertion `!D1 == !D2' failed.
 Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `Cand2.Conversions.size() == NumArgs && "Overload candidate mismatch"' failed.
+Assertion `!isa<NonLoc>(X)' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
