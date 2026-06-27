@@ -334,3 +334,4 @@ Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
 Assertion `LimitedPtr.block() == Ptr.block()' failed.
 Assertion `Base != sizeof(GlobalInlineDescriptor)' failed.
 Assertion `false && "Can't get arguments from that expression type"' failed.
+Assertion `AllocIt != Site.Allocations.end()' failed.
