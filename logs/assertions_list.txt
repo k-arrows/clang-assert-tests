@@ -290,6 +290,7 @@ Assertion `!isa<NonLoc>(X)' failed.
 Assertion `(LE->getType().getTypePtr() == BO->getType().getTypePtr() || RE->getType().getTypePtr() == BO->getType().getTypePtr()) && "Either LHS or RHS have base decl inside"' failed.
 Assertion `Arg.getKind() == TemplateArgument::Type && "Template argument kind mismatch"' failed.
 Assertion `!IsGlobalVar && "Only declare mapper handles TU-scope iterators."' failed.
+Assertion `D.getIdentifier() == nullptr && "Type name should have no identifier!"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
