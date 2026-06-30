@@ -1,7 +1,5 @@
 // RUN: clang++ -c -ffixed-point %s
-// EXPECT-CRASH-ASSERT: GetFixedPointRank
-// EXPECT-CRASH-ASSERT: BTy
-// EXPECT-CRASH-ASSERT: Expected
+// EXPECT-FAIL
 
 #define test(e, t) _Generic (e, default : 0, t : 1)
 

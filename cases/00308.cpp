@@ -1,4 +1,4 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 _Atomic __auto_type a;

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: hasAcceptableMemberSpecialization
-// EXPECT-CRASH-ASSERT: getDeclContext
-// EXPECT-CRASH-ASSERT: not
+// EXPECT-FAIL
 
 template <typename T> struct A {
   void B { int y = 0; };
