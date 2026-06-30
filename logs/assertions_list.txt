@@ -127,7 +127,6 @@ Assertion `E->isPRValue() && E->getType()->isRecordType()' failed.
 Assertion `Diagnosed && "failed to diagnose bad conversion"' failed.
 Assertion `D && "missing definition for pattern of instantiated definition"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
-Assertion `!A->getDeducedType().isNull() && "cannot request the size of an undeduced or dependent auto type"' failed.
 Assertion `!isNull() && "Cannot retrieve a NULL type pointer"' failed.
 Assertion `Unqualified ? hasSameUnqualifiedType(X, Y) : hasSameType(X, Y)' failed.
 Assertion `F.isPresplitCoroutine() && "The frontend uses Switch-Resumed ABI should emit " "\"presplitcoroutine\" attribute for the coroutine."' failed.
@@ -162,7 +161,6 @@ Assertion `(Cond.get()->containsErrors() || LHS.get()->containsErrors() || RHS.g
 Assertion `(DestType->containsErrors() || SrcExpr.get()->containsErrors() || SrcExpr.get()->containsErrors()) && "should only occur in error-recovery path."' failed.
 Assertion `(T->hasSignedIntegerRepresentation() || T->isSignedFixedPointType()) && "Unexpected signed integer or fixed point type"' failed.
 Assertion `MaybeODRUseExprs.empty() && "Leftover expressions for odr-use checking"' failed.
-Assertion `BTy && "Expected a builtin type."' failed.
 Assertion `IntTy->isComplexIntegerType()' failed.
 Assertion `D.getASTContext().getLangOpts().CPlusPlus' failed.
 Assertion `OldTInfo && "substituting function without type source info"' failed.
@@ -173,7 +171,6 @@ Assertion `Arg < NumArgs && "Arg access out of range!"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Function' failed.
 Assertion `(Constructor->isDefaulted() && Constructor->isDefaultConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()) && "DefineImplicitDefaultConstructor - call it for implicit default ctor"' failed.
 Assertion `(!needsOverloadResolutionForCopyConstructor() || (data().DeclaredSpecialMembers & SMF_CopyConstructor)) && "this property has not yet been computed by Sema"' failed.
-Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' failed.
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
@@ -274,7 +271,6 @@ Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in
 Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->isConstrained()' failed.
 Assertion `AggrDeductionCandidateParamTypes' failed.
 Assertion `Name.isIdentifier() && "Name is not a simple identifier"' failed.
-Assertion `isa<CXXRecordDecl>(D->getDeclContext()) && "not a member specialization"' failed.
 Assertion `CodeDC && !CodeDC->isFileContext() && "statement expr not in code context"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Paren' failed.
 Assertion `ParamD && "no parameter found for incomplete deduction result"' failed.
@@ -283,7 +279,6 @@ Assertion `!OldParam->hasUnparsedDefaultArg()' failed.
 Assertion `getType()->isMemberPointerType()' failed.
 Assertion `OldParm->getFunctionScopeIndex() == i' failed.
 Assertion `getKind() == Pack' failed.
-Assertion `!D1 == !D2' failed.
 Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `Cand2.Conversions.size() == NumArgs && "Overload candidate mismatch"' failed.
 Assertion `!isa<NonLoc>(X)' failed.
@@ -324,7 +319,6 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
 Assertion `getFieldDesc()->isPrimitiveArray()' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
-Assertion `I < getNumBases()' failed.
 Assertion `isa<ArrayType>(CanonicalType)' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
@@ -334,7 +328,4 @@ Assertion `Func->hasThisPointer()' failed.
 Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
 Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
-Assertion `LimitedPtr.block() == Ptr.block()' failed.
-Assertion `Base != sizeof(GlobalInlineDescriptor)' failed.
 Assertion `false && "Can't get arguments from that expression type"' failed.
-Assertion `AllocIt != Site.Allocations.end()' failed.
