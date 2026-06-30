@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getBase
-// EXPECT-CRASH-ASSERT: getNumBases
+// EXPECT-PASS
 
 struct S {
   ~S() {}

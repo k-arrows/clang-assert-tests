@@ -1,5 +1,5 @@
 // RUN: clang++ -c -std=c++26 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 struct S {
   constexpr int size() { return sizeof("foo"); }

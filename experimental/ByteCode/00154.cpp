@@ -1,5 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 struct A {
   constexpr A(int) {}

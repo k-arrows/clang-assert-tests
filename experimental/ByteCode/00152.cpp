@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: deallocate
-// EXPECT-CRASH-ASSERT: Site.Allocations.end
+// EXPECT-FAIL
 
 template <int N> constexpr bool foo(const char (&x)[N]) {
   int **p = new int *[N];

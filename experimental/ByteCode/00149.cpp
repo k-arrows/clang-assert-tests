@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: DynamicCast
-// EXPECT-CRASH-ASSERT: LimitedPtr
+// EXPECT-FAIL
 
 struct A {
   virtual void foo();
