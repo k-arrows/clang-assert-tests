@@ -287,6 +287,7 @@ Assertion `Arg.getKind() == TemplateArgument::Type && "Template argument kind mi
 Assertion `!IsGlobalVar && "Only declare mapper handles TU-scope iterators."' failed.
 Assertion `D.getIdentifier() == nullptr && "Type name should have no identifier!"' failed.
 Assertion `FromType->isRecordType()' failed.
+Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
