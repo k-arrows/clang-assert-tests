@@ -283,6 +283,7 @@ Assertion `D.getIdentifier() == nullptr && "Type name should have no identifier!
 Assertion `FromType->isRecordType()' failed.
 Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
 Assertion `!isa<ConstantExpr>(E)' failed.
+Assertion `isDependentContext()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
