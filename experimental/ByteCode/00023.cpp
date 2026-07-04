@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: peekData
-// EXPECT-CRASH-ASSERT: Ptr
-// EXPECT-CRASH-ASSERT: Offset
+// EXPECT-FAIL
 
 void foo() {
   struct S {

@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: elem
-// EXPECT-CRASH-ASSERT: isPrimitiveArray
+// EXPECT-PASS
 
 struct B {};
 struct A {
