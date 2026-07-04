@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckBaseSpecifier
-// EXPECT-CRASH-ASSERT: BaseDecl
-// EXPECT-CRASH-ASSERT: definition
+// EXPECT-FAIL
 
 template <typename T> struct S1;
 

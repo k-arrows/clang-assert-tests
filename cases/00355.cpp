@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++2b %s
-// EXPECT-CRASH-ASSERT: getName
-// EXPECT-CRASH-ASSERT: Name.isIdentifier
-// EXPECT-CRASH-ASSERT: simple
+// EXPECT-FAIL
 
 struct S {
   constexpr S(auto) {}

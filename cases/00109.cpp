@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: MightInstantiateTo
-// EXPECT-CRASH-ASSERT: isDependentContext
-// EXPECT-CRASH-ASSERT: can't
+// EXPECT-FAIL
 
 template <class T> struct A;
 

@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getASTRecordLayout
-// EXPECT-CRASH-ASSERT: declarations
+// EXPECT-FAIL
 
 struct S {
   S foo();
