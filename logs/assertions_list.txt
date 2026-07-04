@@ -285,6 +285,7 @@ Assertion `PrevClassTemplate && "Member specialization without a primary templat
 Assertion `!isa<ConstantExpr>(E)' failed.
 Assertion `isDependentContext()' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "Unaccounted cleanups in function"' failed.
+Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc() && "The annotation should be until the most recent cached token"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
