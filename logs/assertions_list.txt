@@ -286,6 +286,7 @@ Assertion `!isa<ConstantExpr>(E)' failed.
 Assertion `isDependentContext()' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "Unaccounted cleanups in function"' failed.
 Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc() && "The annotation should be until the most recent cached token"' failed.
+Assertion `SS.isSet() && "C++ scope was cleared ?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
