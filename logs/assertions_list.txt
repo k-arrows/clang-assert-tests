@@ -289,6 +289,9 @@ Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc(
 Assertion `SS.isSet() && "C++ scope was cleared ?"' failed.
 Assertion `llvm::isIntN(BitWidth, val) && "Value is not an N-bit signed value"' failed.
 Assertion `!HasRefTypeParam || isa<Loc>(*DV)' failed.
+Assertion `IsUnsigned == RHS.IsUnsigned && "Signedness mismatch!"' failed.
+Assertion `(TSK == TSK_ExplicitInstantiationDefinition || TSK == TSK_ExplicitInstantiationDeclaration || (TSK == TSK_ImplicitInstantiation && Instantiation->isLocalClass())) && "Unexpected template specialization kind!"' failed.
+Assertion `!A->getDeducedType().isNull() && "cannot request the size of an undeduced or dependent auto type"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
