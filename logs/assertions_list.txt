@@ -335,3 +335,4 @@ Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
 Assertion `false && "Can't get arguments from that expression type"' failed.
 Assertion `isDereferencable()' failed.
 Assertion `((int64_t)*VL - (int64_t)*VR) % ElemSize == 0' failed.
+Assertion `Stk.empty()' failed.
