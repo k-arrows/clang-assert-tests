@@ -289,6 +289,7 @@ Assertion `IsUnsigned == RHS.IsUnsigned && "Signedness mismatch!"' failed.
 Assertion `(TSK == TSK_ExplicitInstantiationDefinition || TSK == TSK_ExplicitInstantiationDeclaration || (TSK == TSK_ImplicitInstantiation && Instantiation->isLocalClass())) && "Unexpected template specialization kind!"' failed.
 Assertion `!A->getDeducedType().isNull() && "cannot request the size of an undeduced or dependent auto type"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within block not correctly bound!"' failed.
+Assertion `(Qualifier || TPLs.empty()) && "template parameter lists without qualifier"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
