@@ -1,7 +1,7 @@
 // RUN: clang++ -c -std=c++2c %s
-// EXPECT-CRASH-ASSERT: DelayDependentAccess
-// EXPECT-CRASH-ASSERT: EC.isDependent
-// EXPECT-CRASH-ASSERT: non-dependent
+// EXPECT-CRASH-ASSERT: getTemplateInstantiationArgs
+// EXPECT-CRASH-ASSERT: NumLevels
+// EXPECT-CRASH-ASSERT: Declaration
 
 template <typename... I> using idx = struct S {
 

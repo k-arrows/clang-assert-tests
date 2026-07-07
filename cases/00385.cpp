@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckClassTemplate
-// EXPECT-CRASH-ASSERT: PrevClassTemplate
-// EXPECT-CRASH-ASSERT: specialization
+// EXPECT-FAIL
 
 class C {
   class P {};

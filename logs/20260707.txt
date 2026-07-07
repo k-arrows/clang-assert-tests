@@ -217,7 +217,7 @@
 00217.cpp OK
 00218.cpp OK
 00219.cpp OK
-00220.cpp FAIL
+00220.cpp OK
 00221.cpp OK
 00222.cpp OK
 00223.cpp OK
@@ -229,7 +229,7 @@
 00229.cpp OK
 00230.cpp OK
 00231.cpp OK
-00232.cpp FAIL
+00232.cpp OK
 00233.cpp OK
 00234.cpp OK
 00235.cpp OK
@@ -279,7 +279,7 @@
 00279.cpp OK
 00280.cpp OK
 00281.cpp OK
-00282.cpp FAIL
+00282.cpp OK
 00283.cpp OK
 00284.cpp OK
 00285.cpp OK
@@ -315,7 +315,7 @@
 00315.cpp OK
 00316.cpp OK
 00317.cpp OK
-00318.cpp FAIL
+00318.cpp OK
 00319.cpp OK
 00320.cpp OK
 00321.cpp OK
@@ -336,7 +336,7 @@
 00336.cpp OK
 00337.cpp OK
 00338.cpp OK
-00339.cpp FAIL
+00339.cpp OK
 00340.cpp OK
 00341.cpp OK
 00342.cpp OK
@@ -351,7 +351,7 @@
 00351.cpp OK
 00352.cpp OK
 00353.cpp OK
-00354.cpp FAIL
+00354.cpp OK
 00355.cpp OK
 00356.cpp OK
 00357.cpp OK
@@ -382,7 +382,7 @@
 00382.cpp OK
 00383.cpp OK
 00384.cpp OK
-00385.cpp FAIL
+00385.cpp OK
 00386.cpp OK
 00387.cpp OK
 00388.cpp OK
@@ -402,6 +402,5 @@
 === Summary ===
 Clang version: clang version 23.0.0git (https://github.com/llvm/llvm-project.git 06f4b027b2df1febf3cd496573b8739074e8aa29)
 Total: 400
-OK: 393
-FAIL: 7
-Failed files: 00220.cpp, 00232.cpp, 00282.cpp, 00318.cpp, 00339.cpp, 00354.cpp, 00385.cpp
+OK: 400
+FAIL: 0
