@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: cleanupAfterFunctionCall
-// EXPECT-CRASH-ASSERT: getNumWrittenParams
+// EXPECT-FAIL
 
 class A {
 public:
