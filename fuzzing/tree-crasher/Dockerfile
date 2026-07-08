@@ -2,6 +2,36 @@
 
 ARG DEBIAN_CODENAME=bookworm
 ARG RUST_VERSION=1.87
+ARG CMAKE_VERSION=3.31.10
+
+############################
+# 0) Build CMake
+############################
+FROM --platform=$BUILDPLATFORM debian:${DEBIAN_CODENAME} AS cmake-builder
+
+ARG CMAKE_VERSION
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    build-essential \
+    libssl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp
+
+RUN curl -L \
+    https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}.tar.gz \
+    -o cmake.tar.gz \
+ && tar xf cmake.tar.gz
+
+WORKDIR /tmp/cmake-${CMAKE_VERSION}
+
+RUN ./bootstrap --prefix=/opt/cmake \
+ && make -j8 \
+ && make install
 
 ############################
 # 1) Build LLVM/Clang
@@ -11,13 +41,13 @@ FROM --platform=$BUILDPLATFORM debian:${DEBIAN_CODENAME} AS llvm-builder
 ARG LLVM_REPO=https://github.com/llvm/llvm-project.git
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV PATH=/opt/cmake/bin:${PATH}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     bash \
     ca-certificates \
     git \
     clang \
-    cmake \
     libomp-dev \
     ninja-build \
     python3 \
@@ -27,11 +57,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     file \
  && rm -rf /var/lib/apt/lists/*
 
+COPY --from=cmake-builder /opt/cmake /opt/cmake
+
 WORKDIR /src
 
 RUN git clone --depth 1 ${LLVM_REPO} llvm-project
 
 WORKDIR /src/llvm-project
+
+RUN cmake --version
 
 RUN cmake -S llvm -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
