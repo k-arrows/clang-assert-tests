@@ -291,6 +291,7 @@ Assertion `!A->getDeducedType().isNull() && "cannot request the size of an unded
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within block not correctly bound!"' failed.
 Assertion `(Qualifier || TPLs.empty()) && "template parameter lists without qualifier"' failed.
 Assertion `MightBeCXXScopeToken() && "Cannot be a type or scope token!"' failed.
+Assertion `S.DelayedEquivalentExceptionSpecChecks.empty() && "there shouldn't be any pending delayed exception spec checks"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
