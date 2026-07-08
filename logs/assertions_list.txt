@@ -292,6 +292,7 @@ Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within block not correctly 
 Assertion `(Qualifier || TPLs.empty()) && "template parameter lists without qualifier"' failed.
 Assertion `MightBeCXXScopeToken() && "Cannot be a type or scope token!"' failed.
 Assertion `S.DelayedEquivalentExceptionSpecChecks.empty() && "there shouldn't be any pending delayed exception spec checks"' failed.
+Assertion `!isa<BlockDecl>(Binding->getDeclContext())' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
