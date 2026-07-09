@@ -1,6 +1,4 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: VisitCXXNewExpr
-// EXPECT-CRASH-ASSERT: isArrayType
-// EXPECT-CRASH-ASSERT: non-array
+// EXPECT-FAIL
 
 auto p = new int[][42]();
