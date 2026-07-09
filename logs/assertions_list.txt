@@ -17,7 +17,6 @@ Assertion `!KnownValid && "Explicit template arguments?"' failed.
 Assertion `!llvm::is_contained(getLookupResult(), D) && "Already exists!"' failed.
 Assertion `IdentLoc.isValid() && "Invalid TargetName location."' failed.
 Assertion `DD && "queried property of class with no definition"' failed.
-Assertion `!AllocType->isArrayType() && "array allocation with non-array new"' failed.
 Assertion `!Body && "can't replace function body with defaulted function info"' failed.
 Assertion `R.getAsSingle<TemplateDecl>() && "There should only be one declaration found."' failed.
 Assertion `(FD && FD->getInClassInitStyle() != ICIS_NoInit) && "must set init style when field is created"' failed.
@@ -312,7 +311,6 @@ Assertion `!ItemTypes.empty()' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only call on two APFloats with the same semantics"' failed.
 Assertion `Offset + sizeof(T) <= BS.Pointee->getDescriptor()->getAllocSize()' failed.
 Assertion `SrcDesc->ElemRecord == DestDesc->ElemRecord' failed.
-Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
 Assertion `ArgSize >= F->getWrittenArgSize()' failed.
 Assertion `Base % alignof(void *) == 0 && "wrong base"' failed.
 Assertion `isNumber()' failed.
