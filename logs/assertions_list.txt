@@ -293,6 +293,10 @@ Assertion `MightBeCXXScopeToken() && "Cannot be a type or scope token!"' failed.
 Assertion `S.DelayedEquivalentExceptionSpecChecks.empty() && "there shouldn't be any pending delayed exception spec checks"' failed.
 Assertion `!isa<BlockDecl>(Binding->getDeclContext())' failed.
 Assertion `NextToken.isNot(tok::coloncolon) && "parse nested name specifiers before calling ClassifyName"' failed.
+Assertion `SyntaxUsed == AttributeCommonInfo::AS_CXX11 || SyntaxUsed == AttributeCommonInfo::AS_C23' failed.
+Assertion `llvm::all_of(DeclarationAttrs, [](const ParsedAttr &AL) { return (AL.isStandardAttributeSyntax() || AL.isRegularKeywordAttribute()); }) && "DeclarationAttrs may only contain [[]] and keyword attributes"' failed.
+Assertion `Tok.is(EndOfStream)' failed.
+Assertion `Tok.isNot(tok::identifier) && "TryAnnotateName succeeded without producing an annotation"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
