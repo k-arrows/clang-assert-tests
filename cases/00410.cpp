@@ -1,0 +1,16 @@
+// RUN: clang++ -c -fms-compatibility %s
+// EXPECT-CRASH-ASSERT: ParseIntelInlineAsmIdentifier
+// EXPECT-CRASH-ASSERT: getPointer
+// EXPECT-CRASH-ASSERT: InlineAsmIdentifierInfo
+// EXPECT-CRASH-ASSERT: claimed
+
+struct A {
+  struct B {
+  } b;
+};
+
+namespace N {
+A a;
+}
+
+void foo() { __asm mov eax, N::a.b.__is_trivially_relocatable }

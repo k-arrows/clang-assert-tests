@@ -297,6 +297,8 @@ Assertion `SyntaxUsed == AttributeCommonInfo::AS_CXX11 || SyntaxUsed == Attribut
 Assertion `llvm::all_of(DeclarationAttrs, [](const ParsedAttr &AL) { return (AL.isStandardAttributeSyntax() || AL.isRegularKeywordAttribute()); }) && "DeclarationAttrs may only contain [[]] and keyword attributes"' failed.
 Assertion `Tok.is(EndOfStream)' failed.
 Assertion `Tok.isNot(tok::identifier) && "TryAnnotateName succeeded without producing an annotation"' failed.
+Assertion `(End.getPointer() == EndPtr || Info.isKind(InlineAsmIdentifierInfo::IK_Invalid)) && "frontend claimed part of a token?"' failed.
+Assertion `!this->empty()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
