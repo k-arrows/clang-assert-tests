@@ -163,6 +163,7 @@ Assertion `D.getASTContext().getLangOpts().CPlusPlus' failed.
 Assertion `OldTInfo && "substituting function without type source info"' failed.
 Assertion `TA.pack_size() == 1 && TA.pack_begin()->isPackExpansion() && "unexpected pack arguments in template rewrite"' failed.
 Assertion `Idx < size() && "Out-of-bounds Bit access."' failed.
+Assertion `(NewDecl->getFriendObjectKind() || !OldDecl->getLexicalDeclContext()->isDependentContext()) && "non-friend with qualified name defined in dependent context"' failed.
 Assertion `Arg < NumArgs && "Arg access out of range!"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Function' failed.
 Assertion `(Constructor->isDefaulted() && Constructor->isDefaultConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()) && "DefineImplicitDefaultConstructor - call it for implicit default ctor"' failed.
@@ -171,6 +172,7 @@ Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' fa
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
 Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
+Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a constructor or assignment operator was empty"' failed.
 Assertion `!MemberQuals.hasAddressSpace()' failed.
 Assertion `SemaRef.Context.hasSameType(expr->getType(), ElemType) && "found implicit initialization for the wrong type"' failed.
 Assertion `Loc.isValid() && "point of instantiation must be valid!"' failed.
@@ -210,7 +212,7 @@ Assertion `!Unexpanded.empty() && "Pack expansion without parameter packs?"' fai
 Assertion `Kind.getKind() == InitializationKind::IK_Value || DestType->isReferenceType()' failed.
 Assertion `Index < Length && "Invalid index!"' failed.
 Assertion `NumBits >= MIN_INT_BITS && "bitwidth too small"' failed.
-Assertion `!NumLevels && "Declaration had less levels than expected"' failed.
+Assertion `EC.isDependent() && "delaying non-dependent access"' failed.
 Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
 Assertion `At && "Received null Attr object!"' failed.
 Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' failed.
@@ -238,6 +240,7 @@ Assertion `T::isKind(*this)' failed.
 Assertion `CGF.getContext().hasSameUnqualifiedType(E->getSubExpr()->getType(), E->getType()) && "Implicit cast types must be compatible"' failed.
 Assertion `!isAlignmentDependent()' failed.
 Assertion `llvm::isPowerOf2_64(NewAlignment.getQuantity()) && "Alignment not a power of 2"' failed.
+Assertion `(ForConstraintInstantiation || Result.getNumSubstitutedLevels() == 0) && "Outer template not instantiated?"' failed.
 Assertion `F && "deduction guide for alias template must be a function template"' failed.
 Assertion `!NewFD->getReturnType()->isVariablyModifiedType() && "Variably modified return types are not handled here"' failed.
 Assertion `!isValueDependent() && "setSatisfied called on a dependent RequiresExpr"' failed.
@@ -261,7 +264,7 @@ Assertion `isSemanticForm() && "syntactic form never semantically transparent"' 
 Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind() == ConstructionContextItem::TemporaryDestructorKind || State->contains<IndexOfElementToConstruct>( {dyn_cast_or_null<CXXConstructExpr>(Init), SF})) && "The object is already marked as `UnderConstruction`, when it's not " "supposed to!"' failed.
 Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in array type bit size evaluation"' failed.
 Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->isConstrained()' failed.
-Assertion `!NumLevels && "Declaration had less levels than expected"' failed.
+Assertion `AggrDeductionCandidateParamTypes' failed.
 Assertion `CodeDC && !CodeDC->isFileContext() && "statement expr not in code context"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Paren' failed.
 Assertion `ParamD && "no parameter found for incomplete deduction result"' failed.
@@ -281,15 +284,12 @@ Assertion `!isa<ConstantExpr>(E)' failed.
 Assertion `isDependentContext()' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "Unaccounted cleanups in function"' failed.
 Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc() && "The annotation should be until the most recent cached token"' failed.
-Assertion `SS.isSet() && "C++ scope was cleared ?"' failed.
 Assertion `llvm::isIntN(BitWidth, val) && "Value is not an N-bit signed value"' failed.
 Assertion `!HasRefTypeParam || isa<Loc>(*DV)' failed.
 Assertion `IsUnsigned == RHS.IsUnsigned && "Signedness mismatch!"' failed.
 Assertion `(TSK == TSK_ExplicitInstantiationDefinition || TSK == TSK_ExplicitInstantiationDeclaration || (TSK == TSK_ImplicitInstantiation && Instantiation->isLocalClass())) && "Unexpected template specialization kind!"' failed.
 Assertion `!A->getDeducedType().isNull() && "cannot request the size of an undeduced or dependent auto type"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within block not correctly bound!"' failed.
-Assertion `(Qualifier || TPLs.empty()) && "template parameter lists without qualifier"' failed.
-Assertion `MightBeCXXScopeToken() && "Cannot be a type or scope token!"' failed.
 Assertion `S.DelayedEquivalentExceptionSpecChecks.empty() && "there shouldn't be any pending delayed exception spec checks"' failed.
 Assertion `!isa<BlockDecl>(Binding->getDeclContext())' failed.
 Assertion `NextToken.isNot(tok::coloncolon) && "parse nested name specifiers before calling ClassifyName"' failed.
