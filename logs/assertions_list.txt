@@ -301,6 +301,7 @@ Assertion `(End.getPointer() == EndPtr || Info.isKind(InlineAsmIdentifierInfo::I
 Assertion `!this->empty()' failed.
 Assertion `!NewT.isNull()' failed.
 Assertion `DeclAccess != AS_none' failed.
+Assertion `LateParsedInstantiations.empty() && "end of TU template instantiation should not create more " "late-parsed templates"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
