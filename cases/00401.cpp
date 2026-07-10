@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getTemplateInstantiationArgs
-// EXPECT-CRASH-ASSERT: Qualifier
-// EXPECT-CRASH-ASSERT: without 
+// EXPECT-FAIL
 
 template <typename> struct S {
   template <typename typename> inline auto foo = 42;

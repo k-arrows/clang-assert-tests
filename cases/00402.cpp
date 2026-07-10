@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: TryAnnotateCXXScopeToken
-// EXPECT-CRASH-ASSERT: MightBeCXXScopeToken
-// EXPECT-CRASH-ASSERT: Cannot
+// EXPECT-FAIL
 
 namespace N {
 template <typename T> void foo();

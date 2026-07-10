@@ -1,7 +1,6 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getTemplateInstantiationArgs
-// EXPECT-CRASH-ASSERT: NumLevels
-// EXPECT-CRASH-ASSERT: Declaration
+// EXPECT-CRASH-ASSERT: CheckSubElementType
+// EXPECT-CRASH-ASSERT: AggrDeductionCandidateParamTypes
 
 template <class T> using S = struct F {
 

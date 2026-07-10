@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: ~DeclaratorScopeObj
-// EXPECT-CRASH-ASSERT: SS.isSet
-// EXPECT-CRASH-ASSERT: cleared
+// EXPECT-FAIL
 
 void foo();
 

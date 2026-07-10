@@ -1,5 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 #define C(x) __attribute__((cleanup(x)))
 void foo(double *x U) {}
