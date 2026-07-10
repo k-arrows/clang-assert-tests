@@ -299,6 +299,7 @@ Assertion `Tok.is(EndOfStream)' failed.
 Assertion `Tok.isNot(tok::identifier) && "TryAnnotateName succeeded without producing an annotation"' failed.
 Assertion `(End.getPointer() == EndPtr || Info.isKind(InlineAsmIdentifierInfo::IK_Invalid)) && "frontend claimed part of a token?"' failed.
 Assertion `!this->empty()' failed.
+Assertion `!NewT.isNull()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
