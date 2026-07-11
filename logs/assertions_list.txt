@@ -304,6 +304,7 @@ Assertion `DeclAccess != AS_none' failed.
 Assertion `LateParsedInstantiations.empty() && "end of TU template instantiation should not create more " "late-parsed templates"' failed.
 Assertion `*FirstTokOffset == FirstCharOffset' failed.
 Assertion `Base->getType()->isRecordType() && "left-hand side must have class type"' failed.
+Assertion `BaseDecl && "Base type is not incomplete, but has no definition"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
