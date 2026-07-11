@@ -308,6 +308,7 @@ Assertion `BaseDecl && "Base type is not incomplete, but has no definition"' fai
 Assertion `LineIndex < LineToks.size() - 2' failed.
 Assertion `(!Result || *Result == Size) && "inconsistent pack sizes"' failed.
 Assertion `L.Conversions.size() == R.Conversions.size()' failed.
+Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
