@@ -310,6 +310,7 @@ Assertion `(!Result || *Result == Size) && "inconsistent pack sizes"' failed.
 Assertion `L.Conversions.size() == R.Conversions.size()' failed.
 Assertion `PrevClassTemplate && "Member specialization without a primary template?"' failed.
 Assertion `QualifierLoc.getNestedNameSpecifier() == getTypePtr()->getQualifier() && "Inconsistent nested-name-specifier pointer"' failed.
+Assertion `D.isPastIdentifier() && "Haven't past the location of the identifier yet?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
