@@ -356,3 +356,4 @@ Assertion `((int64_t)*VL - (int64_t)*VR) % ElemSize == 0' failed.
 Assertion `Stk.empty()' failed.
 Assertion `F' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
+Assertion `Ptr && "Offset too large"' failed.
