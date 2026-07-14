@@ -316,6 +316,7 @@ Assertion `Path->Access <= UnprivilegedAccess && "access along best path worse t
 Assertion `isFriend && "dependent specialization info on " "non-member non-friend function?"' failed.
 Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `ValidArg && "This constraint should be applied on an integral type"' failed.
+Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template parameter depth"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
