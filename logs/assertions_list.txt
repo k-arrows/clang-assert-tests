@@ -314,6 +314,7 @@ Assertion `D.isPastIdentifier() && "Haven't past the location of the identifier 
 Assertion `SS.isSet() && "C++ scope was cleared ?"' failed.
 Assertion `Path->Access <= UnprivilegedAccess && "access along best path worse than direct?"' failed.
 Assertion `isFriend && "dependent specialization info on " "non-member non-friend function?"' failed.
+Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
