@@ -307,6 +307,7 @@ Assertion `ValidArg && "This constraint should be applied on an integral type"' 
 Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template parameter depth"' failed.
 Assertion `DelayedEquivalentExceptionSpecChecks.empty()' failed.
 Assertion `isDeclRep((TST) TypeSpecType) && "DeclSpec does not store a decl"' failed.
+Assertion `D->getLexicalDeclContext() == this && "Decl inserted into wrong lexical context"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
