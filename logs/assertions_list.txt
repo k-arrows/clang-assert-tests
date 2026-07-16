@@ -7,7 +7,6 @@ Assertion `(EltTy->isDependentType() || EltTy->isIncompleteType() || EltTy->isCo
 Assertion `SI.getBitWidth() == Info.Ctx.getIntWidth(E->getType()) && "Invalid evaluation result."' failed.
 Assertion `Val && "isa<> used on a null pointer"' failed.
 Assertion `Ancestor->getEntity() == CurContext && "ancestor context mismatch"' failed.
-Assertion `((IndexOfCaptureReadyLambda != (FunctionScopes.size() - 1)) || S.getCurGenericLambda()) && "The capture ready lambda for a potential capture can only be the " "current lambda if it is a generic lambda"' failed.
 Assertion `Permissive || !(!LabelAndGotoScopes.count(TheLabel->getStmt()))' failed.
 Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc() && "The annotation should be until the most recent cached token"' failed.
 Assertion `Tok.is(tok::l_paren) && "Expected '('"' failed.
@@ -19,10 +18,9 @@ Assertion `IdentLoc.isValid() && "Invalid TargetName location."' failed.
 Assertion `DD && "queried property of class with no definition"' failed.
 Assertion `!Body && "can't replace function body with defaulted function info"' failed.
 Assertion `R.getAsSingle<TemplateDecl>() && "There should only be one declaration found."' failed.
-Assertion `(FD && FD->getInClassInitStyle() != ICIS_NoInit) && "must set init style when field is created"' failed.
 Assertion `(!Unexpanded.empty() || LambdaReferencingOuterPacks) && "Unable to find unexpanded parameter packs"' failed.
 Assertion `CanDeclareSpecialMemberFunction(RD) && "doing special member lookup into record that isn't fully complete"' failed.
-Assertion `getType(Base).getNonReferenceType()->isPointerType() || getType(Base).getNonReferenceType()->isArrayType()' failed.
+Assertion `!Base || getType(Base).getNonReferenceType()->isPointerType() || getType(Base).getNonReferenceType()->isArrayType()' failed.
 Assertion `(LHSExpr->containsErrors() || RHSExpr->containsErrors()) && "Should only occur in error-recovery path."' failed.
 Assertion `NameInfo.getName().getNameKind() == DeclarationName::CXXDestructorName && "Name must refer to a destructor"' failed.
 Assertion `getSubExpr()->getType()->isAnyPointerType() && !getSubExpr()->getType()->isBlockPointerType()' failed.
@@ -41,7 +39,6 @@ Assertion `(Fn->containsErrors() || llvm::any_of(ArgExprs, [](clang::Expr *E) { 
 Assertion `!Info.isIncomplete() && "Access to an object of an incomplete type!"' failed.
 Assertion `NumElts > 0 && "#Elements of a VectorType must be greater than 0"' failed.
 Assertion `isa<LabelDecl>(D) && "declaration not instantiated in this scope"' failed.
-Assertion `Info.Ctx.hasSameUnqualifiedType(BaseIt->getType(), BaseType) && "base class initializers not in expected order"' failed.
 Assertion `Access == AS_private || Access == AS_protected' failed.
 Assertion `Init->containsErrors() && "Dependent code should only occur in error-recovery path."' failed.
 Assertion `Offset >= Size' failed.
@@ -67,7 +64,6 @@ Assertion `FromType->castAsEnumDecl()->isFixed() && SCS.Second == ICK_Integral_P
 Assertion `(S.getLangOpts().CPlusPlus11 || isCCEAllowedPreCXX11) && "converted constant expression outside C++11 or TTP matching"' failed.
 Assertion `VDecl->isLinkageValid()' failed.
 Assertion `!Eval->WasEvaluated && "already evaluated var value before checking for constant init"' failed.
-Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
 Assertion `!T->isDependentType() && "should not see dependent types here"' failed.
 Assertion `TL.getFullDataSize() == CurrTL.getFullDataSize()' failed.
 Assertion `isFuncOrMethodForAttrSubject(D) && hasFunctionProto(D)' failed.
@@ -103,7 +99,6 @@ Assertion `QualifierLoc.getNestedNameSpecifier() == getTypePtr()->getTemplateNam
 Assertion `hasInClassInitializer() && !getInClassInitializer()' failed.
 Assertion `llvm::isPowerOf2_64(Value) && "Alignment is not a power of 2"' failed.
 Assertion `!DT.isNull() && "Undeduced types shouldn't reach here."' failed.
-Assertion `getLangOpts().CPlusPlusModules && ModuleTok.is(tok::kw_module)' failed.
 Assertion `ModifierLen == 0 && "unknown modifier for string"' failed.
 Assertion `Kind != -1 && "couldn't find reason why type is not structural"' failed.
 Assertion `it != BitFields.end() && "Unable to find bitfield info"' failed.
@@ -129,7 +124,6 @@ Assertion `Unqualified ? hasSameUnqualifiedType(X, Y) : hasSameType(X, Y)' faile
 Assertion `F.isPresplitCoroutine() && "The frontend uses Switch-Resumed ABI should emit " "\"presplitcoroutine\" attribute for the coroutine."' failed.
 Assertion `!E->isFileScope() && "file-scope compound literal did not have constant initializer!"' failed.
 Assertion `ModuleScopes.size() <= 1 && "expected to be at global module scope"' failed.
-Assertion `isArray() && "Invalid accessor"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `!isResultDependent() && "Generic selection is result-dependent but getResultIndex called!"' failed.
 Assertion `ParamD && "no parameter found for invalid explicit arguments"' failed.
@@ -219,10 +213,8 @@ Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' 
 Assertion `getContext().hasSameUnqualifiedType( AlignValT->castAsEnumDecl()->getIntegerType(), sizeType) && "wrong type for alignment parameter"' failed.
 Assertion `V && "Dereferencing deleted ValueHandle"' failed.
 Assertion `idx < size()' failed.
-Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
-Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `Match != ArgType::NoMatchPromotionTypeConfusion' failed.
 Assertion `E && hasScalarEvaluationKind(E->getType()) && "Invalid scalar expression to emit"' failed.
 Assertion `(!PrevDecl || PrevFunTmpl) && "Function/function template mismatch"' failed.
@@ -251,14 +243,12 @@ Assertion `Kind == OMPD_for || Kind == OMPD_section || Kind == OMPD_sections || 
 Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
 Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
-Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
 Assertion `Source->isUnicodeCharacterType() && Target->isUnicodeCharacterType() && Source != Target' failed.
 Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
 Assertion `ShiftAmt <= BitWidth && "Invalid shift amount"' failed.
 Assertion `getSignificantBits() <= 64 && "Too many bits for int64_t"' failed.
 Assertion `!R.isInvalid() && "operation was asserted to never fail!"' failed.
-Assertion `Depth >= 0 && "Depth must be non-negative"' failed.
 Assertion `TypeSize == Context.getTypeSize(Context.LongLongTy) && "Unhandled vector element size in vector compare"' failed.
 Assertion `isSemanticForm() && "syntactic form never semantically transparent"' failed.
 Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind() == ConstructionContextItem::TemporaryDestructorKind || State->contains<IndexOfElementToConstruct>( {dyn_cast_or_null<CXXConstructExpr>(Init), SF})) && "The object is already marked as `UnderConstruction`, when it's not " "supposed to!"' failed.
@@ -271,7 +261,6 @@ Assertion `ParamD && "no parameter found for incomplete deduction result"' faile
 Assertion `(PAsInteger & PtrMask) == 0 && "Improperly aligned pointer in setPtrAndKind!"' failed.
 Assertion `!OldParam->hasUnparsedDefaultArg()' failed.
 Assertion `getType()->isMemberPointerType()' failed.
-Assertion `OldParm->getFunctionScopeIndex() == i' failed.
 Assertion `getKind() == Pack' failed.
 Assertion `Cand2.Conversions.size() == NumArgs && "Overload candidate mismatch"' failed.
 Assertion `!isa<NonLoc>(X)' failed.
@@ -314,7 +303,6 @@ Assertion `D.isPastIdentifier() && "Haven't past the location of the identifier 
 Assertion `SS.isSet() && "C++ scope was cleared ?"' failed.
 Assertion `Path->Access <= UnprivilegedAccess && "access along best path worse than direct?"' failed.
 Assertion `isFriend && "dependent specialization info on " "non-member non-friend function?"' failed.
-Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `ValidArg && "This constraint should be applied on an integral type"' failed.
 Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template parameter depth"' failed.
 Assertion `DelayedEquivalentExceptionSpecChecks.empty()' failed.
@@ -322,7 +310,6 @@ Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
-Assertion `i < getStructNumBases() && "base class index OOB"' failed.
 Assertion `BS.Pointee' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `has_value()' failed.
@@ -359,6 +346,5 @@ Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
 Assertion `isDereferencable()' failed.
 Assertion `((int64_t)*VL - (int64_t)*VR) % ElemSize == 0' failed.
 Assertion `Stk.empty()' failed.
-Assertion `F' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `Ptr && "Offset too large"' failed.
