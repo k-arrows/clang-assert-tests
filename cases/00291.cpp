@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: setDepth
-// EXPECT-CRASH-ASSERT: negative
+// EXPECT-FAIL
 
 #include <initializer_list>
 

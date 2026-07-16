@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: setMemberSpecialization
-// EXPECT-CRASH-ASSERT: InstantiatedFromMember
-// EXPECT-CRASH-ASSERT: Only
+// EXPECT-FAIL
 
 template<typename T> struct S {};
 

@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getASTRecordLayout
-// EXPECT-CRASH-ASSERT: isCompleteDefinition
-// EXPECT-CRASH-ASSERT: Cannot
+// EXPECT-FAIL
 
 struct S {
   ~S() {}

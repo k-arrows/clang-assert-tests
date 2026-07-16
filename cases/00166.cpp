@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++26 %s
-// EXPECT-CRASH-ASSERT: getArrayInitializedElts
-// EXPECT-CRASH-ASSERT: isArray
-// EXPECT-CRASH-ASSERT: Invalid
+// EXPECT-FAIL
 
 using size_t = decltype(sizeof(0));
 

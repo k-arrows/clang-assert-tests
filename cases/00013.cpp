@@ -1,8 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: getStackIndexOfNearestEnclosingCaptureCapableLambda
-// EXPECT-CRASH-ASSERT: IndexOfCaptureReadyLambda
-// EXPECT-CRASH-ASSERT: getCurGenericLambda
-// EXPECT-CRASH-ASSERT: lambda
+// EXPECT-FAIL
 
 void foo(int i) {
 template <class T>

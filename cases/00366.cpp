@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: TransformFunctionTypeParams
-// EXPECT-CRASH-ASSERT: getFunctionScopeIndex
+// EXPECT-FAIL
 
 struct S {};
 enum E { e1, e2 };

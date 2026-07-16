@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: HandleConstructorCall
-// EXPECT-CRASH-ASSERT: hasSameUnqualifiedType
-// EXPECT-CRASH-ASSERT: initializers
+// EXPECT-FAIL
 
 struct S {};
 

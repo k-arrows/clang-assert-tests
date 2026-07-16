@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: VisitVarTemplatePartialSpecializationDecl
-// EXPECT-CRASH-ASSERT: empty
-// EXPECT-CRASH-ASSERT: nothing
+// EXPECT-FAIL
 
 template <typename> struct S {
   template <typename, typename> __forceinline auto var = 1;

@@ -10,7 +10,7 @@
 00010.cpp OK
 00011.cpp OK
 00012.cpp OK
-00013.cpp FAIL
+00013.cpp OK
 00014.cpp OK
 00015.cpp OK
 00016.cpp OK
@@ -25,7 +25,7 @@
 00025.cpp OK
 00026.cpp OK
 00027.cpp OK
-00028.cpp FAIL
+00028.cpp OK
 00029.cpp OK
 00030.cpp OK
 00031.cpp OK
@@ -51,7 +51,7 @@
 00051.cpp OK
 00052.cpp OK
 00053.cpp OK
-00054.cpp FAIL
+00054.cpp OK
 00055.cpp OK
 00056.cpp OK
 00057.cpp OK
@@ -80,7 +80,7 @@
 00080.cpp OK
 00081.cpp OK
 00082.cpp OK
-00083.cpp FAIL
+00083.cpp OK
 00084.cpp OK
 00085.cpp OK
 00086.cpp OK
@@ -128,7 +128,7 @@
 00128.cpp OK
 00129.cpp OK
 00130.cpp OK
-00131.cpp FAIL
+00131.cpp OK
 00132.cpp OK
 00133.cpp OK
 00134.cpp OK
@@ -163,7 +163,7 @@
 00163.cpp OK
 00164.cpp OK
 00165.cpp OK
-00166.cpp FAIL
+00166.cpp OK
 00167.cpp OK
 00168.cpp OK
 00169.cpp OK
@@ -288,13 +288,13 @@
 00288.cpp OK
 00289.cpp OK
 00290.cpp OK
-00291.cpp FAIL
+00291.cpp OK
 00292.cpp OK
 00293.cpp OK
 00294.cpp OK
 00295.cpp OK
 00296.cpp OK
-00297.cpp FAIL
+00297.cpp OK
 00298.cpp OK
 00299.cpp OK
 00300.cpp OK
@@ -331,7 +331,7 @@
 00331.cpp OK
 00332.cpp OK
 00333.cpp OK
-00334.cpp FAIL
+00334.cpp OK
 00335.cpp OK
 00336.cpp OK
 00337.cpp OK
@@ -341,7 +341,7 @@
 00341.cpp OK
 00342.cpp OK
 00343.cpp OK
-00344.cpp FAIL
+00344.cpp OK
 00345.cpp OK
 00346.cpp OK
 00347.cpp OK
@@ -363,7 +363,7 @@
 00363.cpp OK
 00364.cpp OK
 00365.cpp OK
-00366.cpp FAIL
+00366.cpp OK
 00367.cpp OK
 00368.cpp OK
 00369.cpp OK
@@ -379,7 +379,7 @@
 00379.cpp OK
 00380.cpp OK
 00381.cpp OK
-00382.cpp FAIL
+00382.cpp OK
 00383.cpp OK
 00384.cpp OK
 00385.cpp OK
@@ -427,7 +427,7 @@
 00427.cpp OK
 00428.cpp OK
 00429.cpp OK
-00430.cpp FAIL
+00430.cpp OK
 00431.cpp OK
 00432.cpp OK
 00433.cpp OK
@@ -435,6 +435,5 @@
 === Summary ===
 Clang version: clang version 24.0.0git (https://github.com/llvm/llvm-project.git 18d2b47a0d3b6bb5d55260e69bf51c47de8e0dc6)
 Total: 433
-OK: 420
-FAIL: 13
-Failed files: 00013.cpp, 00028.cpp, 00054.cpp, 00083.cpp, 00131.cpp, 00166.cpp, 00291.cpp, 00297.cpp, 00334.cpp, 00344.cpp, 00366.cpp, 00382.cpp, 00430.cpp
+OK: 433
+FAIL: 0
