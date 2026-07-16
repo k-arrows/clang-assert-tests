@@ -308,6 +308,7 @@ Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template paramet
 Assertion `DelayedEquivalentExceptionSpecChecks.empty()' failed.
 Assertion `isDeclRep((TST) TypeSpecType) && "DeclSpec does not store a decl"' failed.
 Assertion `D->getLexicalDeclContext() == this && "Decl inserted into wrong lexical context"' failed.
+Assertion `Depth >= 0 && "Depth must be non-negative"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
