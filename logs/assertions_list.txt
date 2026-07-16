@@ -306,6 +306,7 @@ Assertion `isFriend && "dependent specialization info on " "non-member non-frien
 Assertion `ValidArg && "This constraint should be applied on an integral type"' failed.
 Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template parameter depth"' failed.
 Assertion `DelayedEquivalentExceptionSpecChecks.empty()' failed.
+Assertion `isDeclRep((TST) TypeSpecType) && "DeclSpec does not store a decl"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
