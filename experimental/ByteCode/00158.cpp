@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitCXXInheritedCtorInitExpr
-// EXPECT-CRASH-ASSERT: F
+// EXPECT-FAIL
 
 struct S {
   constexpr S(int = ;
