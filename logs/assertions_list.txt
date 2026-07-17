@@ -317,6 +317,7 @@ Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member t
 Assertion `ParamType->isPointerOrReferenceType() || ParamType->isNullPtrType()' failed.
 Assertion `!FD->getType().isNull() && "Expected a valid FunctionDecl"' failed.
 Assertion `PK.Ptr != nullptr' failed.
+Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
