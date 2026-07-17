@@ -318,6 +318,7 @@ Assertion `ParamType->isPointerOrReferenceType() || ParamType->isNullPtrType()' 
 Assertion `!FD->getType().isNull() && "Expected a valid FunctionDecl"' failed.
 Assertion `PK.Ptr != nullptr' failed.
 Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
+Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
