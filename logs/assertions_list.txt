@@ -316,6 +316,7 @@ Assertion `isa<CXXForRangeStmt>(Loop) && "Expected canonical for or range-based 
 Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `ParamType->isPointerOrReferenceType() || ParamType->isNullPtrType()' failed.
 Assertion `!FD->getType().isNull() && "Expected a valid FunctionDecl"' failed.
+Assertion `PK.Ptr != nullptr' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
