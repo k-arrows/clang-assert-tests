@@ -322,6 +322,7 @@ Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `!isa<CXXConstructorDecl>(MethodTmpl->getTemplatedDecl())' failed.
 Assertion `Operand.first == IC_IMM && "Unary operation with a register!"' failed.
 Assertion `!Qualifier == !QualifierData' failed.
+Assertion `D->getDeclContext()->isFileContext()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
