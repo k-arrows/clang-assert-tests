@@ -320,6 +320,7 @@ Assertion `PK.Ptr != nullptr' failed.
 Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `!isa<CXXConstructorDecl>(MethodTmpl->getTemplatedDecl())' failed.
+Assertion `Operand.first == IC_IMM && "Unary operation with a register!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
