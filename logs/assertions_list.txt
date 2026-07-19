@@ -326,6 +326,7 @@ Assertion `D->getDeclContext()->isFileContext()' failed.
 Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch stack missing push/pop!"' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within StmtExpr not correctly bound!"' failed.
+Assertion `Arg && "expected a default argument"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
