@@ -323,6 +323,7 @@ Assertion `!isa<CXXConstructorDecl>(MethodTmpl->getTemplatedDecl())' failed.
 Assertion `Operand.first == IC_IMM && "Unary operation with a register!"' failed.
 Assertion `!Qualifier == !QualifierData' failed.
 Assertion `D->getDeclContext()->isFileContext()' failed.
+Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch stack missing push/pop!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
