@@ -330,6 +330,7 @@ Assertion `Arg && "expected a default argument"' failed.
 Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `!TypeSpecOwned || isDeclRep((TST)TypeSpecType)' failed.
+Assertion `Chunk.Kind == DeclaratorChunk::Pointer' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
