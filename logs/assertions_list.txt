@@ -331,6 +331,7 @@ Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `!TypeSpecOwned || isDeclRep((TST)TypeSpecType)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Pointer' failed.
+Assertion `File != getSourceManager().getMainFileID() && "end of submodule in main source file"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
