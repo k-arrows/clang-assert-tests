@@ -332,6 +332,7 @@ Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `!TypeSpecOwned || isDeclRep((TST)TypeSpecType)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Pointer' failed.
 Assertion `File != getSourceManager().getMainFileID() && "end of submodule in main source file"' failed.
+Assertion `MaxFunctionScopesIndex <= FSIndex && "FunctionScopeIndexToStopAt should be no greater than FSIndex into " "FunctionScopes."' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
