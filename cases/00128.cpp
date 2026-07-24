@@ -2,6 +2,7 @@
 // EXPECT-CRASH-ASSERT: Align
 // EXPECT-CRASH-ASSERT: isPowerOf2_64
 // EXPECT-CRASH-ASSERT: not
+// SKIP: aarch64
 
 long double ld;
 

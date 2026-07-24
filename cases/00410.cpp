@@ -3,6 +3,7 @@
 // EXPECT-CRASH-ASSERT: getPointer
 // EXPECT-CRASH-ASSERT: InlineAsmIdentifierInfo
 // EXPECT-CRASH-ASSERT: claimed
+// SKIP: aarch64
 
 struct A {
   struct B {

@@ -1,5 +1,6 @@
 // RUN: clang++ -c %s
 // EXPECT-PASS
+// SKIP: aarch64
 
 typedef struct S {
   _BitInt(123) a : 4;

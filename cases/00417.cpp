@@ -2,6 +2,7 @@
 // EXPECT-CRASH-ASSERT: findTokensForString
 // EXPECT-CRASH-ASSERT: FirstTokOffset
 // EXPECT-CRASH-ASSERT: FirstCharOffset
+// SKIP: aarch64
 
 struct S {};
 

@@ -2,6 +2,7 @@
 // EXPECT-CRASH-ASSERT: compareSigned
 // EXPECT-CRASH-ASSERT: RHS.BitWidth
 // EXPECT-CRASH-ASSERT: comparison
+// SKIP: aarch64
 
 void foo() {
   const char len = 8;

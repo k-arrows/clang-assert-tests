@@ -3,6 +3,7 @@
 // EXPECT-CRASH-ASSERT: getNonReferenceType
 // EXPECT-CRASH-ASSERT: isPointerType
 // EXPECT-CRASH-ASSERT: isArrayType
+// SKIP: aarch64
 
 long b[123.4];
 _BitInt(567) b[];

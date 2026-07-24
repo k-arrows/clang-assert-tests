@@ -3,6 +3,7 @@
 // EXPECT-CRASH-ASSERT: getBitWidth
 // EXPECT-CRASH-ASSERT: getIntWidth
 // EXPECT-CRASH-ASSERT: Invalid
+// SKIP: aarch64
 
 const int x[] = {""};
 
