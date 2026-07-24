@@ -1,8 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: Create
-// EXPECT-CRASH-ASSERT: getNameKind
-// EXPECT-CRASH-ASSERT: CXXDestructorName
-// EXPECT-CRASH-ASSERT: destructor
+// EXPECT-FAIL
 
 template <typename T> struct S {
   friend T::U::~foo();

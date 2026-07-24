@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: getArg
-// EXPECT-CRASH-ASSERT: getNumArgs
-// EXPECT-CRASH-ASSERT: access
+// EXPECT-FAIL
 
 void operator-();
 

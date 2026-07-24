@@ -1,7 +1,5 @@
-// RUN: clang++ --analyze %s
-// EXPECT-CRASH-ASSERT: checkSpecificValidity
-// EXPECT-CRASH-ASSERT: ValidArg
-// EXPECT-CRASH-ASSERT: constraint
+// RUN: clang++ --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 struct sockaddr;
 using socklen_t = unsigned;

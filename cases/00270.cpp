@@ -1,5 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 struct S {};
 

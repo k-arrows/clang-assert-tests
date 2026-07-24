@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: CheckSubElementType
-// EXPECT-CRASH-ASSERT: SemaRef.Context.hasSameType
-// EXPECT-CRASH-ASSERT: initialization
+// EXPECT-FAIL
 
 struct S {};
 

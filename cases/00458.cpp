@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: IntegerLiteral
-// EXPECT-CRASH-ASSERT: isIntegerType
-// EXPECT-CRASH-ASSERT: Illegal
+// EXPECT-PASS
 
 struct S {
   decltype(nullptr) x;

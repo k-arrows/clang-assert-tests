@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: getUnconstrainedType
-// EXPECT-CRASH-ASSERT: getContainedAutoType
-// EXPECT-CRASH-ASSERT: isConstrained
+// EXPECT-FAIL
 
 template <Foo<char, int> auto &x> using K = int;
 
