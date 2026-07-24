@@ -22,7 +22,6 @@ Assertion `(!Unexpanded.empty() || LambdaReferencingOuterPacks) && "Unable to fi
 Assertion `CanDeclareSpecialMemberFunction(RD) && "doing special member lookup into record that isn't fully complete"' failed.
 Assertion `!Base || getType(Base).getNonReferenceType()->isPointerType() || getType(Base).getNonReferenceType()->isArrayType()' failed.
 Assertion `(LHSExpr->containsErrors() || RHSExpr->containsErrors()) && "Should only occur in error-recovery path."' failed.
-Assertion `NameInfo.getName().getNameKind() == DeclarationName::CXXDestructorName && "Name must refer to a destructor"' failed.
 Assertion `getSubExpr()->getType()->isAnyPointerType() && !getSubExpr()->getType()->isBlockPointerType()' failed.
 Assertion `Type <= 3 && "unexpected type"' failed.
 Assertion `!isIncompleteType() && "This doesn't make sense for incomplete types"' failed.
@@ -168,7 +167,6 @@ Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
 Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
 Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a constructor or assignment operator was empty"' failed.
 Assertion `!MemberQuals.hasAddressSpace()' failed.
-Assertion `SemaRef.Context.hasSameType(expr->getType(), ElemType) && "found implicit initialization for the wrong type"' failed.
 Assertion `Loc.isValid() && "point of instantiation must be valid!"' failed.
 Assertion `getType()->isBlockPointerType() == getSubExpr()->getType()->isBlockPointerType()' failed.
 Assertion `!E->hasPlaceholderType() && "unexpected placeholder"' failed.
@@ -185,7 +183,6 @@ Assertion `!S->isDeclScope(PrevDecl)' failed.
 Assertion `vecType->isBuiltinType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `Permissive || !(!LabelAndGotoScopes.count(To))' failed.
 Assertion `ToType->isIntegerType()' failed.
-Assertion `R.isValid() && "Must have a valid source range"' failed.
 Assertion `T->isIntegralOrEnumerationType() && "unexpected converted const type"' failed.
 Assertion `(T->isIntegralType(*this) || T->isEnumeralType()) && "Integral type required!"' failed.
 Assertion `!SS.isInvalid() && "Invalid CXXScopeSpec."' failed.
@@ -253,7 +250,6 @@ Assertion `TypeSize == Context.getTypeSize(Context.LongLongTy) && "Unhandled vec
 Assertion `isSemanticForm() && "syntactic form never semantically transparent"' failed.
 Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind() == ConstructionContextItem::TemporaryDestructorKind || State->contains<IndexOfElementToConstruct>( {dyn_cast_or_null<CXXConstructExpr>(Init), SF})) && "The object is already marked as `UnderConstruction`, when it's not " "supposed to!"' failed.
 Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in array type bit size evaluation"' failed.
-Assertion `!CanonT->getContainedAutoType() || !CanonT->getContainedAutoType()->isConstrained()' failed.
 Assertion `AggrDeductionCandidateParamTypes' failed.
 Assertion `CodeDC && !CodeDC->isFileContext() && "statement expr not in code context"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Paren' failed.
@@ -303,7 +299,6 @@ Assertion `D.isPastIdentifier() && "Haven't past the location of the identifier 
 Assertion `SS.isSet() && "C++ scope was cleared ?"' failed.
 Assertion `Path->Access <= UnprivilegedAccess && "access along best path worse than direct?"' failed.
 Assertion `isFriend && "dependent specialization info on " "non-member non-friend function?"' failed.
-Assertion `ValidArg && "This constraint should be applied on an integral type"' failed.
 Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template parameter depth"' failed.
 Assertion `DelayedEquivalentExceptionSpecChecks.empty()' failed.
 Assertion `isDeclRep((TST) TypeSpecType) && "DeclSpec does not store a decl"' failed.
@@ -327,8 +322,6 @@ Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch st
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within StmtExpr not correctly bound!"' failed.
 Assertion `Arg && "expected a default argument"' failed.
-Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
-Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `!TypeSpecOwned || isDeclRep((TST)TypeSpecType)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Pointer' failed.
 Assertion `File != getSourceManager().getMainFileID() && "end of submodule in main source file"' failed.
