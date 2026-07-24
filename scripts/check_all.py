@@ -36,6 +36,8 @@ files = sorted(
 
 total = 0
 ok_count = 0
+skip_count = 0
+skipped_files = []
 fail_count = 0
 failed_files = []
 
@@ -48,11 +50,22 @@ for f in files:
             text=True,
             check=False
         )
-        status = "OK" if "[OK]" in result.stdout else "FAIL"
+
+        if "[SKIP]" in result.stdout:
+            status = "SKIP"
+        elif "[OK]" in result.stdout:
+            status = "OK"
+        else:
+            status = "FAIL"
+
     except Exception:
         status = "ERROR"
+
     if status == "OK":
         ok_count += 1
+    elif status == "SKIP":
+        skip_count += 1
+        skipped_files.append(f.name)
     else:
         fail_count += 1
         failed_files.append(f.name)
@@ -64,5 +77,8 @@ print(f"Clang version: {clang_version}")
 print(f"Total: {total}")
 print(f"OK: {ok_count}")
 print(f"FAIL: {fail_count}")
+print(f"SKIP: {skip_count}")
 if failed_files:
     print("Failed files:", ", ".join(failed_files))
+if skipped_files:
+    print("Skipped files:", ", ".join(skipped_files))

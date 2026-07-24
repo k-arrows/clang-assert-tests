@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import platform
 import re
 import shlex
 import shutil
@@ -11,9 +12,19 @@ def parse_directives(source):
     run_cmd = None
     expected_asserts = []
     expect = None  # PASS / FAIL / CRASH-NOASSERT / CRASH-ASSERT
+    skip_archs = []
 
     for line in source.splitlines():
         line = line.strip()
+
+        # SKIP
+        m = re.fullmatch(r"//\s*SKIP:\s*(.+)", line)
+        if m:
+            skip_archs.extend(
+                s.strip().lower()
+                for s in m.group(1).split(",")
+            )
+            continue
 
         # RUN
         m = re.fullmatch(r"//\s*RUN:\s*(.+)", line)
@@ -61,7 +72,16 @@ def parse_directives(source):
     if not expect:
         raise RuntimeError("No supported EXPECT-* directive found")
 
-    return run_cmd, expect, expected_asserts
+    return run_cmd, expect, expected_asserts, skip_archs
+
+
+def normalize_arch(machine):
+    m = machine.lower()
+
+    # TODO: Add architecture alias normalization when required.
+    #       Currently, keep the value returned by platform.machine().
+
+    return m
 
 
 def main():
@@ -72,7 +92,13 @@ def main():
     src = Path(sys.argv[1])
     text = src.read_text()
 
-    run_cmd, expect, expected_asserts = parse_directives(text)
+    run_cmd, expect, expected_asserts, skip_archs = parse_directives(text)
+
+    arch = normalize_arch(platform.machine())
+    if arch in [normalize_arch(a) for a in skip_archs]:
+        print(f"[SKIP] unsupported on {arch}")
+        sys.exit(77)
+
     run_cmd = run_cmd.replace("%s", str(src))
     argv = shlex.split(run_cmd)
 
