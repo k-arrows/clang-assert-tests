@@ -328,6 +328,7 @@ Assertion `File != getSourceManager().getMainFileID() && "end of submodule in ma
 Assertion `MaxFunctionScopesIndex <= FSIndex && "FunctionScopeIndexToStopAt should be no greater than FSIndex into " "FunctionScopes."' failed.
 Assertion `StructuredList->getNumInits() == 1 && "A union should never have more than one initializer!"' failed.
 Assertion `Block == EntryConditionBlock' failed.
+Assertion `(Params || CurTok.is(tok::eod)) && "expected success or to be at the end of the directive"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
