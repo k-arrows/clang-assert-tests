@@ -331,6 +331,7 @@ Assertion `Block == EntryConditionBlock' failed.
 Assertion `(Params || CurTok.is(tok::eod)) && "expected success or to be at the end of the directive"' failed.
 Assertion `Op2.second != 0 && "Division by zero!"' failed.
 Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
+Assertion `castIsValid(op, S, Ty) && "Invalid cast!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
