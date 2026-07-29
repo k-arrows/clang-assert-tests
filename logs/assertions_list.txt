@@ -335,6 +335,7 @@ Assertion `castIsValid(op, S, Ty) && "Invalid cast!"' failed.
 Assertion `Ty->isSizelessVectorType()' failed.
 Assertion `Context.getTypeSize(Ty) == ResultVal.getBitWidth() && "long long is not intmax_t?"' failed.
 Assertion `!FuncParam.isNull() && "substituting template parameter for 'auto' failed"' failed.
+Assertion `(!needsOverloadResolutionForMoveConstructor() || (data().DeclaredSpecialMembers & SMF_MoveConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
