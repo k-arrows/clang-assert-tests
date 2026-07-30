@@ -337,6 +337,7 @@ Assertion `Context.getTypeSize(Ty) == ResultVal.getBitWidth() && "long long is n
 Assertion `!FuncParam.isNull() && "substituting template parameter for 'auto' failed"' failed.
 Assertion `(!needsOverloadResolutionForMoveConstructor() || (data().DeclaredSpecialMembers & SMF_MoveConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `Range == Builder.getSourceRange() && "NestedNameSpecifierLoc range computation incorrect"' failed.
+Assertion `ESD->getInstantiations() && "not expanded?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
