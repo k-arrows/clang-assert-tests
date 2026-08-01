@@ -333,6 +333,7 @@ Assertion `!FuncParam.isNull() && "substituting template parameter for 'auto' fa
 Assertion `(!needsOverloadResolutionForMoveConstructor() || (data().DeclaredSpecialMembers & SMF_MoveConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `Range == Builder.getSourceRange() && "NestedNameSpecifierLoc range computation incorrect"' failed.
 Assertion `ESD->getInstantiations() && "not expanded?"' failed.
+Assertion `!Friend->isDependentContext() && "can't handle friends with dependent contexts here"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
