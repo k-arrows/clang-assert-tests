@@ -192,7 +192,6 @@ Assertion `false && "Unexpected unary operator!"' failed.
 Assertion `IsExpectedEntity(FD1) && FD2 && IsExpectedEntity(FD2) && "use non-instantiated function declaration for constraints partial " "ordering"' failed.
 Assertion `!Current->LocalDecls.contains(D) && "Instantiated local in inner and outer scopes"' failed.
 Assertion `Kind.getKind() == InitializationKind::IK_Copy || Kind.isExplicitCast() || Kind.getKind() == InitializationKind::IK_DirectList' failed.
-Assertion `isAllowedClauseForDirective(DKind, CKind, OpenMPVersion) && "Invalid directive with CKind-clause"' failed.
 Assertion `!LHS.get()->hasPlaceholderType() && !RHS.get()->hasPlaceholderType() && "placeholders should have been weeded out by now"' failed.
 Assertion `From->getType()->isIntegerType()' failed.
 Assertion `(data().DefaultedDestructorIsDeleted || needsOverloadResolutionForDestructor()) && "destructor should not be deleted"' failed.
@@ -208,7 +207,6 @@ Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"
 Assertion `At && "Received null Attr object!"' failed.
 Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' failed.
 Assertion `getContext().hasSameUnqualifiedType( AlignValT->castAsEnumDecl()->getIntegerType(), sizeType) && "wrong type for alignment parameter"' failed.
-Assertion `V && "Dereferencing deleted ValueHandle"' failed.
 Assertion `idx < size()' failed.
 Assertion `(!isValueDependent() || isInstantiationDependent()) && "should not be value-dependent"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Reference' failed.
@@ -268,7 +266,6 @@ Assertion `FromType->isRecordType()' failed.
 Assertion `!isa<ConstantExpr>(E)' failed.
 Assertion `isDependentContext()' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "Unaccounted cleanups in function"' failed.
-Assertion `CachedTokens[CachedLexPos-1].getLastLoc() == Tok.getAnnotationEndLoc() && "The annotation should be until the most recent cached token"' failed.
 Assertion `llvm::isIntN(BitWidth, val) && "Value is not an N-bit signed value"' failed.
 Assertion `!HasRefTypeParam || isa<Loc>(*DV)' failed.
 Assertion `IsUnsigned == RHS.IsUnsigned && "Signedness mismatch!"' failed.
@@ -301,7 +298,6 @@ Assertion `Path->Access <= UnprivilegedAccess && "access along best path worse t
 Assertion `isFriend && "dependent specialization info on " "non-member non-friend function?"' failed.
 Assertion `getDepthAndIndex(NewParam).first == 0 && "Unexpected template parameter depth"' failed.
 Assertion `DelayedEquivalentExceptionSpecChecks.empty()' failed.
-Assertion `isDeclRep((TST) TypeSpecType) && "DeclSpec does not store a decl"' failed.
 Assertion `D->getLexicalDeclContext() == this && "Decl inserted into wrong lexical context"' failed.
 Assertion `Depth >= 0 && "Depth must be non-negative"' failed.
 Assertion `MSInfo && "No member specialization information?"' failed.
@@ -317,7 +313,6 @@ Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `!isa<CXXConstructorDecl>(MethodTmpl->getTemplatedDecl())' failed.
 Assertion `Operand.first == IC_IMM && "Unary operation with a register!"' failed.
 Assertion `!Qualifier == !QualifierData' failed.
-Assertion `D->getDeclContext()->isFileContext()' failed.
 Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch stack missing push/pop!"' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within StmtExpr not correctly bound!"' failed.
