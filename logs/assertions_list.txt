@@ -376,3 +376,4 @@ Assertion `Stk.empty()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
+Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
