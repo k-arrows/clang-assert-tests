@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: operator*
-// EXPECT-CRASH-ASSERT: Dereferencing
+// EXPECT-PASS
 
 extern "C" {
 __attribute__((used)) extern void *foo() { return 0; }

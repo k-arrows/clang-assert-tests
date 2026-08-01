@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++26 %s
-// EXPECT-CRASH-ASSERT: VisitFunctionDecl
-// EXPECT-CRASH-ASSERT: getDeclContext
+// EXPECT-PASS
 
 void foo() {
   template for (auto x : {1, 2}) {

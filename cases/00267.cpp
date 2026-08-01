@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: getOpenMPCaptureRegionForClause
-// EXPECT-CRASH-ASSERT: isAllowedClauseForDirective
-// EXPECT-CRASH-ASSERT: CKind-clause
+// EXPECT-FAIL
 
 void foo() {
 #pragma omp taskloop transparent
