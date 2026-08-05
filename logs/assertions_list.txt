@@ -339,6 +339,7 @@ Assertion `!hasInvalidConstraint() && "getConstraintExpr() may not be called " "
 Assertion `!IsUnion && "Unions cannot be dynamic classes."' failed.
 Assertion `!isa<TagDecl>(this)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::MemberPointer' failed.
+Assertion `TokenID != tok::identifier && "Already at tok::identifier"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
