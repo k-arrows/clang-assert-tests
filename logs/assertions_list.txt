@@ -342,6 +342,7 @@ Assertion `Chunk.Kind == DeclaratorChunk::MemberPointer' failed.
 Assertion `TokenID != tok::identifier && "Already at tok::identifier"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
+Assertion `Owner && "definition of hidden declaration is not in a module"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
