@@ -347,6 +347,7 @@ Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->
 Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext()) && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
 Assertion `i < getStructNumFields() && "field index OOB"' failed.
 Assertion `O->isComplexFloat()' failed.
+Assertion `E->containsErrors() && "valid value-dependent expression should never " "reach invalid code path."' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
