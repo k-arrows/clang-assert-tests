@@ -348,6 +348,7 @@ Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext())
 Assertion `i < getStructNumFields() && "field index OOB"' failed.
 Assertion `O->isComplexFloat()' failed.
 Assertion `E->containsErrors() && "valid value-dependent expression should never " "reach invalid code path."' failed.
+Assertion `OldClass && NewClass && "unexpected kind of covariant return"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
