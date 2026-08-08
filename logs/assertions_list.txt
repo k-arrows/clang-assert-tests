@@ -345,6 +345,7 @@ Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value
 Assertion `Owner && "definition of hidden declaration is not in a module"' failed.
 Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->getCanonicalDecl() && "record / field mismatch"' failed.
 Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext()) && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
+Assertion `i < getStructNumFields() && "field index OOB"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
