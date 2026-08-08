@@ -344,6 +344,7 @@ Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `Owner && "definition of hidden declaration is not in a module"' failed.
 Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->getCanonicalDecl() && "record / field mismatch"' failed.
+Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext()) && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
