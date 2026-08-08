@@ -346,6 +346,7 @@ Assertion `Owner && "definition of hidden declaration is not in a module"' faile
 Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->getCanonicalDecl() && "record / field mismatch"' failed.
 Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext()) && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
 Assertion `i < getStructNumFields() && "field index OOB"' failed.
+Assertion `O->isComplexFloat()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
