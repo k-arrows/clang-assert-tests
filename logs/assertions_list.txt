@@ -350,6 +350,7 @@ Assertion `O->isComplexFloat()' failed.
 Assertion `E->containsErrors() && "valid value-dependent expression should never " "reach invalid code path."' failed.
 Assertion `OldClass && NewClass && "unexpected kind of covariant return"' failed.
 Assertion `getABIInfo().getContext().getLangOpts().OpenCL && "Kernel calling convention only defined for OpenCL"' failed.
+Assertion `S && "Null statement?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
