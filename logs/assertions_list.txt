@@ -395,3 +395,4 @@ Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
 Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
 Assertion `ElemDesc->isArray()' failed.
+Assertion `TargetLabel' failed.
