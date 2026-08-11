@@ -117,7 +117,6 @@ Assertion `MD->getParent()->mayInsertExtraPadding() && "unknown trivial member f
 Assertion `E->isPRValue() && E->getType()->isRecordType()' failed.
 Assertion `Diagnosed && "failed to diagnose bad conversion"' failed.
 Assertion `D && "missing definition for pattern of instantiated definition"' failed.
-Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `!isNull() && "Cannot retrieve a NULL type pointer"' failed.
 Assertion `Unqualified ? hasSameUnqualifiedType(X, Y) : hasSameType(X, Y)' failed.
 Assertion `F.isPresplitCoroutine() && "The frontend uses Switch-Resumed ABI should emit " "\"presplitcoroutine\" attribute for the coroutine."' failed.
@@ -311,7 +310,6 @@ Assertion `PK.Ptr != nullptr' failed.
 Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `!isa<CXXConstructorDecl>(MethodTmpl->getTemplatedDecl())' failed.
-Assertion `Operand.first == IC_IMM && "Unary operation with a register!"' failed.
 Assertion `!Qualifier == !QualifierData' failed.
 Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch stack missing push/pop!"' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
@@ -324,7 +322,6 @@ Assertion `MaxFunctionScopesIndex <= FSIndex && "FunctionScopeIndexToStopAt shou
 Assertion `StructuredList->getNumInits() == 1 && "A union should never have more than one initializer!"' failed.
 Assertion `Block == EntryConditionBlock' failed.
 Assertion `(Params || CurTok.is(tok::eod)) && "expected success or to be at the end of the directive"' failed.
-Assertion `Op2.second != 0 && "Division by zero!"' failed.
 Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `castIsValid(op, S, Ty) && "Invalid cast!"' failed.
 Assertion `Ty->isSizelessVectorType()' failed.
@@ -335,13 +332,11 @@ Assertion `Range == Builder.getSourceRange() && "NestedNameSpecifierLoc range co
 Assertion `ESD->getInstantiations() && "not expanded?"' failed.
 Assertion `!Friend->isDependentContext() && "can't handle friends with dependent contexts here"' failed.
 Assertion `Loc >= AsmStart && "Expected Loc to be at or after Start!"' failed.
-Assertion `!hasInvalidConstraint() && "getConstraintExpr() may not be called " "on nested requirements with invalid constraint."' failed.
 Assertion `!IsUnion && "Unions cannot be dynamic classes."' failed.
 Assertion `!isa<TagDecl>(this)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::MemberPointer' failed.
 Assertion `TokenID != tok::identifier && "Already at tok::identifier"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
-Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `Owner && "definition of hidden declaration is not in a module"' failed.
 Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->getCanonicalDecl() && "record / field mismatch"' failed.
 Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext()) && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
@@ -350,7 +345,6 @@ Assertion `O->isComplexFloat()' failed.
 Assertion `E->containsErrors() && "valid value-dependent expression should never " "reach invalid code path."' failed.
 Assertion `OldClass && NewClass && "unexpected kind of covariant return"' failed.
 Assertion `getABIInfo().getContext().getLangOpts().OpenCL && "Kernel calling convention only defined for OpenCL"' failed.
-Assertion `S && "Null statement?"' failed.
 Assertion `UD.shadow_size() && "We shouldn't be codegening an invalid UsingEnumDecl" " containing no decls"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
@@ -392,9 +386,7 @@ Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
 Assertion `isDereferencable()' failed.
 Assertion `((int64_t)*VL - (int64_t)*VR) % ElemSize == 0' failed.
 Assertion `Stk.empty()' failed.
-Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
-Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
 Assertion `ElemDesc->isArray()' failed.
 Assertion `TargetLabel' failed.
