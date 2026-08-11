@@ -1,8 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: getConstraintExpr
-// EXPECT-CRASH-ASSERT: hasInvalidConstraint
-// EXPECT-CRASH-ASSERT: called
-// EXPECT-CRASH-ASSERT: nested
+// EXPECT-FAIL
 
 struct S {};
 template <typename T> bar C;

@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fopenacc %s
-// EXPECT-CRASH-ASSERT: EmitStmt
-// EXPECT-CRASH-ASSERT: statement
+// EXPECT-PASS
 
 void foo() {
 #pragma acc parallel

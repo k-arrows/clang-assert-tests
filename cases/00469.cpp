@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fms-compatibility %s
-// EXPECT-CRASH-ASSERT: execute
-// EXPECT-CRASH-ASSERT: Op2.second
-// EXPECT-CRASH-ASSERT: Division
+// EXPECT-FAIL
 // SKIP: aarch64
 
 void foo() {

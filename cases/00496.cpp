@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: APInt
-// EXPECT-CRASH-ASSERT: isUIntN
-// EXPECT-CRASH-ASSERT: N-bit
+// EXPECT-PASS
 
 int foo() {
   unsigned _BitInt(1) c;

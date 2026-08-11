@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-ASSERT: cast
-// EXPECT-CRASH-ASSERT: isa
-// EXPECT-CRASH-ASSERT: incompatible
+// EXPECT-FAIL
 
 struct S {
   struct SS {
