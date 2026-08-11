@@ -346,6 +346,7 @@ Assertion `E->containsErrors() && "valid value-dependent expression should never
 Assertion `OldClass && NewClass && "unexpected kind of covariant return"' failed.
 Assertion `getABIInfo().getContext().getLangOpts().OpenCL && "Kernel calling convention only defined for OpenCL"' failed.
 Assertion `UD.shadow_size() && "We shouldn't be codegening an invalid UsingEnumDecl" " containing no decls"' failed.
+Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
