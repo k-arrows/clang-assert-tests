@@ -349,6 +349,7 @@ Assertion `UD.shadow_size() && "We shouldn't be codegening an invalid UsingEnumD
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `unsignedRange->NonNegative && "unsigned range includes negative?"' failed.
 Assertion `LHS->getType()->isVectorType() && RHS->getType()->isVectorType() && "Must both be vector types"' failed.
+Assertion `hasUninstantiatedDefaultArg() && "Wrong kind of initialization expression!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
