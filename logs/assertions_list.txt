@@ -394,3 +394,4 @@ Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
 Assertion `ElemDesc->isArray()' failed.
 Assertion `TargetLabel' failed.
+Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
