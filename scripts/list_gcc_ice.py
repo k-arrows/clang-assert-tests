@@ -12,7 +12,13 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DEFAULT_CASES_DIR = ROOT / "experimental" / "gcc"
 
 STRIP_OPTIONS = {
+    "-Xanalyzer",
+    "-analyzer-output=text",
     "-fexperimental-new-constant-interpreter",
+}
+
+OPTION_REPLACEMENTS = {
+    "--analyze": "-fanalyzer",
 }
 
 GXX = shutil.which("g++")
@@ -37,7 +43,14 @@ def build_gcc_command(run_line: str, source_path: pathlib.Path):
     cmd = cmd.replace("%s", shlex.quote(str(relative_path)))
 
     args = shlex.split(cmd)
+
+    analyze = "--analyze" in args
+
     args = [arg for arg in args if arg not in STRIP_OPTIONS]
+    args = [OPTION_REPLACEMENTS.get(arg, arg) for arg in args]
+
+    if analyze and "-c" not in args:
+        args.insert(1, "-c")
 
     if "-o" not in args:
         args += ["-o", "/dev/null"]
