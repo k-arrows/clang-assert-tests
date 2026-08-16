@@ -19,7 +19,7 @@ STRIP_OPTIONS = {
 }
 
 OPTION_REPLACEMENTS = {
-    "--analyze": "-fanalyzer -c",
+    "--analyze": "-fanalyzer",
 }
 
 GXX = shutil.which("g++")
@@ -56,8 +56,13 @@ def build_gcc_command(run_line: str, source_path: pathlib.Path):
 
     args = shlex.split(cmd)
 
+    analyze = "--analyze" in args
+
     args = [arg for arg in args if arg not in STRIP_OPTIONS]
     args = [OPTION_REPLACEMENTS.get(arg, arg) for arg in args]
+
+    if analyze and "-c" not in args:
+        args.insert(1, "-c")
 
     if "-o" not in args:
         args += ["-o", "/dev/null"]
