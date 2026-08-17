@@ -2,7 +2,6 @@ Assertion `(data().DefaultedCopyAssignmentIsDeleted || needsOverloadResolutionFo
 Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
 Assertion `Access != AS_none && "Access specifier is AS_none inside a record decl"' failed.
 Assertion `isLValue()' failed.
-Assertion `Init < getNumInits() && "Initializer access out of range!"' failed.
 Assertion `(EltTy->isDependentType() || EltTy->isIncompleteType() || EltTy->isConstantSizeType()) && "Constant array of VLAs is illegal!"' failed.
 Assertion `SI.getBitWidth() == Info.Ctx.getIntWidth(E->getType()) && "Invalid evaluation result."' failed.
 Assertion `Val && "isa<> used on a null pointer"' failed.
@@ -18,6 +17,7 @@ Assertion `IdentLoc.isValid() && "Invalid TargetName location."' failed.
 Assertion `DD && "queried property of class with no definition"' failed.
 Assertion `!Body && "can't replace function body with defaulted function info"' failed.
 Assertion `R.getAsSingle<TemplateDecl>() && "There should only be one declaration found."' failed.
+Assertion `(FD && FD->getInClassInitStyle() != ICIS_NoInit) && "must set init style when field is created"' failed.
 Assertion `(!Unexpanded.empty() || LambdaReferencingOuterPacks) && "Unable to find unexpanded parameter packs"' failed.
 Assertion `CanDeclareSpecialMemberFunction(RD) && "doing special member lookup into record that isn't fully complete"' failed.
 Assertion `!Base || getType(Base).getNonReferenceType()->isPointerType() || getType(Base).getNonReferenceType()->isArrayType()' failed.
@@ -315,7 +315,6 @@ Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch st
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within StmtExpr not correctly bound!"' failed.
 Assertion `Arg && "expected a default argument"' failed.
-Assertion `!TypeSpecOwned || isDeclRep((TST)TypeSpecType)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::Pointer' failed.
 Assertion `File != getSourceManager().getMainFileID() && "end of submodule in main source file"' failed.
 Assertion `MaxFunctionScopesIndex <= FSIndex && "FunctionScopeIndexToStopAt should be no greater than FSIndex into " "FunctionScopes."' failed.
@@ -330,7 +329,6 @@ Assertion `!FuncParam.isNull() && "substituting template parameter for 'auto' fa
 Assertion `(!needsOverloadResolutionForMoveConstructor() || (data().DeclaredSpecialMembers & SMF_MoveConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `Range == Builder.getSourceRange() && "NestedNameSpecifierLoc range computation incorrect"' failed.
 Assertion `ESD->getInstantiations() && "not expanded?"' failed.
-Assertion `!Friend->isDependentContext() && "can't handle friends with dependent contexts here"' failed.
 Assertion `Loc >= AsmStart && "Expected Loc to be at or after Start!"' failed.
 Assertion `!IsUnion && "Unions cannot be dynamic classes."' failed.
 Assertion `!isa<TagDecl>(this)' failed.
@@ -393,6 +391,5 @@ Assertion `Stk.empty()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
 Assertion `ElemDesc->isArray()' failed.
-Assertion `TargetLabel' failed.
 Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
