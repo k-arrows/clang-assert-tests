@@ -1,5 +1,7 @@
 // RUN: clang++ -c %s
-// EXPECT-FAIL
+// EXPECT-CRASH-ASSERT: ActOnFinishCXXInClassMemberInitializer
+// EXPECT-CRASH-ASSERT: FD
+// EXPECT-CRASH-ASSERT: init
 
 struct S {};
 struct T {
