@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-FAIL
+// EXPECT-PASS
 
 constexpr char *foo(char *p) {
   auto q = reinterpret_cast<long unsigned>(p);

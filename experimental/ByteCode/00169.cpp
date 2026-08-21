@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getASTRecordLayout
-// EXPECT-CRASH-ASSERT: isInvalidDecl
-// EXPECT-CRASH-ASSERT: Cannot
+// EXPECT-FAIL
 
 struct S {
   S();
