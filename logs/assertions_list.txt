@@ -390,3 +390,4 @@ Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
 Assertion `ElemDesc->isArray()' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
+Assertion `V.isLValue() && "Setting LValue from a non-LValue?"' failed.
