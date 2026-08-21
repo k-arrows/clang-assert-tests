@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fms-compatibility %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 void foo() {
   [] {

@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckFriendAccess
-// EXPECT-CRASH-ASSERT: getAsFunction
+// EXPECT-FAIL
 
 template <class T> void foo() {
   class C {

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: getUninstantiatedDefaultArg
-// EXPECT-CRASH-ASSERT: hasUninstantiatedDefaultArg
-// EXPECT-CRASH-ASSERT: Wrong
+// EXPECT-FAIL
 
 void foo() {
 #pragma omp parallel

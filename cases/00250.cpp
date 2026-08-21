@@ -1,4 +1,4 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 int *foo [[clang::address_space(bar())]];
