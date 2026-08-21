@@ -347,6 +347,7 @@ Assertion `unsignedRange->NonNegative && "unsigned range includes negative?"' fa
 Assertion `LHS->getType()->isVectorType() && RHS->getType()->isVectorType() && "Must both be vector types"' failed.
 Assertion `CurContext == FD->getLexicalParent() && "The next DeclContext should be lexically contained in the current one."' failed.
 Assertion `D.DeclIdent && "Identifier expected."' failed.
+Assertion `VD || isOpenMPCapturedDecl(D)' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
