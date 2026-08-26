@@ -349,6 +349,7 @@ Assertion `CurContext == FD->getLexicalParent() && "The next DeclContext should 
 Assertion `D.DeclIdent && "Identifier expected."' failed.
 Assertion `VD || isOpenMPCapturedDecl(D)' failed.
 Assertion `!isAnnotation() && "Annotation tokens have no length field"' failed.
+Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
