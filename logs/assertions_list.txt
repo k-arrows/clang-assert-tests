@@ -352,6 +352,7 @@ Assertion `!isAnnotation() && "Annotation tokens have no length field"' failed.
 Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `EnumDeclBits.NumPositiveBits == Num && "can't store this bitcount"' failed.
 Assertion `power <= maxExponent' failed.
+Assertion `(SemaRef.CurContext->isDependentContext() || B.builtAll()) && "loop exprs were not built"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
