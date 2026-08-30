@@ -354,6 +354,7 @@ Assertion `EnumDeclBits.NumPositiveBits == Num && "can't store this bitcount"' f
 Assertion `power <= maxExponent' failed.
 Assertion `(SemaRef.CurContext->isDependentContext() || B.builtAll()) && "loop exprs were not built"' failed.
 Assertion `Init < getNumInits() && "Initializer access out of range!"' failed.
+Assertion `!Unexpanded.empty() && "Unable to find unexpanded parameter packs"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `Offset != PastEndMark' failed.
