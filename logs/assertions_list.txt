@@ -59,7 +59,6 @@ Assertion `!isValueDependent() && "Expression evaluator can't be called on a dep
 Assertion `(t.isNull() || !t->isReferenceType()) && "Expressions can't have reference type"' failed.
 Assertion `getSema().Context.hasSameType(ThisT, T) && "mismatched resolved types in using pack expansion"' failed.
 Assertion `FromType->castAsEnumDecl()->isFixed() && SCS.Second == ICK_Integral_Promotion && "only enums with fixed underlying type can promote to bool"' failed.
-Assertion `(S.getLangOpts().CPlusPlus11 || isCCEAllowedPreCXX11) && "converted constant expression outside C++11 or TTP matching"' failed.
 Assertion `VDecl->isLinkageValid()' failed.
 Assertion `!Eval->WasEvaluated && "already evaluated var value before checking for constant init"' failed.
 Assertion `!T->isDependentType() && "should not see dependent types here"' failed.
@@ -75,7 +74,6 @@ Assertion `detail::isPresent(Val) && "dyn_cast on a non-existent value"' failed.
 Assertion `!isAnnotation() && "getIdentifierInfo() on an annotation token!"' failed.
 Assertion `SL->isOrdinary()' failed.
 Assertion `Func && "No function?"' failed.
-Assertion `NameInfo.getName()' failed.
 Assertion `ResultKind == LookupResultKind::NotFound || ResultKind == LookupResultKind::NotFoundInCurrentInstantiation' failed.
 Assertion `(S->getFlags() & (Scope::DeclScope | Scope::TemplateParamScope)) && "Scope shouldn't contain decls!"' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::BlockPointer' failed.
@@ -162,7 +160,6 @@ Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' fa
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
 Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
-Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a constructor or assignment operator was empty"' failed.
 Assertion `!MemberQuals.hasAddressSpace()' failed.
 Assertion `Loc.isValid() && "point of instantiation must be valid!"' failed.
 Assertion `getType()->isBlockPointerType() == getSubExpr()->getType()->isBlockPointerType()' failed.
@@ -200,7 +197,6 @@ Assertion `Kind.getKind() == InitializationKind::IK_Value || DestType->isReferen
 Assertion `Index < Length && "Invalid index!"' failed.
 Assertion `NumBits >= MIN_INT_BITS && "bitwidth too small"' failed.
 Assertion `EC.isDependent() && "delaying non-dependent access"' failed.
-Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
 Assertion `At && "Received null Attr object!"' failed.
 Assertion `Spec->getTemplateSpecializationKind() == TSK_ExplicitSpecialization' failed.
 Assertion `getContext().hasSameUnqualifiedType( AlignValT->castAsEnumDecl()->getIntegerType(), sizeType) && "wrong type for alignment parameter"' failed.
@@ -322,16 +318,13 @@ Assertion `(Params || CurTok.is(tok::eod)) && "expected success or to be at the 
 Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `castIsValid(op, S, Ty) && "Invalid cast!"' failed.
 Assertion `Ty->isSizelessVectorType()' failed.
-Assertion `Context.getTypeSize(Ty) == ResultVal.getBitWidth() && "long long is not intmax_t?"' failed.
 Assertion `!FuncParam.isNull() && "substituting template parameter for 'auto' failed"' failed.
 Assertion `(!needsOverloadResolutionForMoveConstructor() || (data().DeclaredSpecialMembers & SMF_MoveConstructor)) && "this property has not yet been computed by Sema"' failed.
 Assertion `Range == Builder.getSourceRange() && "NestedNameSpecifierLoc range computation incorrect"' failed.
 Assertion `ESD->getInstantiations() && "not expanded?"' failed.
 Assertion `Loc >= AsmStart && "Expected Loc to be at or after Start!"' failed.
-Assertion `!IsUnion && "Unions cannot be dynamic classes."' failed.
 Assertion `!isa<TagDecl>(this)' failed.
 Assertion `Chunk.Kind == DeclaratorChunk::MemberPointer' failed.
-Assertion `TokenID != tok::identifier && "Already at tok::identifier"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Owner && "definition of hidden declaration is not in a module"' failed.
 Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->getCanonicalDecl() && "record / field mismatch"' failed.
@@ -345,11 +338,9 @@ Assertion `UD.shadow_size() && "We shouldn't be codegening an invalid UsingEnumD
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `unsignedRange->NonNegative && "unsigned range includes negative?"' failed.
 Assertion `LHS->getType()->isVectorType() && RHS->getType()->isVectorType() && "Must both be vector types"' failed.
-Assertion `CurContext == FD->getLexicalParent() && "The next DeclContext should be lexically contained in the current one."' failed.
 Assertion `D.DeclIdent && "Identifier expected."' failed.
 Assertion `VD || isOpenMPCapturedDecl(D)' failed.
 Assertion `!isAnnotation() && "Annotation tokens have no length field"' failed.
-Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `EnumDeclBits.NumPositiveBits == Num && "can't store this bitcount"' failed.
 Assertion `power <= maxExponent' failed.
 Assertion `(SemaRef.CurContext->isDependentContext() || B.builtAll()) && "loop exprs were not built"' failed.
@@ -357,14 +348,13 @@ Assertion `Init < getNumInits() && "Initializer access out of range!"' failed.
 Assertion `!Unexpanded.empty() && "Unable to find unexpanded parameter packs"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
-Assertion `Offset != PastEndMark' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `has_value()' failed.
 Assertion `Base <= Pointee->getSize()' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
-Assertion `Base >= Pointee->getMetadataSize()' failed.
+Assertion `isBlockPointer()' failed.
 Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Result && "Could not evaluate expression"' failed.
@@ -400,4 +390,3 @@ Assertion `BaseDesc->isArray()' failed.
 Assertion `ElemDesc->isArray()' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
 Assertion `V.isLValue() && "Setting LValue from a non-LValue?"' failed.
-Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
