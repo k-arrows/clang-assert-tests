@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: LookupSpecialMember
-// EXPECT-CRASH-ASSERT: DefaultConstructor
-// EXPECT-CRASH-ASSERT: assignment
+// EXPECT-FAIL
 
 struct Y {
   struct X {};

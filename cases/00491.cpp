@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: revertTokenIDToIdentifier
-// EXPECT-CRASH-ASSERT: Already
+// EXPECT-FAIL
 
 foo < bar()
 

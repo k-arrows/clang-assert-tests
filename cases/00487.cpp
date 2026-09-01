@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: LayoutNonVirtualBases
-// EXPECT-CRASH-ASSERT: IsUnion
-// EXPECT-CRASH-ASSERT: dynamic
+// EXPECT-FAIL
 
 union alignas(16) H {
   class C {

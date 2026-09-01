@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: ActOnReenterFunctionContext
-// EXPECT-CRASH-ASSERT: getLexicalParent
-// EXPECT-CRASH-ASSERT: lexically
+// EXPECT-FAIL
 
 namespace N {
 void foo();

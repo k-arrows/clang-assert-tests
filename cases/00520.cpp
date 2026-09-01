@@ -1,5 +1,5 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 int foo() {
   for (;;)

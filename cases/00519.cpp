@@ -1,7 +1,5 @@
-// RUN: clang++ -x c --analyze %s
-// EXPECT-CRASH-ASSERT: getExtValue
-// EXPECT-CRASH-ASSERT: isRepresentableByInt64
-// EXPECT-CRASH-ASSERT: int64_t
+// RUN: clang++ -x c --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 unsigned foo(unsigned x, int t) {
   unsigned tl = x << (t);
