@@ -347,6 +347,7 @@ Assertion `(SemaRef.CurContext->isDependentContext() || B.builtAll()) && "loop e
 Assertion `Init < getNumInits() && "Initializer access out of range!"' failed.
 Assertion `!Unexpanded.empty() && "Unable to find unexpanded parameter packs"' failed.
 Assertion `!MayBePseudoDestructor && "unexpected annot_cxxscope"' failed.
+Assertion `NextVal != ArgumentEnd && "Value for integer select modifier was" " larger than the number of options in the diagnostic string!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
