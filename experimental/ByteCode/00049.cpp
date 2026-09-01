@@ -1,6 +1,6 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: Pointer
-// EXPECT-CRASH-ASSERT: getMetadataSize
+// EXPECT-CRASH-ASSERT: asBlockPointer
+// EXPECT-CRASH-ASSERT: isBlockPointer
 
 struct S1 {};
 

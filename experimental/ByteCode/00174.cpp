@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getSize
-// EXPECT-CRASH-ASSERT: isUnknownSizeArray
+// EXPECT-FAIL
 
 void foo() {
   constexpr char K[] = {'\0';
