@@ -350,6 +350,7 @@ Assertion `!MayBePseudoDestructor && "unexpected annot_cxxscope"' failed.
 Assertion `NextVal != ArgumentEnd && "Value for integer select modifier was" " larger than the number of options in the diagnostic string!"' failed.
 Assertion `Parameter && "A variable template id without template?"' failed.
 Assertion `!IsDependent && "explicit instantiation of dependent name not yet handled"' failed.
+Assertion `isFromASTFile() && "Not from AST file?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
