@@ -354,6 +354,7 @@ Assertion `isFromASTFile() && "Not from AST file?"' failed.
 Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `LSI != E && "Should be in a lambda scope info"' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
+Assertion `(isGenericMethod || Ty->isVariablyModifiedType() || ParamTy->isObjCRetainableType() || getContext().getCanonicalType(ParamTy).getTypePtr() == getContext().getCanonicalType(ArgTy).getTypePtr()) && "type mismatch in call argument!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
