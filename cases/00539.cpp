@@ -4,4 +4,4 @@
 
 template <template <> class C> struct S {
   friend C();
-}
+};
