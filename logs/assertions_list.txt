@@ -359,6 +359,7 @@ Assertion `isTypeIdInParens() && "Not a type-id!"' failed.
 Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a constructor or assignment operator was empty"' failed.
 Assertion `NameInfo.getName()' failed.
 Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
+Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQualifier()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
