@@ -1,7 +1,6 @@
 Assertion `(data().DefaultedCopyAssignmentIsDeleted || needsOverloadResolutionForCopyAssignment()) && "copy assignment should not be deleted"' failed.
 Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
 Assertion `Access != AS_none && "Access specifier is AS_none inside a record decl"' failed.
-Assertion `isLValue()' failed.
 Assertion `(EltTy->isDependentType() || EltTy->isIncompleteType() || EltTy->isConstantSizeType()) && "Constant array of VLAs is illegal!"' failed.
 Assertion `SI.getBitWidth() == Info.Ctx.getIntWidth(E->getType()) && "Invalid evaluation result."' failed.
 Assertion `Val && "isa<> used on a null pointer"' failed.
@@ -159,8 +158,6 @@ Assertion `(!needsOverloadResolutionForCopyConstructor() || (data().DeclaredSpec
 Assertion `cast<Decl *>(Stored) == Inst && "Already instantiated this local"' failed.
 Assertion `isa<T>(CanonicalType)' failed.
 Assertion `Idx < getNumArgs() && "Argument index out of range!"' failed.
-Assertion `FD->isInvalidDecl() && "a null body is only allowed for invalid declarations"' failed.
-Assertion `!MemberQuals.hasAddressSpace()' failed.
 Assertion `Loc.isValid() && "point of instantiation must be valid!"' failed.
 Assertion `getType()->isBlockPointerType() == getSubExpr()->getType()->isBlockPointerType()' failed.
 Assertion `!E->hasPlaceholderType() && "unexpected placeholder"' failed.
@@ -168,7 +165,6 @@ Assertion `!Found.isAmbiguous() && "Cannot handle ambiguities here yet"' failed.
 Assertion `Param->hasDefaultArg() && "can't build nonexistent default arg"' failed.
 Assertion `!isa<NamedDecl>(static_cast<decl_type*>(this)) || cast<NamedDecl>(static_cast<decl_type*>(this))->isLinkageValid()' failed.
 Assertion `Result.isInvalid() && "C++ binary operator overloading is missing candidates!"' failed.
-Assertion `CallRange.isValid()' failed.
 Assertion `ParmDepth < Depth && "ParmVarDecl is not visible in current parameter environment"' failed.
 Assertion `(data().DefaultedCopyConstructorIsDeleted || needsOverloadResolutionForCopyConstructor()) && "Copy constructor should not be deleted"' failed.
 Assertion `Context.hasSameType( ToAtomicType->castAs<AtomicType>()->getValueType(), From->getType())' failed.
@@ -232,7 +228,6 @@ Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
 Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
-Assertion `Source->isUnicodeCharacterType() && Target->isUnicodeCharacterType() && Source != Target' failed.
 Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
 Assertion `ShiftAmt <= BitWidth && "Invalid shift amount"' failed.
 Assertion `getSignificantBits() <= 64 && "Too many bits for int64_t"' failed.
@@ -305,7 +300,6 @@ Assertion `!Found.empty() && "Instantiation found nothing?"' failed.
 Assertion `D >= 0 && "The depth cannot be negative"' failed.
 Assertion `!isa<CXXConstructorDecl>(MethodTmpl->getTemplatedDecl())' failed.
 Assertion `!Qualifier == !QualifierData' failed.
-Assertion `SS == getCurFunction()->SwitchStack.back().getPointer() && "switch stack missing push/pop!"' failed.
 Assertion `D && "Cannot get layout of forward declarations!"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within StmtExpr not correctly bound!"' failed.
 Assertion `Arg && "expected a default argument"' failed.
@@ -317,10 +311,8 @@ Assertion `Block == EntryConditionBlock' failed.
 Assertion `(Params || CurTok.is(tok::eod)) && "expected success or to be at the end of the directive"' failed.
 Assertion `Arg < getNumArgs() && "Arg access out of range!"' failed.
 Assertion `castIsValid(op, S, Ty) && "Invalid cast!"' failed.
-Assertion `Ty->isSizelessVectorType()' failed.
 Assertion `!FuncParam.isNull() && "substituting template parameter for 'auto' failed"' failed.
 Assertion `(!needsOverloadResolutionForMoveConstructor() || (data().DeclaredSpecialMembers & SMF_MoveConstructor)) && "this property has not yet been computed by Sema"' failed.
-Assertion `Range == Builder.getSourceRange() && "NestedNameSpecifierLoc range computation incorrect"' failed.
 Assertion `ESD->getInstantiations() && "not expanded?"' failed.
 Assertion `Loc >= AsmStart && "Expected Loc to be at or after Start!"' failed.
 Assertion `!isa<TagDecl>(this)' failed.
@@ -328,7 +320,6 @@ Assertion `Chunk.Kind == DeclaratorChunk::MemberPointer' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Owner && "definition of hidden declaration is not in a module"' failed.
 Assertion `BaseTy->castAsCanonical<RecordType>()->getDecl() == FD->getParent()->getCanonicalDecl() && "record / field mismatch"' failed.
-Assertion `(!SemaRef.CodeSynthesisContexts.empty() || SemaRef.isSFINAEContext()) && "Cannot perform an instantiation without some context on the " "instantiation stack"' failed.
 Assertion `i < getStructNumFields() && "field index OOB"' failed.
 Assertion `O->isComplexFloat()' failed.
 Assertion `E->containsErrors() && "valid value-dependent expression should never " "reach invalid code path."' failed.
@@ -351,7 +342,6 @@ Assertion `NextVal != ArgumentEnd && "Value for integer select modifier was" " l
 Assertion `Parameter && "A variable template id without template?"' failed.
 Assertion `!IsDependent && "explicit instantiation of dependent name not yet handled"' failed.
 Assertion `isFromASTFile() && "Not from AST file?"' failed.
-Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `LSI != E && "Should be in a lambda scope info"' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `(isGenericMethod || Ty->isVariablyModifiedType() || ParamTy->isObjCRetainableType() || getContext().getCanonicalType(ParamTy).getTypePtr() == getContext().getCanonicalType(ArgTy).getTypePtr()) && "type mismatch in call argument!"' failed.
@@ -361,7 +351,6 @@ Assertion `NameInfo.getName()' failed.
 Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
 Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQualifier()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
-Assertion `value.isComplexFloat()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
@@ -380,14 +369,12 @@ Assertion `SrcDesc->ElemRecord == DestDesc->ElemRecord' failed.
 Assertion `ArgSize >= F->getWrittenArgSize()' failed.
 Assertion `Base % alignof(void *) == 0 && "wrong base"' failed.
 Assertion `isNumber()' failed.
-Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
 Assertion `HasRVO == Func->hasRVO()' failed.
 Assertion `BS.Base != sizeof(GlobalInlineDescriptor)' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only compare APFloats with the same semantics"' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
 Assertion `CurRecord->getNumBases() > 0' failed.
-Assertion `isa<ArrayType>(CanonicalType)' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `TruncBits >= 1' failed.
@@ -397,11 +384,9 @@ Assertion `BaseDecl' failed.
 Assertion `Pointee' failed.
 Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
 Assertion `isDereferencable()' failed.
-Assertion `((int64_t)*VL - (int64_t)*VR) % ElemSize == 0' failed.
 Assertion `Stk.empty()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `BaseDesc->isArray()' failed.
 Assertion `ElemDesc->isArray()' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
 Assertion `V.isLValue() && "Setting LValue from a non-LValue?"' failed.
-Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
