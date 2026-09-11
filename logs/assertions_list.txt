@@ -350,6 +350,7 @@ Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a const
 Assertion `NameInfo.getName()' failed.
 Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
 Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQualifier()' failed.
+Assertion `isLValue()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
