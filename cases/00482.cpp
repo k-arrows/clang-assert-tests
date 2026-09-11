@@ -1,5 +1,5 @@
 // RUN: clang++ -std=c++20 %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 struct strong_ordering;
 

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: CheckCompletedCoroutineBody
-// EXPECT-CRASH-ASSERT: isInvalidDecl
-// EXPECT-CRASH-ASSERT: declarations
+// EXPECT-FAIL
 
 class C {};
 

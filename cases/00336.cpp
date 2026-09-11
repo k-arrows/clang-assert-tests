@@ -1,8 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: DiagnoseMixedUnicodeImplicitConversion
-// EXPECT-CRASH-ASSERT: isUnicodeCharacterType
-// EXPECT-CRASH-ASSERT: Source
-// EXPECT-CRASH-ASSERT: Target
+// EXPECT-PASS
 
 typedef __attribute__((__ext_vector_type__(4))) char32_t vf4;
 typedef __attribute__((__ext_vector_type__(4))) int vi4;

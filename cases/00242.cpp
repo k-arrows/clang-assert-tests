@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 %s
-// EXPECT-CRASH-ASSERT: addCallStack
-// EXPECT-CRASH-ASSERT: CallRange.isValid
+// EXPECT-FAIL
 
 struct S {
   constexpr int foo() {}

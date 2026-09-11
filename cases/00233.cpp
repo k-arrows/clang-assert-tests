@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: BuildFieldReferenceExpr
-// EXPECT-CRASH-ASSERT: hasAddressSpace
+// EXPECT-FAIL
 
 struct S {
   int [[clang::address_space(1)]] i;

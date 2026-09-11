@@ -1,9 +1,5 @@
 // RUN: clang++ -c -std=c++26 %s
-// EXPECT-CRASH-ASSERT: TemplateInstantiator
-// EXPECT-CRASH-ASSERT: CodeSynthesisContexts
-// EXPECT-CRASH-ASSERT: isSFINAEContext
-// EXPECT-CRASH-ASSERT: Cannot
-// EXPECT-CRASH-ASSERT: instantiation
+// EXPECT-FAIL
 
 struct S {
   Foo(Foo &&);

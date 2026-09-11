@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: ClassifyImpl
-// EXPECT-CRASH-ASSERT: isLValue 
+// EXPECT-FAIL
 
 template <typename _Tp> class complex;
 

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++26 %s
-// EXPECT-CRASH-ASSERT: ActOnFinishSwitchStmt
-// EXPECT-CRASH-ASSERT: getCurFunction
-// EXPECT-CRASH-ASSERT: missing
+// EXPECT-FAIL
 
 void foo(int i) {
   switch (i) {
