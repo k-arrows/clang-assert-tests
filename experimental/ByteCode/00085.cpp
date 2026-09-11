@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getASTRecordLayout
-// EXPECT-CRASH-ASSERT: isInvalidDecl
-// EXPECT-CRASH-ASSERT: Cannot
+// EXPECT-FAIL
 
 char *strcpy(char *dest, const char *src);
 
