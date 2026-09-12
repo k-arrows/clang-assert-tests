@@ -352,6 +352,7 @@ Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' 
 Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQualifier()' failed.
 Assertion `isLValue()' failed.
 Assertion `hasInvalidConstraint()' failed.
+Assertion `makeInsertToken(ProfileID.computeHash()) == Token && "node profile must match the insert token"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
