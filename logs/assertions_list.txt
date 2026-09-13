@@ -353,6 +353,7 @@ Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQuali
 Assertion `isLValue()' failed.
 Assertion `hasInvalidConstraint()' failed.
 Assertion `makeInsertToken(ProfileID.computeHash()) == Token && "node profile must match the insert token"' failed.
+Assertion `CSI && "Failed to find CapturedRegionScopeInfo"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
