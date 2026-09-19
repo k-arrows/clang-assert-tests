@@ -398,3 +398,4 @@ Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' faile
 Assertion `V.isLValue() && "Setting LValue from a non-LValue?"' failed.
 Assertion `((int64_t)*VL - (int64_t)*VR) % ElemSize == 0' failed.
 Assertion `Expected' failed.
+Assertion `Offset != PastEndMark' failed.
