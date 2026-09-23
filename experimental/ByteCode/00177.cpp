@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: castBackMemberPointer
-// EXPECT-CRASH-ASSERT: Expected
+// EXPECT-PASS
 
 struct S {};
 struct T : S {};

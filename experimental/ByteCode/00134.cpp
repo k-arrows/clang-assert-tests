@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: CallVirt
-// EXPECT-CRASH-ASSERT: hasThisPointer
+// EXPECT-FAIL
 
 struct A {
   virtual void foo();

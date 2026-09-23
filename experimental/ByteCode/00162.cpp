@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: CheckArrayInitialized
-// EXPECT-CRASH-ASSERT: BaseDesc
-// EXPECT-CRASH-ASSERT: isArray
+// EXPECT-PASS
 
 enum E { I };
 class C {};

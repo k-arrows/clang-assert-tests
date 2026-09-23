@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: SubPtr
-// EXPECT-CRASH-ASSERT: ElemSize
+// EXPECT-FAIL
 
 struct A {
   char x;
