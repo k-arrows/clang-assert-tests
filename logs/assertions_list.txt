@@ -388,3 +388,4 @@ Assertion `Ptr && "Offset too large"' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
 Assertion `V.isLValue() && "Setting LValue from a non-LValue?"' failed.
 Assertion `Offset != PastEndMark' failed.
+Assertion `I == 0 && "unexpected unsized array designator"' failed.
