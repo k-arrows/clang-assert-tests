@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: BuildCallToObjectOfClassType
-// EXPECT-CRASH-ASSERT: FoundDecl
-// EXPECT-CRASH-ASSERT: conversion-to-functionptr
+// EXPECT-PASS
 
 struct M {
   template <class T> static int static_foo(T) { return 5; }

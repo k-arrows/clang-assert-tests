@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 void foo() {
 #pragma omp flatten

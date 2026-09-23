@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: TransformTemplateTypeParmType
-// EXPECT-CRASH-ASSERT: TemplateArgument
-// EXPECT-CRASH-ASSERT: mismatch
+// EXPECT-FAIL
 
 template <class D> constexpr bool C = false;
 

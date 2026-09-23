@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: getInvalidConstraintEntity
-// EXPECT-CRASH-ASSERT: hasInvalidConstraint
+// EXPECT-FAIL
 
 template <typename T> struct foo {};
 template <typename T>

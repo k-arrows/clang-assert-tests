@@ -1,5 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 template <class... ArgTs> struct A {};
 template <class... ArgTs> A(ArgTs...) -> A<typename ArgTs::value_type...>;

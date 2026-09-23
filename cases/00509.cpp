@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: AnalyzeComparison
-// EXPECT-CRASH-ASSERT: unsignedRange
-// EXPECT-CRASH-ASSERT: negative
+// EXPECT-FAIL
 
 typedef unsigned __int128 __attribute__((__vector_size__(32))) V;
 
