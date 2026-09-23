@@ -348,6 +348,7 @@ Assertion `CSI && "Failed to find CapturedRegionScopeInfo"' failed.
 Assertion `ParsedType.isUsable()' failed.
 Assertion `!MemberQuals.hasAddressSpace()' failed.
 Assertion `!isCompoundAssignmentOp() && "Use CompoundAssignOperator for compound assignments"' failed.
+Assertion `!RHS->getType()->hasSignedIntegerRepresentation() && "unsigned comparison between two signed integer expressions?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
