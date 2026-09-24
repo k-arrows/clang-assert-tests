@@ -351,6 +351,7 @@ Assertion `!isCompoundAssignmentOp() && "Use CompoundAssignOperator for compound
 Assertion `!RHS->getType()->hasSignedIntegerRepresentation() && "unsigned comparison between two signed integer expressions?"' failed.
 Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `Parameter && "A variable template id without template?"' failed.
+Assertion `OldDecls.size() == NewDecls.size()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
