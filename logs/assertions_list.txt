@@ -352,6 +352,7 @@ Assertion `!RHS->getType()->hasSignedIntegerRepresentation() && "unsigned compar
 Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `Parameter && "A variable template id without template?"' failed.
 Assertion `OldDecls.size() == NewDecls.size()' failed.
+Assertion `hasArrayFiller() && "No array filler"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
