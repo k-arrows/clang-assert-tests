@@ -355,6 +355,7 @@ Assertion `OldDecls.size() == NewDecls.size()' failed.
 Assertion `hasArrayFiller() && "No array filler"' failed.
 Assertion `TemplateKWLoc.isInvalid() && "template keyword in front of a concept id?"' failed.
 Assertion `NewTemplateDecl && "Template/non-template mismatch"' failed.
+Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
