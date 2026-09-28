@@ -357,6 +357,7 @@ Assertion `TemplateKWLoc.isInvalid() && "template keyword in front of a concept 
 Assertion `NewTemplateDecl && "Template/non-template mismatch"' failed.
 Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `AlignArg->getType()->isAlignValT()' failed.
+Assertion `DiagID - DIAG_UPPER_LIMIT < DiagInfo.size() && "Invalid diagnostic ID"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
