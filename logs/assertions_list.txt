@@ -400,3 +400,4 @@ Assertion `I == 0 && "unexpected unsized array designator"' failed.
 Assertion `PC >= getCodeBegin() && "PC does not belong to this function"' failed.
 Assertion `isBlockPointer()' failed.
 Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
+Assertion `Initializing' failed.
