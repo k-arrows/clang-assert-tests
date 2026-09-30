@@ -359,6 +359,7 @@ Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member t
 Assertion `AlignArg->getType()->isAlignValT()' failed.
 Assertion `DiagID - DIAG_UPPER_LIMIT < DiagInfo.size() && "Invalid diagnostic ID"' failed.
 Assertion `isa<LabelDecl>(D) && "declaration not instantiated in this scope"' failed.
+Assertion `IsValid && "Failed to parse output constraint"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `BS.Pointee' failed.
