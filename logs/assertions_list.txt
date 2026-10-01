@@ -67,7 +67,6 @@ Assertion `(NoexceptExpr->isTypeDependent() || NoexceptExpr->getType()->getCanon
 Assertion `CurVal.getAlignMode() == AlignPackInfo::Native && "Empty pack stack can only be at Native alignment mode."' failed.
 Assertion `(ElemType->isRecordType() || ElemType->isVectorType() || ElemType->isOpenCLSpecificType() || ElemType->isMFloat8Type()) && "Unexpected type"' failed.
 Assertion `(FD == nullptr || getInitializedFieldInUnion() == nullptr || getInitializedFieldInUnion() == FD) && "Only one field of a union may be initialized at a time!"' failed.
-Assertion `UserValue <= UserMaxValue && "value is too big"' failed.
 Assertion `NextVal != ArgumentEnd && "Value for integer select modifier was" " larger than the number of options in the diagnostic string!"' failed.
 Assertion `detail::isPresent(Val) && "dyn_cast on a non-existent value"' failed.
 Assertion `!isAnnotation() && "getIdentifierInfo() on an annotation token!"' failed.
@@ -122,7 +121,6 @@ Assertion `!isResultDependent() && "Generic selection is result-dependent but ge
 Assertion `ParamD && "no parameter found for invalid explicit arguments"' failed.
 Assertion `!Invalid' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
-Assertion `E->isGLValue() || E->getType()->isFunctionType() || E->getType()->isVoidType() || isa<ObjCSelectorExpr>(E->IgnoreParens())' failed.
 Assertion `Constructor->getInheritedConstructor() && !Constructor->doesThisDeclarationHaveABody() && !Constructor->isDeleted()' failed.
 Assertion `FD->hasBody() && "expected the function to have a body"' failed.
 Assertion `(MoveConstructor->isDefaulted() && MoveConstructor->isMoveConstructor() && !MoveConstructor->doesThisDeclarationHaveABody() && !MoveConstructor->isDeleted()) && "DefineImplicitMoveConstructor - call it for implicit move ctor"' failed.
@@ -166,7 +164,6 @@ Assertion `Result.isInvalid() && "C++ binary operator overloading is missing can
 Assertion `ParmDepth < Depth && "ParmVarDecl is not visible in current parameter environment"' failed.
 Assertion `(data().DefaultedCopyConstructorIsDeleted || needsOverloadResolutionForCopyConstructor()) && "Copy constructor should not be deleted"' failed.
 Assertion `Context.hasSameType( ToAtomicType->castAs<AtomicType>()->getValueType(), From->getType())' failed.
-Assertion `Align != 0u && "Align can't be 0."' failed.
 Assertion `!S->isDeclScope(PrevDecl)' failed.
 Assertion `vecType->isBuiltinType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `Permissive || !(!LabelAndGotoScopes.count(To))' failed.
@@ -209,7 +206,6 @@ Assertion `(IsDependent || !ObjectType->isIncompleteType() || !ObjectType->getAs
 Assertion `(Pattern || PatternDecl->isDefaulted() || PatternDecl->hasSkippedBody()) && "unexpected kind of function template definition"' failed.
 Assertion `!Init->isValueDependent()' failed.
 Assertion `S.Context.hasSameUnqualifiedType(SubInit[0]->getType(), DestType) && "Deduced to other type?"' failed.
-Assertion `!VD->mightBeUsableInConstantExpressions(Info.Ctx)' failed.
 Assertion `T::isKind(*this)' failed.
 Assertion `CGF.getContext().hasSameUnqualifiedType(E->getSubExpr()->getType(), E->getType()) && "Implicit cast types must be compatible"' failed.
 Assertion `!isAlignmentDependent()' failed.
@@ -251,7 +247,6 @@ Assertion `FromType->isRecordType()' failed.
 Assertion `!isa<ConstantExpr>(E)' failed.
 Assertion `isDependentContext()' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "Unaccounted cleanups in function"' failed.
-Assertion `llvm::isIntN(BitWidth, val) && "Value is not an N-bit signed value"' failed.
 Assertion `!HasRefTypeParam || isa<Loc>(*DV)' failed.
 Assertion `IsUnsigned == RHS.IsUnsigned && "Signedness mismatch!"' failed.
 Assertion `(TSK == TSK_ExplicitInstantiationDefinition || TSK == TSK_ExplicitInstantiationDeclaration || (TSK == TSK_ImplicitInstantiation && Instantiation->isLocalClass())) && "Unexpected template specialization kind!"' failed.
@@ -322,7 +317,6 @@ Assertion `OldClass && NewClass && "unexpected kind of covariant return"' failed
 Assertion `getABIInfo().getContext().getLangOpts().OpenCL && "Kernel calling convention only defined for OpenCL"' failed.
 Assertion `UD.shadow_size() && "We shouldn't be codegening an invalid UsingEnumDecl" " containing no decls"' failed.
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
-Assertion `LHS->getType()->isVectorType() && RHS->getType()->isVectorType() && "Must both be vector types"' failed.
 Assertion `D.DeclIdent && "Identifier expected."' failed.
 Assertion `VD || isOpenMPCapturedDecl(D)' failed.
 Assertion `!isAnnotation() && "Annotation tokens have no length field"' failed.
@@ -344,7 +338,6 @@ Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' 
 Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQualifier()' failed.
 Assertion `isLValue()' failed.
 Assertion `makeInsertToken(ProfileID.computeHash()) == Token && "node profile must match the insert token"' failed.
-Assertion `CSI && "Failed to find CapturedRegionScopeInfo"' failed.
 Assertion `ParsedType.isUsable()' failed.
 Assertion `!MemberQuals.hasAddressSpace()' failed.
 Assertion `!isCompoundAssignmentOp() && "Use CompoundAssignOperator for compound assignments"' failed.
@@ -353,17 +346,13 @@ Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `Parameter && "A variable template id without template?"' failed.
 Assertion `OldDecls.size() == NewDecls.size()' failed.
 Assertion `hasArrayFiller() && "No array filler"' failed.
-Assertion `TemplateKWLoc.isInvalid() && "template keyword in front of a concept id?"' failed.
-Assertion `NewTemplateDecl && "Template/non-template mismatch"' failed.
 Assertion `getCommonPtr()->InstantiatedFromMember.getPointer() && "Only member templates can be member template specializations"' failed.
 Assertion `AlignArg->getType()->isAlignValT()' failed.
-Assertion `DiagID - DIAG_UPPER_LIMIT < DiagInfo.size() && "Invalid diagnostic ID"' failed.
 Assertion `isa<LabelDecl>(D) && "declaration not instantiated in this scope"' failed.
 Assertion `IsValid && "Failed to parse output constraint"' failed.
 Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
-Assertion `BS.Pointee' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `has_value()' failed.
 Assertion `Base <= Pointee->getSize()' failed.
@@ -371,16 +360,14 @@ Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Result && "Could not evaluate expression"' failed.
-Assertion `NumElems <= (MaxArrayElemBytes / ElemSize)' failed.
 Assertion `!ItemTypes.empty()' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only call on two APFloats with the same semantics"' failed.
-Assertion `Offset + sizeof(T) <= BS.Pointee->getSize()' failed.
 Assertion `SrcDesc->ElemRecord == DestDesc->ElemRecord' failed.
 Assertion `ArgSize >= F->getWrittenArgSize()' failed.
 Assertion `Base % alignof(void *) == 0 && "wrong base"' failed.
 Assertion `isNumber()' failed.
 Assertion `HasRVO == Func->hasRVO()' failed.
-Assertion `BS.Base != sizeof(GlobalInlineDescriptor)' failed.
+Assertion `Base != sizeof(GlobalInlineDescriptor)' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only compare APFloats with the same semantics"' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
@@ -390,16 +377,10 @@ Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `TruncBits >= 1' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `BaseDecl' failed.
-Assertion `Pointee' failed.
 Assertion `!localBlock(Local.Offset)->isInitialized()' failed.
-Assertion `isDereferencable()' failed.
 Assertion `Stk.empty()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
-Assertion `V.isLValue() && "Setting LValue from a non-LValue?"' failed.
+Assertion `Val.isLValue()' failed.
 Assertion `Offset != PastEndMark' failed.
-Assertion `I == 0 && "unexpected unsized array designator"' failed.
 Assertion `PC >= getCodeBegin() && "PC does not belong to this function"' failed.
-Assertion `isBlockPointer()' failed.
-Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
-Assertion `Initializing' failed.
