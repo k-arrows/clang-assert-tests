@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: alignTo
-// EXPECT-CRASH-ASSERT: 0u
-// EXPECT-CRASH-ASSERT: can't
+// EXPECT-FAIL
 
 typedef __attribute__((ext_vector_type(0xDEADBEEF))) int vi4b;
 

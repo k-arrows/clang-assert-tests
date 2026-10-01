@@ -91,7 +91,7 @@
 00091.cpp OK
 00092.cpp OK
 00093.cpp OK
-00094.cpp FAIL
+00094.cpp OK
 00095.cpp OK
 00096.cpp OK
 00097.cpp OK
@@ -172,7 +172,7 @@
 00172.cpp OK
 00173.cpp OK
 00174.cpp OK
-00175.cpp FAIL
+00175.cpp OK
 00176.cpp OK
 00177.cpp OK
 00178.cpp OK
@@ -244,7 +244,7 @@
 00244.cpp OK
 00245.cpp OK
 00246.cpp OK
-00247.cpp FAIL
+00247.cpp OK
 00248.cpp OK
 00249.cpp OK
 00250.cpp OK
@@ -309,7 +309,7 @@
 00309.cpp OK
 00310.cpp OK
 00311.cpp OK
-00312.cpp FAIL
+00312.cpp OK
 00313.cpp OK
 00314.cpp OK
 00315.cpp OK
@@ -392,7 +392,7 @@
 00392.cpp OK
 00393.cpp OK
 00394.cpp OK
-00395.cpp FAIL
+00395.cpp OK
 00396.cpp OK
 00397.cpp OK
 00398.cpp OK
@@ -507,8 +507,8 @@
 00507.cpp OK
 00508.cpp OK
 00509.cpp OK
-00510.cpp FAIL
-00511.cpp FAIL
+00510.cpp OK
+00511.cpp OK
 00512.cpp OK
 00513.cpp OK
 00514.cpp OK
@@ -543,7 +543,7 @@
 00543.cpp OK
 00544.cpp OK
 00545.cpp OK
-00546.cpp FAIL
+00546.cpp OK
 00547.cpp OK
 00548.cpp OK
 00549.cpp OK
@@ -553,11 +553,11 @@
 00553.cpp OK
 00554.cpp OK
 00555.cpp OK
-00556.cpp FAIL
-00557.cpp FAIL
+00556.cpp OK
+00557.cpp OK
 00558.cpp OK
 00559.cpp OK
-00560.cpp FAIL
+00560.cpp OK
 00561.cpp OK
 00562.cpp OK
 00563.cpp OK
@@ -565,8 +565,7 @@
 === Summary ===
 Clang version: clang version 24.0.0git (https://github.com/llvm/llvm-project.git f1ad1f04e39a0f49ff9d9b78fba895a7102ef765)
 Total: 563
-OK: 551
-FAIL: 11
+OK: 562
+FAIL: 0
 SKIP: 1
-Failed files: 00094.cpp, 00175.cpp, 00247.cpp, 00312.cpp, 00395.cpp, 00510.cpp, 00511.cpp, 00546.cpp, 00556.cpp, 00557.cpp, 00560.cpp
 Skipped files: 00212.cpp

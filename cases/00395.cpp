@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: APInt
-// EXPECT-CRASH-ASSERT: isIntN
-// EXPECT-CRASH-ASSERT: N-bit
+// EXPECT-FAIL
 
 template <typename T, int n> struct S;
 

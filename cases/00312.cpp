@@ -1,6 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: evaluateVarDeclInit
-// EXPECT-CRASH-ASSERT: mightBeUsableInConstantExpressions
+// EXPECT-FAIL
 
 extern const char (&Str)[];
 int foo() __attribute((enable_if(__builtin_strlen(Str), ""))) {

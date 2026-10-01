@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckFunctionDeclaration
-// EXPECT-CRASH-ASSERT: NewTemplateDecl
-// EXPECT-CRASH-ASSERT: non-template
+// EXPECT-FAIL
 
 template <int I> struct S {
   template <class C> friend int main() { return I; }

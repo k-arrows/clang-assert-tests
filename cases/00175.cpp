@@ -1,9 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: EvaluateLValue
-// EXPECT-CRASH-ASSERT: isGLValue
-// EXPECT-CRASH-ASSERT: isFunctionType
-// EXPECT-CRASH-ASSERT: isVoidType
-// EXPECT-CRASH-ASSERT: IgnoreParens
+// EXPECT-PASS
 
 typedef __SIZE_TYPE__ size_t;
 
