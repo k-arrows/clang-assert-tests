@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitCXXStdInitializerListExpr
-// EXPECT-CRASH-ASSERT: Initializing
+// EXPECT-PASS
 
 namespace std {
 typedef decltype(sizeof(int)) size_t;

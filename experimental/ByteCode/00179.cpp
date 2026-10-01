@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: findMostDerivedSubobject
-// EXPECT-CRASH-ASSERT: unexpected
+// EXPECT-FAIL
 
 void foo() {
   struct S {

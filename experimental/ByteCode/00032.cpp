@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getDeclDesc
-// EXPECT-CRASH-ASSERT: Pointee
+// EXPECT-FAIL
 
 union U {
   int i;

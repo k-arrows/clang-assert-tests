@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getSize
-// EXPECT-CRASH-ASSERT: isUnknownSizeArray
+// EXPECT-FAIL
 
 struct S {
   ~S() {};
