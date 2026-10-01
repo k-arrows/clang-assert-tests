@@ -384,3 +384,4 @@ Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' faile
 Assertion `Val.isLValue()' failed.
 Assertion `Offset != PastEndMark' failed.
 Assertion `PC >= getCodeBegin() && "PC does not belong to this function"' failed.
+Assertion `!Ctor->isTrivial() && "Trivial CXXInheritedCtorInitExpr, implement. (possible?)"' failed.
