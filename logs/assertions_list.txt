@@ -351,6 +351,7 @@ Assertion `AlignArg->getType()->isAlignValT()' failed.
 Assertion `isa<LabelDecl>(D) && "declaration not instantiated in this scope"' failed.
 Assertion `IsValid && "Failed to parse output constraint"' failed.
 Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
+Assertion `!TemplateInfo.TemplateParams && "Nested template improperly parsed?"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
