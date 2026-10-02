@@ -389,3 +389,4 @@ Assertion `!Ctor->isTrivial() && "Trivial CXXInheritedCtorInitExpr, implement. (
 Assertion `isDereferencable()' failed.
 Assertion `isBlockPointer()' failed.
 Assertion `result.isLValue() || result.isAddrLabelDiff()' failed.
+Assertion `CXXInfo->BaseOffsets.count(Base) && "Did not find base!"' failed.
