@@ -355,6 +355,7 @@ Assertion `!TemplateInfo.TemplateParams && "Nested template improperly parsed?"'
 Assertion `NewTSI' failed.
 Assertion `!BinaryOperator::isComparisonOp(op) && "arguments to comparison ops must be of the same type"' failed.
 Assertion `IsPack == (TA2.getKind() == TemplateArgument::Pack)' failed.
+Assertion `(Record->hasTrivialCopyConstructorForCall() || Record->hasTrivialCopyAssignment() || Record->hasTrivialMoveConstructorForCall() || Record->hasTrivialMoveAssignment() || Record->isUnion() || (getLangOpts().HLSL && !Record->isHLSLBuiltinRecord())) && "Trying to aggregate-copy a type without a trivial copy/move " "constructor or assignment operator"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
