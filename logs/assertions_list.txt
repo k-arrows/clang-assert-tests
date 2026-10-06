@@ -398,3 +398,4 @@ Assertion `result.isLValue() || result.isAddrLabelDiff()' failed.
 Assertion `CXXInfo->BaseOffsets.count(Base) && "Did not find base!"' failed.
 Assertion `CXXInfo->VBaseOffsets.count(VBase) && "Did not find base!"' failed.
 Assertion `Offset + sizeof(T) <= BS.Pointee->getSize()' failed.
+Assertion `PC <= getCodeEnd() && "PC Does not belong to this function"' failed.
