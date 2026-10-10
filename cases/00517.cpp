@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: ActOnOpenMPCopyprivateClause
-// EXPECT-CRASH-ASSERT: VD
-// EXPECT-CRASH-ASSERT: isOpenMPCapturedDecl
+// EXPECT-FAIL
 
 struct S {
   int a;

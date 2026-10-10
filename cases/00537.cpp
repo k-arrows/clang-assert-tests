@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: ParseCXXAmbiguousParenExpression
-// EXPECT-CRASH-ASSERT: isTypeIdInParens
-// EXPECT-CRASH-ASSERT: type-id
+// EXPECT-FAIL
 
 template <class T> struct S {};
 

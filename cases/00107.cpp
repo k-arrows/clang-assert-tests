@@ -1,7 +1,5 @@
 // RUN: clang++ -c -x c %s
-// EXPECT-CRASH-ASSERT: InitializeFrom
-// EXPECT-CRASH-ASSERT: Initializer
-// EXPECT-CRASH-ASSERT: non-null
+// EXPECT-FAIL
 
 int A = ;
 

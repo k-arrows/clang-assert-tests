@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++2d %s
-// EXPECT-CRASH-ASSERT: getMoreSpecializedTrailingPackTieBreaker
-// EXPECT-CRASH-ASSERT: IsPack
-// EXPECT-CRASH-ASSERT: TemplateArgument
+// EXPECT-FAIL
 
 template <class T> struct S {};
 template <unsigned N, template <> class... TT> void foo(TT...[N]<int>);

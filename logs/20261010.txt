@@ -39,7 +39,7 @@
 00039.cpp OK
 00040.cpp OK
 00041.cpp OK
-00042.cpp FAIL
+00042.cpp OK
 00043.cpp OK
 00044.cpp OK
 00045.cpp OK
@@ -71,8 +71,8 @@
 00071.cpp OK
 00072.cpp OK
 00073.cpp OK
-00074.cpp FAIL
-00075.cpp FAIL
+00074.cpp OK
+00075.cpp OK
 00076.cpp OK
 00077.cpp OK
 00078.cpp OK
@@ -104,7 +104,7 @@
 00104.cpp OK
 00105.cpp OK
 00106.cpp OK
-00107.cpp FAIL
+00107.cpp OK
 00108.cpp OK
 00109.cpp OK
 00110.cpp OK
@@ -139,7 +139,7 @@
 00139.cpp OK
 00140.cpp OK
 00141.cpp OK
-00142.cpp FAIL
+00142.cpp OK
 00143.cpp OK
 00144.cpp OK
 00145.cpp OK
@@ -160,7 +160,7 @@
 00160.cpp OK
 00161.cpp OK
 00162.cpp OK
-00163.cpp FAIL
+00163.cpp OK
 00164.cpp OK
 00165.cpp OK
 00166.cpp OK
@@ -237,7 +237,7 @@
 00237.cpp OK
 00238.cpp OK
 00239.cpp OK
-00240.cpp FAIL
+00240.cpp OK
 00241.cpp OK
 00242.cpp OK
 00243.cpp OK
@@ -327,7 +327,7 @@
 00327.cpp OK
 00328.cpp OK
 00329.cpp OK
-00330.cpp FAIL
+00330.cpp OK
 00331.cpp OK
 00332.cpp OK
 00333.cpp OK
@@ -394,7 +394,7 @@
 00394.cpp OK
 00395.cpp OK
 00396.cpp OK
-00397.cpp FAIL
+00397.cpp OK
 00398.cpp OK
 00399.cpp OK
 00400.cpp OK
@@ -514,7 +514,7 @@
 00514.cpp OK
 00515.cpp OK
 00516.cpp OK
-00517.cpp FAIL
+00517.cpp OK
 00518.cpp OK
 00519.cpp OK
 00520.cpp OK
@@ -534,21 +534,21 @@
 00534.cpp OK
 00535.cpp OK
 00536.cpp OK
-00537.cpp FAIL
+00537.cpp OK
 00538.cpp OK
 00539.cpp OK
-00540.cpp FAIL
+00540.cpp OK
 00541.cpp OK
 00542.cpp OK
 00543.cpp OK
 00544.cpp OK
-00545.cpp FAIL
+00545.cpp OK
 00546.cpp OK
 00547.cpp OK
 00548.cpp OK
 00549.cpp OK
 00550.cpp OK
-00551.cpp FAIL
+00551.cpp OK
 00552.cpp OK
 00553.cpp OK
 00554.cpp OK
@@ -561,11 +561,11 @@
 00561.cpp OK
 00562.cpp OK
 00563.cpp OK
-00564.cpp FAIL
+00564.cpp OK
 00565.cpp OK
 00566.cpp OK
 00567.cpp OK
-00568.cpp FAIL
+00568.cpp OK
 00569.cpp OK
 00570.cpp OK
 00571.cpp OK
@@ -574,8 +574,7 @@
 === Summary ===
 Clang version: clang version 24.0.0git (https://github.com/llvm/llvm-project.git 765392a6b4498f1dc57233f03a31b87462fdef01)
 Total: 572
-OK: 555
-FAIL: 16
+OK: 571
+FAIL: 0
 SKIP: 1
-Failed files: 00042.cpp, 00074.cpp, 00075.cpp, 00107.cpp, 00142.cpp, 00163.cpp, 00240.cpp, 00330.cpp, 00397.cpp, 00517.cpp, 00537.cpp, 00540.cpp, 00545.cpp, 00551.cpp, 00564.cpp, 00568.cpp
 Skipped files: 00212.cpp

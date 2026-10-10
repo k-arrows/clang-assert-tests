@@ -1,4 +1,4 @@
 // RUN: clang++ -c -fms-compatibility %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 class _multiple_inheritance C;

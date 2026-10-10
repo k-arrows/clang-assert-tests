@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp -fms-compatibility %s
-// EXPECT-CRASH-ASSERT: AnalyzeComparison
-// EXPECT-CRASH-ASSERT: hasSignedIntegerRepresentation
-// EXPECT-CRASH-ASSERT: unsigned
+// EXPECT-FAIL
 
 void foo(int n) {
 #pragma omp flatten depth(2)

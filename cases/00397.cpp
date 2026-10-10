@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: operator>
-// EXPECT-CRASH-ASSERT: IsUnsigned
-// EXPECT-CRASH-ASSERT: Signedness
+// EXPECT-PASS
 
 void foo() {
   const char32_t len = 8;

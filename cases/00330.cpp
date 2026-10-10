@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: compareSigned
-// EXPECT-CRASH-ASSERT: RHS.BitWidth
-// EXPECT-CRASH-ASSERT: comparison
+// EXPECT-PASS
 // SKIP: aarch64
 
 void foo() {
