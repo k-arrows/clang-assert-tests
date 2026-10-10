@@ -1,6 +1,5 @@
 // RUN: clang++ -c -x c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: operator*
-// EXPECT-CRASH-ASSERT: bool
+// EXPECT-FAIL
 
 int strcmp(const char *, const char *);
 #define S "\x01\x02"

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitCXXInheritedCtorInitExpr
-// EXPECT-CRASH-ASSERT: isTrivial
-// EXPECT-CRASH-ASSERT: implement
+// EXPECT-PASS
 
 struct S {};
 
