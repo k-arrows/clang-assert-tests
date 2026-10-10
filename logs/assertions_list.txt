@@ -26,7 +26,6 @@ Assertion `Type <= 3 && "unexpected type"' failed.
 Assertion `!isIncompleteType() && "This doesn't make sense for incomplete types"' failed.
 Assertion `BO->getRHS()->isPRValue()' failed.
 Assertion `(getExceptionSpecType() == EST_DependentNoexcept) == epi.ExceptionSpec.NoexceptExpr->isValueDependent()' failed.
-Assertion `vecType->isBuiltinType() || vecType->isDependentType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `!D->isInvalidDecl() && "Cannot get layout of invalid decl!"' failed.
 Assertion `E->getType()->isSpecificBuiltinType(BuiltinType::Overload)' failed.
 Assertion `Pointer->getType()->isAnyPointerType()' failed.
@@ -52,8 +51,6 @@ Assertion `(CXX11Attrs.empty() || Res.isInvalid() || Res.isUsable()) && "attribu
 Assertion `NewArgs.empty() && "no parens or braces but have direct init with arguments?"' failed.
 Assertion `RD->isUnion() && "RecordType is expected to be a union."' failed.
 Assertion `IsReinject && "new tokens in the middle of cached stream"' failed.
-Assertion `VD->isThisDeclarationADefinition() && !VD->isExternallyVisible() && "Broken AliasAttr handled late!"' failed.
-Assertion `N.ugt(ArraySize) && "bounds check failed for in-bounds index"' failed.
 Assertion `!isValueDependent() && "Expression evaluator can't be called on a dependent expression."' failed.
 Assertion `(t.isNull() || !t->isReferenceType()) && "Expressions can't have reference type"' failed.
 Assertion `getSema().Context.hasSameType(ThisT, T) && "mismatched resolved types in using pack expansion"' failed.
@@ -77,7 +74,6 @@ Assertion `(S->getFlags() & (Scope::DeclScope | Scope::TemplateParamScope)) && "
 Assertion `Chunk.Kind == DeclaratorChunk::BlockPointer' failed.
 Assertion `Tok.is(tok::eof) && Tok.getEofData() == AttrEnd.getEofData()' failed.
 Assertion `ME->getBase()->getType()->getAsRecordDecl()' failed.
-Assertion `Initializer && "Initializer must be non-null"' failed.
 Assertion `!CodeSynthesisContexts.empty()' failed.
 Assertion `ArgPackSubstIndex && "found declaration pack but not pack expanding"' failed.
 Assertion `(Kind != CK_LValueToRValue || !(T->isNullPtrType() || (T->getAsCXXRecordDecl() && !C.getLangOpts().HLSL))) && "invalid type for lvalue-to-rvalue conversion"' failed.
@@ -100,7 +96,6 @@ Assertion `LV.getLinkage() == OldLinkage' failed.
 Assertion `i < getNumParams() && "Illegal param #"' failed.
 Assertion `isPRValue()' failed.
 Assertion `!(D & ExprDependence::UnexpandedPack)' failed.
-Assertion `Value > 0 && "Value must not be 0"' failed.
 Assertion `Info.Size > 0 && "Empty bitfield!"' failed.
 Assertion `DiagnoseInitList.HadError() && "Inconsistent init list check result."' failed.
 Assertion `Arg.getKind() == TemplateArgument::Pack && "Missing argument pack"' failed.
@@ -114,7 +109,6 @@ Assertion `D && "missing definition for pattern of instantiated definition"' fai
 Assertion `!isNull() && "Cannot retrieve a NULL type pointer"' failed.
 Assertion `Unqualified ? hasSameUnqualifiedType(X, Y) : hasSameType(X, Y)' failed.
 Assertion `F.isPresplitCoroutine() && "The frontend uses Switch-Resumed ABI should emit " "\"presplitcoroutine\" attribute for the coroutine."' failed.
-Assertion `!E->isFileScope() && "file-scope compound literal did not have constant initializer!"' failed.
 Assertion `ModuleScopes.size() <= 1 && "expected to be at global module scope"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `!isResultDependent() && "Generic selection is result-dependent but getResultIndex called!"' failed.
@@ -159,7 +153,6 @@ Assertion `getType()->isBlockPointerType() == getSubExpr()->getType()->isBlockPo
 Assertion `!E->hasPlaceholderType() && "unexpected placeholder"' failed.
 Assertion `!Found.isAmbiguous() && "Cannot handle ambiguities here yet"' failed.
 Assertion `Param->hasDefaultArg() && "can't build nonexistent default arg"' failed.
-Assertion `!isa<NamedDecl>(static_cast<decl_type*>(this)) || cast<NamedDecl>(static_cast<decl_type*>(this))->isLinkageValid()' failed.
 Assertion `Result.isInvalid() && "C++ binary operator overloading is missing candidates!"' failed.
 Assertion `ParmDepth < Depth && "ParmVarDecl is not visible in current parameter environment"' failed.
 Assertion `(data().DefaultedCopyConstructorIsDeleted || needsOverloadResolutionForCopyConstructor()) && "Copy constructor should not be deleted"' failed.
@@ -220,7 +213,6 @@ Assertion `getOperand(1)->getType() == getOperand(2)->getType() && "Cmp type and
 Assertion `Kind == OMPD_for || Kind == OMPD_section || Kind == OMPD_sections || Kind == OMPD_parallel_sections || Kind == OMPD_parallel_for || Kind == OMPD_distribute_parallel_for || Kind == OMPD_target_parallel_for || Kind == OMPD_teams_distribute_parallel_for || Kind == OMPD_target_teams_distribute_parallel_for' failed.
 Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
-Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
 Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
 Assertion `ShiftAmt <= BitWidth && "Invalid shift amount"' failed.
@@ -248,7 +240,6 @@ Assertion `!isa<ConstantExpr>(E)' failed.
 Assertion `isDependentContext()' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "Unaccounted cleanups in function"' failed.
 Assertion `!HasRefTypeParam || isa<Loc>(*DV)' failed.
-Assertion `IsUnsigned == RHS.IsUnsigned && "Signedness mismatch!"' failed.
 Assertion `(TSK == TSK_ExplicitInstantiationDefinition || TSK == TSK_ExplicitInstantiationDeclaration || (TSK == TSK_ImplicitInstantiation && Instantiation->isLocalClass())) && "Unexpected template specialization kind!"' failed.
 Assertion `!A->getDeducedType().isNull() && "cannot request the size of an undeduced or dependent auto type"' failed.
 Assertion `!Cleanup.exprNeedsCleanups() && "cleanups within block not correctly bound!"' failed.
@@ -318,7 +309,6 @@ Assertion `getABIInfo().getContext().getLangOpts().OpenCL && "Kernel calling con
 Assertion `UD.shadow_size() && "We shouldn't be codegening an invalid UsingEnumDecl" " containing no decls"' failed.
 Assertion `D->isCompleteDefinition() && "Cannot layout type before complete!"' failed.
 Assertion `D.DeclIdent && "Identifier expected."' failed.
-Assertion `VD || isOpenMPCapturedDecl(D)' failed.
 Assertion `!isAnnotation() && "Annotation tokens have no length field"' failed.
 Assertion `EnumDeclBits.NumPositiveBits == Num && "can't store this bitcount"' failed.
 Assertion `power <= maxExponent' failed.
@@ -331,17 +321,13 @@ Assertion `isFromASTFile() && "Not from AST file?"' failed.
 Assertion `LSI != E && "Should be in a lambda scope info"' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `(isGenericMethod || Ty->isVariablyModifiedType() || ParamTy->isObjCRetainableType() || getContext().getCanonicalType(ParamTy).getTypePtr() == getContext().getCanonicalType(ArgTy).getTypePtr()) && "type mismatch in call argument!"' failed.
-Assertion `isTypeIdInParens() && "Not a type-id!"' failed.
 Assertion `SM == CXXSpecialMemberKind::DefaultConstructor && "lookup for a constructor or assignment operator was empty"' failed.
 Assertion `NameInfo.getName()' failed.
-Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
 Assertion `QualifierLoc.getNestedNameSpecifier() == this->getTypePtr()->getQualifier()' failed.
 Assertion `isLValue()' failed.
-Assertion `makeInsertToken(ProfileID.computeHash()) == Token && "node profile must match the insert token"' failed.
 Assertion `ParsedType.isUsable()' failed.
 Assertion `!MemberQuals.hasAddressSpace()' failed.
 Assertion `!isCompoundAssignmentOp() && "Use CompoundAssignOperator for compound assignments"' failed.
-Assertion `!RHS->getType()->hasSignedIntegerRepresentation() && "unsigned comparison between two signed integer expressions?"' failed.
 Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `Parameter && "A variable template id without template?"' failed.
 Assertion `OldDecls.size() == NewDecls.size()' failed.
@@ -354,7 +340,6 @@ Assertion `PArg->isInvalidDecl() && "Unexpected NonDeducedMismatch"' failed.
 Assertion `!TemplateInfo.TemplateParams && "Nested template improperly parsed?"' failed.
 Assertion `NewTSI' failed.
 Assertion `!BinaryOperator::isComparisonOp(op) && "arguments to comparison ops must be of the same type"' failed.
-Assertion `IsPack == (TA2.getKind() == TemplateArgument::Pack)' failed.
 Assertion `(Record->hasTrivialCopyConstructorForCall() || Record->hasTrivialCopyAssignment() || Record->hasTrivialMoveConstructorForCall() || Record->hasTrivialMoveAssignment() || Record->isUnion() || (getLangOpts().HLSL && !Record->isHLSLBuiltinRecord())) && "Trying to aggregate-copy a type without a trivial copy/move " "constructor or assignment operator"' failed.
 Assertion `V.getBitWidth() == C.getIntWidth(type) && "Integer type is not the correct size for constant."' failed.
 Assertion `!isConditionDependent() && "Dependent condition isn't true or false"' failed.
@@ -392,7 +377,6 @@ Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' faile
 Assertion `Val.isLValue()' failed.
 Assertion `Offset != PastEndMark' failed.
 Assertion `PC >= getCodeBegin() && "PC does not belong to this function"' failed.
-Assertion `!Ctor->isTrivial() && "Trivial CXXInheritedCtorInitExpr, implement. (possible?)"' failed.
 Assertion `isDereferencable()' failed.
 Assertion `isBlockPointer()' failed.
 Assertion `result.isLValue() || result.isAddrLabelDiff()' failed.
@@ -400,4 +384,3 @@ Assertion `CXXInfo->BaseOffsets.count(Base) && "Did not find base!"' failed.
 Assertion `CXXInfo->VBaseOffsets.count(VBase) && "Did not find base!"' failed.
 Assertion `Offset + sizeof(T) <= BS.Pointee->getSize()' failed.
 Assertion `PC <= getCodeEnd() && "PC Does not belong to this function"' failed.
-Assertion `operator bool()' failed.
