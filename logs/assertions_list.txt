@@ -344,6 +344,7 @@ Assertion `(Record->hasTrivialCopyConstructorForCall() || Record->hasTrivialCopy
 Assertion `V.getBitWidth() == C.getIntWidth(type) && "Integer type is not the correct size for constant."' failed.
 Assertion `!isConditionDependent() && "Dependent condition isn't true or false"' failed.
 Assertion `hasRewrittenInit() && "expected a rewritten init expression"' failed.
+Assertion `vecType->isBuiltinType() || vecType->isDependentType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
