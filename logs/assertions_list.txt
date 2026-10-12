@@ -346,6 +346,7 @@ Assertion `!isConditionDependent() && "Dependent condition isn't true or false"'
 Assertion `hasRewrittenInit() && "expected a rewritten init expression"' failed.
 Assertion `vecType->isBuiltinType() || vecType->isDependentType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `(AT && (!AT->isDeduced() || AT->getDeducedType().isNull())) && "Could not find parameter packs or undeduced auto type!"' failed.
+Assertion `FD && FD->isImmediateFunction() && "could not find an immediate function in this expression"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
