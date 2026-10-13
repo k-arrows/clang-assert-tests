@@ -70,7 +70,7 @@ RUN cmake --version
 RUN cmake -S llvm -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/opt/llvm \
-    -DLLVM_TARGET_TO_BUILD=host \
+    -DLLVM_TARGETS_TO_BUILD=host \
     -DLLVM_INSTALL_UTILS=ON \
     -DCMAKE_CXX_STANDARD=17 \
     -DLLVM_ENABLE_WERROR=OFF \
