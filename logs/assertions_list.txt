@@ -391,3 +391,4 @@ Assertion `PC <= getCodeEnd() && "PC Does not belong to this function"' failed.
 Assertion `!ElemSize.isZero()' failed.
 Assertion `bitWidth() == RHS.bitWidth()' failed.
 Assertion `value.isComplexFloat()' failed.
+Assertion `DestPtr.isBlockPointer()' failed.
