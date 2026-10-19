@@ -349,6 +349,7 @@ Assertion `(AT && (!AT->isDeduced() || AT->getDeducedType().isNull())) && "Could
 Assertion `FD && FD->isImmediateFunction() && "could not find an immediate function in this expression"' failed.
 Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
 Assertion `RD && "specialization of class template is not a class?"' failed.
+Assertion `(NewAttr == "error" || NewAttr == "warning") && "unexpected normalized full name"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
