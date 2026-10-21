@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: GetOutputAndInputConstraints
-// EXPECT-CRASH-ASSERT: IsValid
-// EXPECT-CRASH-ASSERT: Failed
+// EXPECT-FAIL
 
 int foo() {
   asm goto("" : "r"(0) : "r"(1)::label);

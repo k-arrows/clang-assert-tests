@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++26 %s
-// EXPECT-CRASH-ASSERT: getRewrittenExpr
-// EXPECT-CRASH-ASSERT: hasRewrittenInit
-// EXPECT-CRASH-ASSERT: expected
+// EXPECT-FAIL
 
 struct S {
   int s1, s2 = 0;

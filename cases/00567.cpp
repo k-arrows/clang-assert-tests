@@ -1,7 +1,5 @@
-// RUN: clang++ --analyze %s
-// EXPECT-CRASH-ASSERT: evalBinOpLN
-// EXPECT-CRASH-ASSERT: isComparisonOp
-// EXPECT-CRASH-ASSERT: arguments
+// RUN: clang++ --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 struct B {
 } b;

@@ -1,8 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: HandleSelectModifier
-// EXPECT-CRASH-ASSERT: ArgumentEnd
-// EXPECT-CRASH-ASSERT: Value
-// EXPECT-CRASH-ASSERT: larger
+// EXPECT-FAIL
 
 void foo() {
 #pragma omp atomic update

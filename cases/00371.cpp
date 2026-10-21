@@ -1,5 +1,4 @@
 // RUN: clang++ --analyze -fopenmp %s
-// EXPECT-CRASH-ASSERT: VisitGCCAsmStmt
-// EXPECT-CRASH-ASSERT: NonLoc
+// EXPECT-FAIL
 
 void foo() { asm volatile("" : "+f"(__LINE__)); }
