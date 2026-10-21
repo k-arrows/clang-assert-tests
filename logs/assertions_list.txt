@@ -383,3 +383,4 @@ Assertion `!ElemSize.isZero()' failed.
 Assertion `bitWidth() == RHS.bitWidth()' failed.
 Assertion `value.isComplexFloat()' failed.
 Assertion `isArrayRoot() || (this->getLifetime() == L)' failed.
+Assertion `LHSType->isVectorType()' failed.
