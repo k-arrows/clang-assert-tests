@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fblocks -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 typedef void (^foo)();
 const foo &bar = ^{

@@ -1,6 +1,7 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getInlineDesc
-// EXPECT-CRASH-ASSERT: BS.Pointee
+// EXPECT-CRASH-ASSERT: setLifeState
+// EXPECT-CRASH-ASSERT: isArrayRoot
+// EXPECT-CRASH-ASSERT: getLifetime
 
 struct S0 {
   constexpr S0(int s0) : data{s0} {}

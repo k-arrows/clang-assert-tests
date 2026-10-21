@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getSource
-// EXPECT-CRASH-ASSERT: getCodeEnd
-// EXPECT-CRASH-ASSERT: PC
+// EXPECT-FAIL
 
 struct S {
   S &operator=(const S &) = default;

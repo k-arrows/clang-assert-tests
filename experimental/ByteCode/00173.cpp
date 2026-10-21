@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fms-compatibility -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: isGlobalLValue
-// EXPECT-CRASH-ASSERT: isLValue
+// EXPECT-FAIL
 
 struct A {
   auto foo;

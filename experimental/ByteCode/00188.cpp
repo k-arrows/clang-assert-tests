@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getBaseClassOffset
-// EXPECT-CRASH-ASSERT: BaseOffsets
-// EXPECT-CRASH-ASSERT: Did
+// EXPECT-FAIL
 
 void foo() {
   struct X {};

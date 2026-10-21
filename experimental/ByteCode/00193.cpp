@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 template <auto V> auto foo = bar(V);
 

@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 template <typename T> struct A {
   char a;

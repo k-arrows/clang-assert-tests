@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++2b -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getSource
-// EXPECT-CRASH-ASSERT: getCodeBegin
-// EXPECT-CRASH-ASSERT: PC
+// EXPECT-FAIL
 
 struct M {
   M &operator=(this M &, const M &) = default;
