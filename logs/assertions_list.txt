@@ -348,6 +348,7 @@ Assertion `Data.Attributes == OMPC_unknown || (A == Data.Attributes) || (A == OM
 Assertion `Ty->isSveVLSBuiltinType() && "Invalid SVE Type"' failed.
 Assertion `(FD == getCurFunctionDecl( true)) && "Function parsing confused"' failed.
 Assertion `isInvalidDecl() && "valid field has incomplete type"' failed.
+Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
