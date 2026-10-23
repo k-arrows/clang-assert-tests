@@ -347,6 +347,7 @@ Assertion `(SemaRef.CurContext->isDependentContext() || B.builtAll()) && "omp lo
 Assertion `Data.Attributes == OMPC_unknown || (A == Data.Attributes) || (A == OMPC_firstprivate && Data.Attributes == OMPC_lastprivate) || (A == OMPC_lastprivate && Data.Attributes == OMPC_firstprivate) || (isLoopControlVariable(D).first && A == OMPC_private)' failed.
 Assertion `Ty->isSveVLSBuiltinType() && "Invalid SVE Type"' failed.
 Assertion `(FD == getCurFunctionDecl( true)) && "Function parsing confused"' failed.
+Assertion `isInvalidDecl() && "valid field has incomplete type"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
