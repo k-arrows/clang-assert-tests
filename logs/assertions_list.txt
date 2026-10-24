@@ -393,3 +393,4 @@ Assertion `SubObjDecl && "Subobject declaration does not exist"' failed.
 Assertion `FullBitWidth.isFullByte()' failed.
 Assertion `isBlockPointer()' failed.
 Assertion `Base >= Pointee->getMetadataSize()' failed.
+Assertion `Ptr.isBlockPointer()' failed.
