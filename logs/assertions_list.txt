@@ -390,3 +390,4 @@ Assertion `isArrayRoot() || (this->getLifetime() == L)' failed.
 Assertion `LHSType->isVectorType()' failed.
 Assertion `BS.Pointee' failed.
 Assertion `SubObjDecl && "Subobject declaration does not exist"' failed.
+Assertion `FullBitWidth.isFullByte()' failed.
