@@ -395,3 +395,4 @@ Assertion `FullBitWidth.isFullByte()' failed.
 Assertion `isBlockPointer()' failed.
 Assertion `Base >= Pointee->getMetadataSize()' failed.
 Assertion `Ptr.isBlockPointer()' failed.
+Assertion `EntryRecord->findVirtualBase(Base)' failed.
