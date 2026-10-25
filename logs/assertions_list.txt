@@ -351,6 +351,7 @@ Assertion `isInvalidDecl() && "valid field has incomplete type"' failed.
 Assertion `isRepresentableByInt64() && "Too many bits for int64_t"' failed.
 Assertion `getLangOpts().OpenMPIsTargetDevice && "OpenMP AMDGPU/NVPTX/SPIRV is only prepared to deal with device code."' failed.
 Assertion `typeSize > 0 && "type size for vector must be greater than 0 bits"' failed.
+Assertion `SecondVec->isVectorType() && "SecondVec should be a vector type"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
