@@ -398,3 +398,4 @@ Assertion `Base >= Pointee->getMetadataSize()' failed.
 Assertion `Ptr.isBlockPointer()' failed.
 Assertion `EntryRecord->findVirtualBase(Base)' failed.
 Assertion `EVResult.Val.isInt() && "Expression did not evaluate to integer"' failed.
+Assertion `Desc' failed.
