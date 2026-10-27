@@ -353,6 +353,7 @@ Assertion `getLangOpts().OpenMPIsTargetDevice && "OpenMP AMDGPU/NVPTX/SPIRV is o
 Assertion `typeSize > 0 && "type size for vector must be greater than 0 bits"' failed.
 Assertion `SecondVec->isVectorType() && "SecondVec should be a vector type"' failed.
 Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"' failed.
+Assertion `CastInst::castIsValid(Instruction::BitCast, C, DestTy) && "Invalid constantexpr bitcast!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
