@@ -356,6 +356,7 @@ Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"'
 Assertion `CastInst::castIsValid(Instruction::BitCast, C, DestTy) && "Invalid constantexpr bitcast!"' failed.
 Assertion `(!Aliasee || Aliasee->getType() == getType()) && "Alias and aliasee types should match!"' failed.
 Assertion `!ty->isIncompleteType()' failed.
+Assertion `(T->hasUnsignedIntegerRepresentation() || T->isUnsignedFixedPointType()) && "Unexpected signed integer or fixed point type"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
