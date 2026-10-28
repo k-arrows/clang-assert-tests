@@ -357,6 +357,7 @@ Assertion `CastInst::castIsValid(Instruction::BitCast, C, DestTy) && "Invalid co
 Assertion `(!Aliasee || Aliasee->getType() == getType()) && "Alias and aliasee types should match!"' failed.
 Assertion `!ty->isIncompleteType()' failed.
 Assertion `(T->hasUnsignedIntegerRepresentation() || T->isUnsignedFixedPointType()) && "Unexpected signed integer or fixed point type"' failed.
+Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
