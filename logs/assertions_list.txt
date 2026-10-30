@@ -358,6 +358,7 @@ Assertion `(!Aliasee || Aliasee->getType() == getType()) && "Alias and aliasee t
 Assertion `!ty->isIncompleteType()' failed.
 Assertion `(T->hasUnsignedIntegerRepresentation() || T->isUnsignedFixedPointType()) && "Unexpected signed integer or fixed point type"' failed.
 Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
+Assertion `RegParmMax < 7 && "RegParmMax value is larger than AST can handle"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
