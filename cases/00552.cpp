@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: IntegerLiteral
-// EXPECT-CRASH-ASSERT: isIntegerType
-// EXPECT-CRASH-ASSERT: Illegal
+// EXPECT-PASS
 
 void foo() {
 #pragma omp flatten

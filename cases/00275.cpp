@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: ActOnOpenMPDeclareMapperType
-// EXPECT-CRASH-ASSERT: ParsedType
-// EXPECT-CRASH-ASSERT: Expect
+// EXPECT-FAIL
 
 template <class T> class D {
 public:

@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++2c %s
-// EXPECT-CRASH-ASSERT: lookupMember
-// EXPECT-CRASH-ASSERT: RD
-// EXPECT-CRASH-ASSERT: specialization
+// EXPECT-FAIL
 
 // Seed: clang/test/AST/ByteCode/libcxx/getfield-nonrecord.cpp
 

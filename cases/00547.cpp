@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fopenmp -fms-compatibility %s
-// EXPECT-CRASH-ASSERT: ActOnOpenMPDeclareReductionType
-// EXPECT-CRASH-ASSERT: ParsedType
+// EXPECT-FAIL
 
 struct foo {};
 

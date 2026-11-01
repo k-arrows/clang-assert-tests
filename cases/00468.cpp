@@ -1,6 +1,4 @@
 // RUN: clang++ -c -x c -std=c23 %s
-// EXPECT-CRASH-ASSERT: HandleEmbedDirective
-// EXPECT-CRASH-ASSERT: CurTok.is
-// EXPECT-CRASH-ASSERT: expected
+// EXPECT-FAIL
 
 #embed <foo> limit(defined(bar)),

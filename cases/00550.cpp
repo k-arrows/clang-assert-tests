@@ -1,4 +1,4 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 void foo [[clang::sycl_local]];

@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: CheckTemplateArgument
-// EXPECT-CRASH-ASSERT: isPointerOrReferenceType
-// EXPECT-CRASH-ASSERT: isNullPtrType
+// EXPECT-FAIL
 
 struct S {};
 

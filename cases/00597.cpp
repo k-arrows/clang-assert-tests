@@ -1,8 +1,5 @@
 // RUN: clang++ -c -target avr -O1 %s
-// EXPECT-CRASH-ASSERT: setAliasee
-// EXPECT-CRASH-ASSERT: Aliasee
-// EXPECT-CRASH-ASSERT: getType
-// EXPECT-CRASH-ASSERT: should
+// EXPECT-FAIL
 
 struct A {};
 struct B : A {

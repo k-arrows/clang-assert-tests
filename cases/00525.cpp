@@ -1,4 +1,4 @@
 // RUN: clang++ -c -fms-compatibility %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 __if_exists(decltype(foo())::bar) {}

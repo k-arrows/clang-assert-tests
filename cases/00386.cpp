@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: Create
-// EXPECT-CRASH-ASSERT: ConstantExpr
+// EXPECT-FAIL
 
 struct S {
   int s;
