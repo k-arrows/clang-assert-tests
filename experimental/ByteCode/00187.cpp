@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: GetValueRange
-// EXPECT-CRASH-ASSERT: isLValue
-// EXPECT-CRASH-ASSERT: isAddrLabelDiff
+// EXPECT-FAIL
 
 struct S {
   char c;

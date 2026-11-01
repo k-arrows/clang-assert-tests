@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: DoBitCast
-// EXPECT-CRASH-ASSERT: Ptr.isBlockPointer
+// EXPECT-FAIL
 
 template <class To, class From> constexpr To cast(const From &from) {
   return __builtin_bit_cast(To, from);

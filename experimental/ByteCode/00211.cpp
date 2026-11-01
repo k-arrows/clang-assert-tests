@@ -1,5 +1,5 @@
 // RUN: clang++ -std=c++23 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 struct A {
   A((B));

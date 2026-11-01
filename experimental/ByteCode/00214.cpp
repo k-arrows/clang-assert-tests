@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++23 -fms-compatibility -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: EvaluateKnownConstInt
-// EXPECT-CRASH-ASSERT: EVResult
-// EXPECT-CRASH-ASSERT: Expression
+// EXPECT-PASS
 
 auto foo() {
   const long bar = (long)&&label;

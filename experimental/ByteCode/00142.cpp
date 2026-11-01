@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: initScope
-// EXPECT-CRASH-ASSERT: isInitialized
+// EXPECT-FAIL
 
 constexpr int foo() {
   while (1) {
