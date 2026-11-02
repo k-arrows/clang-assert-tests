@@ -393,3 +393,4 @@ Assertion `isBlockPointer()' failed.
 Assertion `Base >= Pointee->getMetadataSize()' failed.
 Assertion `Desc' failed.
 Assertion `isNumber()' failed.
+Assertion `B.isBlockPointer()' failed.
