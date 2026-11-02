@@ -350,6 +350,7 @@ Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' 
 Assertion `RegParmMax < 7 && "RegParmMax value is larger than AST can handle"' failed.
 Assertion `LifetimeExtendedCleanupStack.empty() && "mismatched push/pop of cleanups in EHStack!"' failed.
 Assertion `Tok.isNot(tok::kw_decltype) && Tok.isNot(tok::kw___super)' failed.
+Assertion `(T->hasIntegerRepresentation() || T->isEnumeralType() || T->isFixedPointType()) && "Unexpected type"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
