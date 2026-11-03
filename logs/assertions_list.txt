@@ -352,6 +352,7 @@ Assertion `LifetimeExtendedCleanupStack.empty() && "mismatched push/pop of clean
 Assertion `Tok.isNot(tok::kw_decltype) && Tok.isNot(tok::kw___super)' failed.
 Assertion `(T->hasIntegerRepresentation() || T->isEnumeralType() || T->isFixedPointType()) && "Unexpected type"' failed.
 Assertion `!isAnnotation() && "getIdentifierInfo() on an annotation token!"' failed.
+Assertion `rhs.getKind() == nonloc::PointerToMemberKind && "Both SVals should have pointer-to-member-type"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
