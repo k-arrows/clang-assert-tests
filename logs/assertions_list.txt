@@ -396,3 +396,4 @@ Assertion `Base >= Pointee->getMetadataSize()' failed.
 Assertion `Desc' failed.
 Assertion `isNumber()' failed.
 Assertion `B.isBlockPointer()' failed.
+Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
