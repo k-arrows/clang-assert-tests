@@ -354,6 +354,7 @@ Assertion `(T->hasIntegerRepresentation() || T->isEnumeralType() || T->isFixedPo
 Assertion `!isAnnotation() && "getIdentifierInfo() on an annotation token!"' failed.
 Assertion `rhs.getKind() == nonloc::PointerToMemberKind && "Both SVals should have pointer-to-member-type"' failed.
 Assertion `getLangOpts().CPlusPlus && "ADL enabled in C"' failed.
+Assertion `isFloat() && "Invalid accessor"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
