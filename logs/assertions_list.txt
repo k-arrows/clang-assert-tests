@@ -356,6 +356,7 @@ Assertion `rhs.getKind() == nonloc::PointerToMemberKind && "Both SVals should ha
 Assertion `getLangOpts().CPlusPlus && "ADL enabled in C"' failed.
 Assertion `isFloat() && "Invalid accessor"' failed.
 Assertion `getNumArgs() == ArgPack.pack_size() && "Parent bitfields in SubstPackType were overwritten." "Check NumSubstPackTypeBits."' failed.
+Assertion `getKind() == Template && "Unexpected kind"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
