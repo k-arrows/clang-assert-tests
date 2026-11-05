@@ -357,6 +357,7 @@ Assertion `getLangOpts().CPlusPlus && "ADL enabled in C"' failed.
 Assertion `isFloat() && "Invalid accessor"' failed.
 Assertion `getNumArgs() == ArgPack.pack_size() && "Parent bitfields in SubstPackType were overwritten." "Check NumSubstPackTypeBits."' failed.
 Assertion `getKind() == Template && "Unexpected kind"' failed.
+Assertion `RD->isAggregate() && "aggregate init on non-aggregate"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
