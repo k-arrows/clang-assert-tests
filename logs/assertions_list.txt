@@ -355,6 +355,7 @@ Assertion `!isAnnotation() && "getIdentifierInfo() on an annotation token!"' fai
 Assertion `rhs.getKind() == nonloc::PointerToMemberKind && "Both SVals should have pointer-to-member-type"' failed.
 Assertion `getLangOpts().CPlusPlus && "ADL enabled in C"' failed.
 Assertion `isFloat() && "Invalid accessor"' failed.
+Assertion `getNumArgs() == ArgPack.pack_size() && "Parent bitfields in SubstPackType were overwritten." "Check NumSubstPackTypeBits."' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
