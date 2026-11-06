@@ -359,6 +359,7 @@ Assertion `getNumArgs() == ArgPack.pack_size() && "Parent bitfields in SubstPack
 Assertion `getKind() == Template && "Unexpected kind"' failed.
 Assertion `RD->isAggregate() && "aggregate init on non-aggregate"' failed.
 Assertion `E->isPRValue() && E->getType()->isRealFloatingType()' failed.
+Assertion `!IsAtEnd() && "No token on the RHS of a paste operator!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
