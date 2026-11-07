@@ -361,6 +361,7 @@ Assertion `RD->isAggregate() && "aggregate init on non-aggregate"' failed.
 Assertion `E->isPRValue() && E->getType()->isRealFloatingType()' failed.
 Assertion `!IsAtEnd() && "No token on the RHS of a paste operator!"' failed.
 Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
+Assertion `IdealIndex < NumIdealInits && "initializer not found in initializer list"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
