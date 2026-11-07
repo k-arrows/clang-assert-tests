@@ -362,6 +362,7 @@ Assertion `E->isPRValue() && E->getType()->isRealFloatingType()' failed.
 Assertion `!IsAtEnd() && "No token on the RHS of a paste operator!"' failed.
 Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `IdealIndex < NumIdealInits && "initializer not found in initializer list"' failed.
+Assertion `DD && "queried property of class with no definition"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
