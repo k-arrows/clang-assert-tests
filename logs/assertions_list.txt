@@ -367,6 +367,7 @@ Assertion `RD && "specialization of class template is not a class?"' failed.
 Assertion `(!T->isPlaceholderType() || T->isSpecificPlaceholderType(BuiltinType::UnknownAny)) && "Unresolved placeholder type"' failed.
 Assertion `isa<UsingDecl>(Cand.getDecl()) && "illegal Kind of operator = Decl"' failed.
 Assertion `(!ExpectPackInType || Pattern->containsUnexpandedParameterPack()) && "Pack expansions must expand one or more parameter packs"' failed.
+Assertion `TSK != TSK_ExplicitInstantiationDefinition && TSK != TSK_ImplicitInstantiation && "Instantiations don't have key functions"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
