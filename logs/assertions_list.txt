@@ -366,6 +366,7 @@ Assertion `DD && "queried property of class with no definition"' failed.
 Assertion `RD && "specialization of class template is not a class?"' failed.
 Assertion `(!T->isPlaceholderType() || T->isSpecificPlaceholderType(BuiltinType::UnknownAny)) && "Unresolved placeholder type"' failed.
 Assertion `isa<UsingDecl>(Cand.getDecl()) && "illegal Kind of operator = Decl"' failed.
+Assertion `(!ExpectPackInType || Pattern->containsUnexpandedParameterPack()) && "Pack expansions must expand one or more parameter packs"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
