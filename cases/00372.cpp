@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: VisitBinaryOperator
-// EXPECT-CRASH-ASSERT: getTypePtr
-// EXPECT-CRASH-ASSERT: Either
+// EXPECT-FAIL
 
 struct S {
   int i;

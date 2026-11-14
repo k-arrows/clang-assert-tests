@@ -1,7 +1,5 @@
 // RUN: clang++ -c -std=c++20 %s
-// EXPECT-CRASH-ASSERT: EmitCXXMemberOrOperatorMemberCallExpr
-// EXPECT-CRASH-ASSERT: mayInsertExtraPadding
-// EXPECT-CRASH-ASSERT: unknown
+// EXPECT-PASS
 
 union A {
   bool operator==(const A &) const = default;

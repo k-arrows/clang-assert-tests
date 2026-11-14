@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: AssertSuccess
-// EXPECT-CRASH-ASSERT: R.isInvalid
-// EXPECT-CRASH-ASSERT: operation
+// EXPECT-PASS
 
 void foo() {
 #pragma omp unroll partial

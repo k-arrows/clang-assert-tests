@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 void foo () {
   [[omp::directive (target loop)]]

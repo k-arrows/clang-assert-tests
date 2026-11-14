@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp-simd %s
-// EXPECT-CRASH-ASSERT: cast_if_present
-// EXPECT-CRASH-ASSERT: isa
-// EXPECT-CRASH-ASSERT: incompatible
+// EXPECT-PASS
 
 void foo(...);
 

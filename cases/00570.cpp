@@ -1,7 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: IntegerLiteral
-// EXPECT-CRASH-ASSERT: getBitWidth
-// EXPECT-CRASH-ASSERT: correct
+// EXPECT-PASS
 
 void foo(bool b) {
 #pragma omp tile sizes(b)

@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-PASS
 
 template <class T> void foo() {
   switch (T(0)) {

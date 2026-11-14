@@ -1,13 +1,5 @@
 // RUN: clang++ -c -fopenmp %s
-// EXPECT-CRASH-ASSERT: getOMPCancelDestination
-// EXPECT-CRASH-ASSERT: OMPD_for
-// EXPECT-CRASH-ASSERT: OMPD_sections
-// EXPECT-CRASH-ASSERT: OMPD_parallel_sections
-// EXPECT-CRASH-ASSERT: OMPD_parallel_for
-// EXPECT-CRASH-ASSERT: OMPD_distribute_parallel_for
-// EXPECT-CRASH-ASSERT: OMPD_target_parallel_for
-// EXPECT-CRASH-ASSERT: OMPD_teams_distribute_parallel_for
-// EXPECT-CRASH-ASSERT: OMPD_target_teams_distribute_parallel_for
+// EXPECT-PASS
 
 template <class T> T foo() {
 #pragma omp masked taskloop

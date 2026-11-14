@@ -1,7 +1,5 @@
-// RUN: clang++ -fopenmp --analyze %s
-// EXPECT-CRASH-ASSERT: isTransparent
-// EXPECT-CRASH-ASSERT: isSemanticForm
-// EXPECT-CRASH-ASSERT: syntactic
+// RUN: clang++ -fopenmp --analyze -Xanalyzer -analyzer-output=text %s
+// EXPECT-PASS
 
 void foo() {
 #pragma omp parallel for

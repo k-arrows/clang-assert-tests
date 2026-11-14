@@ -1,7 +1,5 @@
 // RUN: clang++ -c %s
-// EXPECT-CRASH-ASSERT: ComputeRecordLayout
-// EXPECT-CRASH-ASSERT: Size
-// EXPECT-CRASH-ASSERT: bitfield
+// EXPECT-PASS
 
 struct S {
   unsigned int a : 0400000;
