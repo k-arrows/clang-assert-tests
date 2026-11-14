@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++2c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: getOffset
-// EXPECT-CRASH-ASSERT: PastEndMark
+// EXPECT-FAIL
 
 constexpr const char foo[] = {};
 

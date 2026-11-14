@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: Pointer
-// EXPECT-CRASH-ASSERT: getMetadataSize
+// EXPECT-FAIL
 
 struct A {
   constexpr A(int n) : n(n) {}

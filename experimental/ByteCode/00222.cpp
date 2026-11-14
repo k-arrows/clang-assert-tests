@@ -1,6 +1,5 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: VisitCXXTypeidExpr
-// EXPECT-CRASH-ASSERT: getExprOperand
+// EXPECT-FAIL
 
 namespace std {
 struct type_info struct S {

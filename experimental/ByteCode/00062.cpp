@@ -1,6 +1,4 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: subtract
-// EXPECT-CRASH-ASSERT: getSemantics
-// EXPECT-CRASH-ASSERT: Should
+// EXPECT-FAIL
 
 extern double INT128_MIN = -INT128_MAX - 1;

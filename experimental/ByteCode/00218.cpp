@@ -1,5 +1,5 @@
 // RUN: clang++ -c -fms-compatibility -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-FAIL
 
 int bar();
 

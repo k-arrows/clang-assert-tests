@@ -1,5 +1,7 @@
 // RUN: clang++ -c -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-NOASSERT
+// EXPECT-CRASH-ASSERT: cast
+// EXPECT-CRASH-ASSERT: isa
+// EXPECT-CRASH-ASSERT: incompatible
 
 void foo(int z) {
   struct X {};

@@ -1,6 +1,5 @@
 // RUN: clang++ -c -std=c++20 -fexperimental-new-constant-interpreter %s
-// EXPECT-CRASH-ASSERT: toAPSInt
-// EXPECT-CRASH-ASSERT: isNumber
+// EXPECT-PASS
 
 namespace std {
 struct S {
