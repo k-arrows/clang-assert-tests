@@ -360,6 +360,7 @@ Assertion `ControllingExprOrType && "Must have either a controlling expression o
 Assertion `isStruct() && "Invalid accessor"' failed.
 Assertion `LCAssign->getOpcode() == BO_Assign && "init part must be a loop variable assignment"' failed.
 Assertion `isSingleDecl() && "Isn't a single decl"' failed.
+Assertion `llvm::isIntN(BitWidth, val) && "Value is not an N-bit signed value"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
