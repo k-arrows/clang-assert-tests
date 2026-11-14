@@ -93,13 +93,11 @@ Assertion `LV.getLinkage() == OldLinkage' failed.
 Assertion `i < getNumParams() && "Illegal param #"' failed.
 Assertion `isPRValue()' failed.
 Assertion `!(D & ExprDependence::UnexpandedPack)' failed.
-Assertion `Info.Size > 0 && "Empty bitfield!"' failed.
 Assertion `DiagnoseInitList.HadError() && "Inconsistent init list check result."' failed.
 Assertion `Arg.getKind() == TemplateArgument::Pack && "Missing argument pack"' failed.
 Assertion `!CallOp->getReturnType()->isUndeducedType() && "failed to deduce lambda return type"' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofExpr || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualExpr' failed.
 Assertion `NewParamInfo.size() == getNumParams() && "Parameter count mismatch!"' failed.
-Assertion `MD->getParent()->mayInsertExtraPadding() && "unknown trivial member function"' failed.
 Assertion `E->isPRValue() && E->getType()->isRecordType()' failed.
 Assertion `Diagnosed && "failed to diagnose bad conversion"' failed.
 Assertion `D && "missing definition for pattern of instantiated definition"' failed.
@@ -206,16 +204,12 @@ Assertion `!isValueDependent() && "setSatisfied called on a dependent RequiresEx
 Assertion `isa<ObjCMethodDecl>(DC) && "unexpected parent code decl"' failed.
 Assertion `Var->hasLocalStorage() && "capture added 'const' to non-local?"' failed.
 Assertion `getOperand(1)->getType() == getOperand(2)->getType() && "Cmp type and NewVal type must be same!"' failed.
-Assertion `Kind == OMPD_for || Kind == OMPD_section || Kind == OMPD_sections || Kind == OMPD_parallel_sections || Kind == OMPD_parallel_for || Kind == OMPD_distribute_parallel_for || Kind == OMPD_target_parallel_for || Kind == OMPD_teams_distribute_parallel_for || Kind == OMPD_target_teams_distribute_parallel_for' failed.
 Assertion `!TmplAttr->isPackExpansion()' failed.
 Assertion `isValidBaseClass(RD, cast<TypedValueRegion>(Super), IsVirtual)' failed.
 Assertion `DS.getTypeSpecType() == DeclSpec::TST_typeofType || DS.getTypeSpecType() == DeclSpec::TST_typeof_unqualType' failed.
 Assertion `ClassDecl->hasFlexibleArrayMember() && "Incomplete array type is not valid"' failed.
 Assertion `ShiftAmt <= BitWidth && "Invalid shift amount"' failed.
 Assertion `getSignificantBits() <= 64 && "Too many bits for int64_t"' failed.
-Assertion `!R.isInvalid() && "operation was asserted to never fail!"' failed.
-Assertion `TypeSize == Context.getTypeSize(Context.LongLongTy) && "Unhandled vector element size in vector compare"' failed.
-Assertion `isSemanticForm() && "syntactic form never semantically transparent"' failed.
 Assertion `(!State->get<ObjectsUnderConstruction>(Key) || Key.getItem().getKind() == ConstructionContextItem::TemporaryDestructorKind || State->contains<IndexOfElementToConstruct>( {dyn_cast_or_null<CXXConstructExpr>(Init), SF})) && "The object is already marked as `UnderConstruction`, when it's not " "supposed to!"' failed.
 Assertion `(Size == 0 || EltInfo.Width <= (uint64_t)(-1) / Size) && "Overflow in array type bit size evaluation"' failed.
 Assertion `AggrDeductionCandidateParamTypes' failed.
@@ -226,7 +220,6 @@ Assertion `!OldParam->hasUnparsedDefaultArg()' failed.
 Assertion `getType()->isMemberPointerType()' failed.
 Assertion `getKind() == Pack' failed.
 Assertion `Cand2.Conversions.size() == NumArgs && "Overload candidate mismatch"' failed.
-Assertion `(LE->getType().getTypePtr() == BO->getType().getTypePtr() || RE->getType().getTypePtr() == BO->getType().getTypePtr()) && "Either LHS or RHS have base decl inside"' failed.
 Assertion `!IsGlobalVar && "Only declare mapper handles TU-scope iterators."' failed.
 Assertion `D.getIdentifier() == nullptr && "Type name should have no identifier!"' failed.
 Assertion `FromType->isRecordType()' failed.
@@ -327,12 +320,10 @@ Assertion `isa<LabelDecl>(D) && "declaration not instantiated in this scope"' fa
 Assertion `!TemplateInfo.TemplateParams && "Nested template improperly parsed?"' failed.
 Assertion `NewTSI' failed.
 Assertion `(Record->hasTrivialCopyConstructorForCall() || Record->hasTrivialCopyAssignment() || Record->hasTrivialMoveConstructorForCall() || Record->hasTrivialMoveAssignment() || Record->isUnion() || (getLangOpts().HLSL && !Record->isHLSLBuiltinRecord())) && "Trying to aggregate-copy a type without a trivial copy/move " "constructor or assignment operator"' failed.
-Assertion `V.getBitWidth() == C.getIntWidth(type) && "Integer type is not the correct size for constant."' failed.
 Assertion `!isConditionDependent() && "Dependent condition isn't true or false"' failed.
 Assertion `vecType->isBuiltinType() || vecType->isDependentType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `(AT && (!AT->isDeduced() || AT->getDeducedType().isNull())) && "Could not find parameter packs or undeduced auto type!"' failed.
 Assertion `FD && FD->isImmediateFunction() && "could not find an immediate function in this expression"' failed.
-Assertion `isa<X>(Val) && "cast_if_present<Ty>() argument of incompatible type!"' failed.
 Assertion `(NewAttr == "error" || NewAttr == "warning") && "unexpected normalized full name"' failed.
 Assertion `(SemaRef.CurContext->isDependentContext() || B.builtAll()) && "omp loop exprs were not built"' failed.
 Assertion `Data.Attributes == OMPC_unknown || (A == Data.Attributes) || (A == OMPC_firstprivate && Data.Attributes == OMPC_lastprivate) || (A == OMPC_lastprivate && Data.Attributes == OMPC_firstprivate) || (isLoopControlVariable(D).first && A == OMPC_private)' failed.
@@ -346,7 +337,6 @@ Assertion `BitWidth == RHS.BitWidth && "Bit widths must be same for comparison"'
 Assertion `CastInst::castIsValid(Instruction::BitCast, C, DestTy) && "Invalid constantexpr bitcast!"' failed.
 Assertion `!ty->isIncompleteType()' failed.
 Assertion `(T->hasUnsignedIntegerRepresentation() || T->isUnsignedFixedPointType()) && "Unexpected signed integer or fixed point type"' failed.
-Assertion `Tmp.isNot(tok::eof) && "EOF seen while discarding directive tokens"' failed.
 Assertion `RegParmMax < 7 && "RegParmMax value is larger than AST can handle"' failed.
 Assertion `LifetimeExtendedCleanupStack.empty() && "mismatched push/pop of cleanups in EHStack!"' failed.
 Assertion `Tok.isNot(tok::kw_decltype) && Tok.isNot(tok::kw___super)' failed.
@@ -360,9 +350,7 @@ Assertion `getKind() == Template && "Unexpected kind"' failed.
 Assertion `RD->isAggregate() && "aggregate init on non-aggregate"' failed.
 Assertion `E->isPRValue() && E->getType()->isRealFloatingType()' failed.
 Assertion `!IsAtEnd() && "No token on the RHS of a paste operator!"' failed.
-Assertion `type->isIntegerType() && "Illegal type in IntegerLiteral"' failed.
 Assertion `IdealIndex < NumIdealInits && "initializer not found in initializer list"' failed.
-Assertion `DD && "queried property of class with no definition"' failed.
 Assertion `RD && "specialization of class template is not a class?"' failed.
 Assertion `(!T->isPlaceholderType() || T->isSpecificPlaceholderType(BuiltinType::UnknownAny)) && "Unresolved placeholder type"' failed.
 Assertion `isa<UsingDecl>(Cand.getDecl()) && "illegal Kind of operator = Decl"' failed.
@@ -380,13 +368,11 @@ Assertion `SrcDesc->getNumElems() == DestDesc->getNumElems()' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `Result && "Could not evaluate expression"' failed.
 Assertion `!ItemTypes.empty()' failed.
-Assertion `&getSemantics() == &RHS.getSemantics() && "Should only call on two APFloats with the same semantics"' failed.
 Assertion `SrcDesc->ElemRecord == DestDesc->ElemRecord' failed.
 Assertion `ArgSize >= F->getWrittenArgSize()' failed.
 Assertion `Base % alignof(void *) == 0 && "wrong base"' failed.
 Assertion `isNumber()' failed.
 Assertion `HasRVO == Func->hasRVO()' failed.
-Assertion `Base != sizeof(GlobalInlineDescriptor)' failed.
 Assertion `&getSemantics() == &RHS.getSemantics() && "Should only compare APFloats with the same semantics"' failed.
 Assertion `SrcDesc->getPrimType() == DestDesc->getPrimType()' failed.
 Assertion `width <= BitWidth && "Invalid APInt Truncate request"' failed.
@@ -399,20 +385,17 @@ Assertion `BaseDecl' failed.
 Assertion `Stk.empty()' failed.
 Assertion `Ptr && "Offset too large"' failed.
 Assertion `S.Current->getFrameOffset() == S.Stk.size() && "Invalid frame"' failed.
-Assertion `Offset != PastEndMark' failed.
 Assertion `isDereferencable()' failed.
 Assertion `Offset + sizeof(T) <= BS.Pointee->getSize()' failed.
 Assertion `!ElemSize.isZero()' failed.
 Assertion `bitWidth() == RHS.bitWidth()' failed.
 Assertion `value.isComplexFloat()' failed.
-Assertion `isArrayRoot() || (this->getLifetime() == L)' failed.
+Assertion `BS.Base <= BS.Pointee->getSize()' failed.
 Assertion `LHSType->isVectorType()' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `BS.Pointee' failed.
 Assertion `FullBitWidth.isFullByte()' failed.
 Assertion `isBlockPointer()' failed.
-Assertion `Base >= Pointee->getMetadataSize()' failed.
 Assertion `Desc' failed.
-Assertion `isNumber()' failed.
 Assertion `B.isBlockPointer()' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
-Assertion `E->getExprOperand()->isLValue()' failed.
