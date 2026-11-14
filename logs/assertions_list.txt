@@ -358,6 +358,7 @@ Assertion `(!ExpectPackInType || Pattern->containsUnexpandedParameterPack()) && 
 Assertion `TSK != TSK_ExplicitInstantiationDefinition && TSK != TSK_ImplicitInstantiation && "Instantiations don't have key functions"' failed.
 Assertion `ControllingExprOrType && "Must have either a controlling expression or a controlling type"' failed.
 Assertion `isStruct() && "Invalid accessor"' failed.
+Assertion `LCAssign->getOpcode() == BO_Assign && "init part must be a loop variable assignment"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
