@@ -365,6 +365,7 @@ Assertion `isOpenMPLoopTransformationDirective(LoopTransform->getDirectiveKind()
 Assertion `getParent() && "only basic blocks in functions have valid numbers"' failed.
 Assertion `(Rel == BO_LT || Rel == BO_LE || Rel == BO_GE || Rel == BO_GT) && "Expected one of these relational operators"' failed.
 Assertion `!Invalid && "Expecting capture-by-value to work."' failed.
+Assertion `!R.isInvalid() && "operation was asserted to never fail!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
