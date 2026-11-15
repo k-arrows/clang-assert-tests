@@ -363,6 +363,7 @@ Assertion `isSingleDecl() && "Isn't a single decl"' failed.
 Assertion `llvm::isIntN(BitWidth, val) && "Value is not an N-bit signed value"' failed.
 Assertion `isOpenMPLoopTransformationDirective(LoopTransform->getDirectiveKind()) && "Loop transformation directive expected"' failed.
 Assertion `getParent() && "only basic blocks in functions have valid numbers"' failed.
+Assertion `(Rel == BO_LT || Rel == BO_LE || Rel == BO_GE || Rel == BO_GT) && "Expected one of these relational operators"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
