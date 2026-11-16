@@ -367,6 +367,7 @@ Assertion `(Rel == BO_LT || Rel == BO_LE || Rel == BO_GE || Rel == BO_GT) && "Ex
 Assertion `!Invalid && "Expecting capture-by-value to work."' failed.
 Assertion `!R.isInvalid() && "operation was asserted to never fail!"' failed.
 Assertion `Proto && "Functions without a prototype cannot be overloaded"' failed.
+Assertion `getSubExpr()->getType()->isPointerType()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
