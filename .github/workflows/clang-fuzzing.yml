@@ -1,0 +1,333 @@
+
+name: Clang Fuzzing
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+    inputs:
+      language:
+        description: "Fuzzing target language"
+        type: choice
+        options:
+          - auto
+          - c
+          - cpp
+        default: auto
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clang-fuzzing
+  cancel-in-progress: false
+
+jobs:
+  fuzz:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+
+    env:
+      CMAKE_VERSION: "3.31.10"
+      LLVM_SRC: ${{ github.workspace }}/llvm-project
+      LLVM_BUILD: ${{ github.workspace }}/llvm-project/build
+      LLVM_INSTALL: ${{ github.workspace }}/llvm-install
+      CRASH_DIR: ${{ github.workspace }}/clang-crashes
+      FUZZ_DIR: ${{ github.workspace }}/fuzzing/tree-crasher
+      CORPUS_DIR: ${{ github.workspace }}/fuzzing/tree-crasher/corpus
+      LOG_DIR: ${{ github.workspace }}/fuzzing/tree-crasher/logs
+
+    steps:
+      # ----------------------------------------
+      # Checkout
+      # ----------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ----------------------------------------
+      # Select language
+      # ----------------------------------------
+
+      - name: Select fuzzing language
+        id: language
+        env:
+          REQUESTED_LANGUAGE: ${{ inputs.language || 'auto' }}
+        shell: bash
+        run: |
+          if [[ "$REQUESTED_LANGUAGE" != "auto" ]]; then
+            LANG="$REQUESTED_LANGUAGE"
+          else
+            DAYS=$(( $(date -u +%s) / 86400 ))
+
+            if (( DAYS % 2 == 0 )); then
+              LANG=c
+            else
+              LANG=cpp
+            fi
+          fi
+
+          echo "language=$LANG" >> "$GITHUB_OUTPUT"
+          echo "Selected language: $LANG"
+
+      # ----------------------------------------
+      # Install dependencies
+      # ----------------------------------------
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ca-certificates \
+            curl \
+            git \
+            clang \
+            libomp-dev \
+            ninja-build \
+            python3 \
+            python3-yaml \
+            build-essential \
+            libssl-dev \
+            pkg-config \
+            xz-utils \
+            file
+
+      # ----------------------------------------
+      # Build CMake
+      # ----------------------------------------
+
+      - name: Build CMake
+        run: |
+          curl -L \
+            "https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}.tar.gz" \
+            -o cmake.tar.gz
+
+          tar xf cmake.tar.gz
+          cd "cmake-${CMAKE_VERSION}"
+
+          ./bootstrap --prefix="$HOME/cmake"
+          make -j4
+          make install
+
+          echo "$HOME/cmake/bin" >> "$GITHUB_PATH"
+
+      # ----------------------------------------
+      # Checkout LLVM
+      # ----------------------------------------
+
+      - name: Checkout LLVM
+        run: |
+          git clone --depth 1 \
+            https://github.com/llvm/llvm-project.git \
+            "$LLVM_SRC"
+
+          echo "LLVM revision:"
+          git -C "$LLVM_SRC" rev-parse HEAD
+
+      # ----------------------------------------
+      # Configure LLVM
+      # ----------------------------------------
+
+      - name: Configure LLVM
+        run: |
+          cmake -S "$LLVM_SRC/llvm" \
+                -B "$LLVM_BUILD" \
+                -G Ninja \
+                -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_INSTALL_PREFIX="$LLVM_INSTALL" \
+                -DLLVM_TARGETS_TO_BUILD=host \
+                -DLLVM_INSTALL_UTILS=ON \
+                -DCMAKE_CXX_STANDARD=17 \
+                -DLLVM_ENABLE_WERROR=OFF \
+                -DBUILD_SHARED_LIBS=ON \
+                -DLLVM_ENABLE_ASSERTIONS=ON \
+                -DLLVM_ENABLE_LIBCXX=ON \
+                -DLLVM_ENABLE_PROJECTS="llvm;clang;mlir" \
+                -DLLVM_ENABLE_RUNTIMES=openmp \
+                -DLLVM_LIT_ARGS="-v -vv" \
+                -DCMAKE_C_COMPILER=/usr/bin/clang \
+                -DCMAKE_CXX_COMPILER=/usr/bin/clang++
+
+      # ----------------------------------------
+      # Build LLVM
+      # ----------------------------------------
+
+      - name: Build and install LLVM
+        run: |
+          cmake --build "$LLVM_BUILD" \
+                --target install \
+                --parallel 4
+
+      - name: Show Clang version
+        run: |
+          "$LLVM_INSTALL/bin/clang" --version
+          "$LLVM_INSTALL/bin/clang++" --version
+
+      # ----------------------------------------
+      # Install Rust
+      # ----------------------------------------
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@1.87
+
+      # ----------------------------------------
+      # Build tree-crasher
+      # ----------------------------------------
+
+      - name: Build tree-crasher
+        run: |
+          cargo install --locked \
+            --git https://github.com/langston-barrett/tree-crasher.git \
+            tree-crasher-c
+
+          mkdir -p "$HOME/.local/bin"
+
+          ln -sf \
+            "$HOME/.cargo/bin/tree-crasher-c" \
+            "$HOME/.local/bin/tree-crasher"
+
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+          tree-crasher --help
+
+      # ----------------------------------------
+      # Prepare fuzzing configuration
+      # ----------------------------------------
+
+      - name: Prepare fuzzing configuration
+        env:
+          FUZZ_LANGUAGE: ${{ steps.language.outputs.language }}
+        working-directory: fuzzing/tree-crasher
+        shell: bash
+        run: |
+          mkdir -p "$CRASH_DIR" "$LOG_DIR"
+
+          if [[ "$FUZZ_LANGUAGE" == "c" ]]; then
+            SOURCE_DIR="$LLVM_SRC/clang/test/Sema"
+            EXTENSION=".c"
+            COMPILER="$LLVM_INSTALL/bin/clang"
+          else
+            SOURCE_DIR="$LLVM_SRC/clang/test/SemaCXX"
+            EXTENSION=".cpp"
+            COMPILER="$LLVM_INSTALL/bin/clang++"
+          fi
+
+          echo "Language: $FUZZ_LANGUAGE"
+          echo "Source: $SOURCE_DIR"
+          echo "Compiler: $COMPILER"
+
+          cat > config.yaml <<EOF
+          corpus:
+            source_directory: "$SOURCE_DIR"
+            destination_directory: "$CORPUS_DIR"
+
+            extensions:
+              - "$EXTENSION"
+
+            number_to_select: 300
+            recursive: true
+            seed: null
+
+          fuzzer:
+            binary: "$HOME/.local/bin/tree-crasher"
+            corpus_dir: "$CORPUS_DIR"
+            debug: "--debug"
+
+            interesting_stderr: '"(?m)^PLEASE "'
+
+            timeout_seconds: 1800
+            parallel: 2
+
+            show_stdout: false
+
+            compiler_cmd:
+              - "$COMPILER"
+              - -c
+              - -o
+              - /dev/null
+              - "-fcrash-diagnostics-dir=$CRASH_DIR"
+
+          logging:
+            log_directory: "$LOG_DIR"
+          EOF
+
+          echo "Generated config.yaml:"
+          cat config.yaml
+
+      # ----------------------------------------
+      # Run fuzzing
+      # ----------------------------------------
+
+      - name: Run tree-crasher
+        timeout-minutes: 40
+        working-directory: fuzzing/tree-crasher
+        env:
+          LLVM_SYMBOLIZER_PATH: ${{ github.workspace }}/llvm-install/bin/llvm-symbolizer
+          ASAN_SYMBOLIZER_PATH: ${{ github.workspace }}/llvm-install/bin/llvm-symbolizer
+          LD_LIBRARY_PATH: ${{ github.workspace }}/llvm-install/lib
+          PYTHONUNBUFFERED: "1"
+        run: |
+          echo "Starting tree-crasher"
+          echo "Language: ${{ steps.language.outputs.language }}"
+
+          python3 fuzz.py
+
+      # ----------------------------------------
+      # Collect metadata
+      # ----------------------------------------
+
+      - name: Collect fuzzing metadata
+        if: always()
+        env:
+          FUZZ_LANGUAGE: ${{ steps.language.outputs.language }}
+        shell: bash
+        run: |
+          mkdir -p "$LOG_DIR" "$CRASH_DIR"
+
+          {
+            echo "Language: $FUZZ_LANGUAGE"
+
+            echo
+            echo "LLVM revision:"
+            git -C "$LLVM_SRC" rev-parse HEAD 2>/dev/null || true
+
+            echo
+            echo "Clang version:"
+            "$LLVM_INSTALL/bin/clang" --version 2>/dev/null || true
+
+            echo
+            echo "Clang++ version:"
+            "$LLVM_INSTALL/bin/clang++" --version 2>/dev/null || true
+
+            echo
+            echo "GitHub run ID: $GITHUB_RUN_ID"
+            echo "GitHub commit: $GITHUB_SHA"
+          } > "$LOG_DIR/metadata.txt"
+
+          echo "Crash diagnostics:"
+          find "$CRASH_DIR" -type f -print || true
+
+          echo
+          echo "Fuzzing logs:"
+          find "$LOG_DIR" -type f -print || true
+
+      # ----------------------------------------
+      # Upload artifacts
+      # ----------------------------------------
+
+      - name: Upload fuzzing artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clang-fuzzing-${{ steps.language.outputs.language }}-${{ github.run_id }}
+          path: |
+            clang-crashes/
+            fuzzing/tree-crasher/logs/
+            fuzzing/tree-crasher/corpus/
+            fuzzing/tree-crasher/config.yaml
+          if-no-files-found: ignore
+          retention-days: 30
+
