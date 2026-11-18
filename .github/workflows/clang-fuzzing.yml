@@ -238,7 +238,7 @@ jobs:
 
             interesting_stderr: '"(?m)^PLEASE "'
 
-            timeout_seconds: 1800
+            timeout_seconds: 3600
             parallel: 2
 
             show_stdout: false
@@ -262,7 +262,7 @@ jobs:
       # ----------------------------------------
 
       - name: Run tree-crasher
-        timeout-minutes: 40
+        timeout-minutes: 70
         working-directory: fuzzing/tree-crasher
         env:
           LLVM_SYMBOLIZER_PATH: ${{ github.workspace }}/llvm-install/bin/llvm-symbolizer
