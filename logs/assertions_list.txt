@@ -370,6 +370,7 @@ Assertion `Proto && "Functions without a prototype cannot be overloaded"' failed
 Assertion `getSubExpr()->getType()->isPointerType()' failed.
 Assertion `hasAggregateEvaluationKind(E->getType()) && "Invalid argument!"' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
+Assertion `FromType->isRecordType()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
