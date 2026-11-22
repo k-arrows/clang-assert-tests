@@ -413,3 +413,4 @@ Assertion `Desc' failed.
 Assertion `B.isBlockPointer()' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `Offset >= sizeof(InlineDescriptor)' failed.
+Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
