@@ -414,3 +414,4 @@ Assertion `B.isBlockPointer()' failed.
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `Offset >= sizeof(InlineDescriptor)' failed.
 Assertion `!isUnknownSizeArray() && "Array of unknown size"' failed.
+Assertion `!isNull() && "Cannot retrieve a NULL type pointer"' failed.
