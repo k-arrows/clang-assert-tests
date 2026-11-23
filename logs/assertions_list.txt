@@ -372,6 +372,7 @@ Assertion `hasAggregateEvaluationKind(E->getType()) && "Invalid argument!"' fail
 Assertion `llvm::isUIntN(BitWidth, val) && "Value is not an N-bit unsigned value"' failed.
 Assertion `FromType->isRecordType()' failed.
 Assertion `DD && "queried property of class with no definition"' failed.
+Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
