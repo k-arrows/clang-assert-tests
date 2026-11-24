@@ -73,50 +73,6 @@ jobs:
           echo "LLVM revision:"
           git -C "$LLVM_SRC" rev-parse HEAD
 
-      - name: Patch CIR TableGen dependency
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-
-          cmake_file = Path(
-              "$LLVM_SRC/clang/lib/CIR/Dialect/Transforms/"
-              "TargetLowering/CMakeLists.txt"
-          )
-
-          # GitHub Actions expression is not expanded inside Python.
-          import os
-          cmake_file = Path(os.environ["LLVM_SRC"]) / (
-              "clang/lib/CIR/Dialect/Transforms/"
-              "TargetLowering/CMakeLists.txt"
-          )
-
-          content = cmake_file.read_text()
-
-          old = """  DEPENDS
-            clangBasic
-            mlir-headers
-          """
-
-          new = """  DEPENDS
-            clangBasic
-            mlir-headers
-            MLIRCIRPassIncGen
-          """
-
-          if "MLIRCIRPassIncGen" in content:
-              print("Dependency already exists. Skipping patch.")
-          elif old in content:
-              cmake_file.write_text(content.replace(old, new, 1))
-              print("Successfully added MLIRCIRPassIncGen.")
-          else:
-              raise RuntimeError(
-                  "Could not find the expected DEPENDS section."
-              )
-          PY
-
-          echo "Patched CMakeLists.txt:"
-          cat "$LLVM_SRC/clang/lib/CIR/Dialect/Transforms/TargetLowering/CMakeLists.txt"
-
       - name: Configure LLVM
         run: |
           cmake -S "$LLVM_SRC/llvm" \
