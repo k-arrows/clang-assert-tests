@@ -375,6 +375,7 @@ Assertion `DD && "queried property of class with no definition"' failed.
 Assertion `isa<To>(Val) && "cast<Ty>() argument of incompatible type!"' failed.
 Assertion `Index < Length && "Invalid index!"' failed.
 Assertion `FD->isDefaulted() && !FD->isDeleted() && !FD->doesThisDeclarationHaveABody()' failed.
+Assertion `getActiveBits() <= 64 && "Too many bits for uint64_t"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
