@@ -378,6 +378,7 @@ Assertion `FD->isDefaulted() && !FD->isDeleted() && !FD->doesThisDeclarationHave
 Assertion `getActiveBits() <= 64 && "Too many bits for uint64_t"' failed.
 Assertion `FirstCoroutineStmtLoc.isValid() && "no coroutine statement available"' failed.
 Assertion `!isTokenSpecial() && "Should consume special tokens with Consume*Token"' failed.
+Assertion `vecType->isBuiltinType() || vecType->isDependentType() || (vecType->isBitIntType() && llvm::isPowerOf2_32(vecType->castAs<BitIntType>()->getNumBits()))' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
