@@ -377,6 +377,7 @@ Assertion `Index < Length && "Invalid index!"' failed.
 Assertion `FD->isDefaulted() && !FD->isDeleted() && !FD->doesThisDeclarationHaveABody()' failed.
 Assertion `getActiveBits() <= 64 && "Too many bits for uint64_t"' failed.
 Assertion `FirstCoroutineStmtLoc.isValid() && "no coroutine statement available"' failed.
+Assertion `!isTokenSpecial() && "Should consume special tokens with Consume*Token"' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
 Assertion `ItemTypes.back() == toPrimType<T>()' failed.
